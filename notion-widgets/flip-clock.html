@@ -109,10 +109,26 @@
     .flap.go .leaf.top-h, .flap.go .leaf.bot-h { animation-duration: 0s; animation-delay: 0s; }
     .top .dot { animation: none; }
   }
+
+  /* halftone dot texture fading in from one corner */
+  .frame { overflow: hidden; position: relative; }
+  .frame::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background-image: radial-gradient(circle, rgba(236,232,223,.09) 0 34%, transparent 38%);
+    background-size: max(5px, calc(var(--u) * 1.1)) max(5px, calc(var(--u) * 1.1));
+    -webkit-mask-image: radial-gradient(90% 90% at 100% 100%, #000, transparent 70%);
+            mask-image: radial-gradient(90% 90% at 100% 100%, #000, transparent 70%);
+  }
+  .sticker {
+    position: absolute; pointer-events: none; user-select: none; z-index: 5;
+    filter: drop-shadow(0 calc(var(--u) * .6) calc(var(--u) * 1.2) rgba(0,0,0,.7));
+  }
+  .sticker { width: calc(var(--u) * 11); right: calc(var(--u) * 1.6); bottom: calc(var(--u) * -1.4); transform: rotate(9deg); }
 </style>
 </head>
 <body>
 <div class="frame">
+  <img class="sticker" src="https://raw.githubusercontent.com/abzumkmail-ops/abzumk3dPortfolio/ccr-a3611b72-q4wqb8/notion-widgets/stickers/king.png" alt="">
   <div class="top"><span class="live"><span class="dot"></span><span id="zone">Local</span></span><span id="week">KW --</span></div>
   <div class="clock">
     <div class="unit"><div class="flap" id="h"></div><div class="label">HRS</div></div>
