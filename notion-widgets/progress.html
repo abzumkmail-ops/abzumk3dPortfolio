@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progress</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --ink: #ece8df;
+    --muted: #6d6a64;
+    --off: #1c1c1c;
+    --red: #d40000;
+    --u: min(1vw, 1.55vh);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: transparent; }
+  body {
+    display: flex; font-family: "JetBrains Mono", ui-monospace, monospace; color: var(--ink);
+    overflow: hidden; -webkit-font-smoothing: antialiased;
+  }
+  .frame {
+    flex: 1; border-radius: 14px; border: 1px solid #1f1f1f;
+    background: radial-gradient(120% 90% at 50% 0%, #161616 0%, var(--bg) 60%);
+    padding: max(14px, calc(var(--u) * 5)) max(14px, calc(var(--u) * 5.5));
+    display: flex; flex-direction: column; justify-content: center; gap: max(10px, calc(var(--u) * 4.2));
+  }
+  .head { display: flex; justify-content: space-between; font-size: max(9px, calc(var(--u) * 2.6)); letter-spacing: .3em; color: var(--muted); text-transform: uppercase; }
+  .head b { font-weight: 400; color: var(--red); }
+  .row { display: grid; grid-template-columns: max(46px, calc(var(--u) * 17)) 1fr max(40px, calc(var(--u) * 15)); align-items: center; gap: max(8px, calc(var(--u) * 3)); }
+  .name { font-size: max(9px, calc(var(--u) * 2.6)); letter-spacing: .25em; color: #a9a59c; text-transform: uppercase; }
+  /* LED bar like a tachometer: the last segments are the red line */
+  .bar { display: grid; grid-template-columns: repeat(20, 1fr); gap: max(2px, calc(var(--u) * .7)); height: max(10px, calc(var(--u) * 4.6)); }
+  .bar i { background: var(--off); border-radius: 2px; transform: skewX(-14deg); transition: background .4s; }
+  .bar i.on { background: var(--ink); }
+  .bar i.on.red { background: var(--red); box-shadow: 0 0 6px rgba(212,0,0,.6); }
+  .bar i.red:not(.on) { background: #2a0d0d; }
+  .pct { font-family: "Bebas Neue", Impact, sans-serif; font-size: max(20px, calc(var(--u) * 8.5)); text-align: right; line-height: 1; letter-spacing: .02em; }
+  .pct small { font-size: .45em; color: var(--muted); margin-left: .1em; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="head"><span>Progress</span><b id="year"></b></div>
+  <div id="rows"></div>
+</div>
+<script>
+  const locale = navigator.language || "en";
+  const de = locale.startsWith("de");
+  const labels = de ? ["Tag", "Woche", "Monat", "Jahr"] : ["Day", "Week", "Month", "Year"];
+  const SEG = 20, RED = 17;
+
+  const rows = document.getElementById("rows");
+  rows.style.display = "grid";
+  rows.style.gap = "max(10px, calc(var(--u) * 4))";
+  rows.innerHTML = labels.map((l, i) =>
+    '<div class="row"><span class="name">' + l + '</span><div class="bar" id="b' + i + '">' +
+    Array.from({ length: SEG }, (_, s) => '<i' + (s >= RED ? ' class="red"' : '') + '></i>').join("") +
+    '</div><span class="pct" id="p' + i + '"></span></div>').join("");
+
+  function spans(now) {
+    const y = now.getFullYear(), m = now.getMonth(), d = now.getDate();
+    const day0 = new Date(y, m, d);
+    const wk0 = new Date(y, m, d - ((now.getDay() + 6) % 7)); // weeks start on Monday
+    return [
+      [day0, new Date(y, m, d + 1)],
+      [wk0, new Date(wk0.getFullYear(), wk0.getMonth(), wk0.getDate() + 7)],
+      [new Date(y, m, 1), new Date(y, m + 1, 1)],
+      [new Date(y, 0, 1), new Date(y + 1, 0, 1)],
+    ];
+  }
+
+  function draw() {
+    const now = new Date();
+    document.getElementById("year").textContent = now.getFullYear();
+    spans(now).forEach(([a, b], i) => {
+      const f = Math.min(1, Math.max(0, (now - a) / (b - a)));
+      const lit = Math.round(f * SEG);
+      document.querySelectorAll("#b" + i + " i").forEach((el, s) => el.classList.toggle("on", s < lit));
+      document.getElementById("p" + i).innerHTML = Math.floor(f * 100) + "<small>%</small>";
+    });
+  }
+  draw();
+  setInterval(draw, 30000);
+</script>
+</body>
+</html>

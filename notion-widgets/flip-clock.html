@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flip Clock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --card: #161616;
+    --card-hi: #1d1d1d;
+    --ink: #ece8df;
+    --muted: #6d6a64;
+    --line: #000;
+    --red: #d40000;
+    /* one scale unit, sized so the clock fits both narrow (phone) and wide (desktop) embeds */
+    --u: min(1vw, 2.1vh);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: transparent; }
+  body {
+    display: flex; align-items: stretch; justify-content: stretch;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    color: var(--ink);
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  .frame {
+    flex: 1;
+    background: radial-gradient(120% 90% at 50% 0%, #161616 0%, var(--bg) 60%);
+    border-radius: 14px;
+    border: 1px solid #1f1f1f;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: calc(var(--u) * 3);
+    padding: calc(var(--u) * 3);
+    position: relative;
+  }
+  .top {
+    position: absolute; top: calc(var(--u) * 2.4); left: calc(var(--u) * 3); right: calc(var(--u) * 3);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: max(9px, calc(var(--u) * 1.7)); letter-spacing: .28em; color: var(--muted);
+    text-transform: uppercase;
+  }
+  .top .live { display: flex; align-items: center; gap: .7em; }
+  .top .dot { width: .7em; height: .7em; border-radius: 50%; background: var(--red); box-shadow: 0 0 8px var(--red); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .35; } }
+
+  .clock { display: flex; align-items: center; gap: calc(var(--u) * 2.4); }
+  .unit { display: flex; flex-direction: column; align-items: center; gap: calc(var(--u) * 1.4); }
+  .unit .label { font-size: max(9px, calc(var(--u) * 1.5)); letter-spacing: .35em; color: var(--muted); }
+
+  /* split-flap card */
+  .flap {
+    --w: calc(var(--u) * 32);
+    --h: calc(var(--u) * 27);
+    position: relative; width: var(--w); height: var(--h);
+    font-family: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+    font-size: calc(var(--h) * 0.92);
+    line-height: var(--h);
+    perspective: calc(var(--u) * 120);
+    border-radius: calc(var(--u) * 1.6);
+    box-shadow: 0 calc(var(--u) * 1.2) calc(var(--u) * 3) rgba(0,0,0,.6), inset 0 0 0 1px #262626;
+  }
+  .half {
+    position: absolute; left: 0; width: 100%; height: 50%;
+    overflow: hidden; text-align: center;
+    background: linear-gradient(180deg, var(--card-hi), var(--card));
+    backface-visibility: hidden;
+  }
+  .half span { display: block; height: var(--h); letter-spacing: .02em; }
+  .half.top-h { top: 0; border-radius: calc(var(--u) * 1.6) calc(var(--u) * 1.6) 0 0; }
+  .half.bot-h { bottom: 0; border-radius: 0 0 calc(var(--u) * 1.6) calc(var(--u) * 1.6); background: linear-gradient(180deg, #131313, var(--card)); }
+  .half.bot-h span { transform: translateY(-50%); }
+  .half.top-h::after { /* soft shade toward the hinge */
+    content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,.35));
+  }
+  .leaf { z-index: 2; }
+  .leaf.top-h { transform-origin: 50% 100%; }
+  .leaf.bot-h { transform-origin: 50% 0; transform: rotateX(90deg); }
+  .flap.go .leaf.top-h { animation: fold-top .32s ease-in forwards; }
+  .flap.go .leaf.bot-h { animation: fold-bot .32s .32s ease-out forwards; }
+  @keyframes fold-top { to { transform: rotateX(-90deg); } }
+  @keyframes fold-bot { to { transform: rotateX(0deg); } }
+  .hinge { /* the split line plus the two pins */
+    position: absolute; left: 0; right: 0; top: 50%; height: max(2px, calc(var(--u) * .35));
+    transform: translateY(-50%); background: var(--line); z-index: 3;
+  }
+  .hinge::before, .hinge::after {
+    content: ""; position: absolute; top: 50%; width: calc(var(--u) * 1.2); height: calc(var(--u) * 2.6);
+    transform: translateY(-50%); background: #2a2a2a; border-radius: 2px;
+  }
+  .hinge::before { left: calc(var(--u) * -.4); }
+  .hinge::after { right: calc(var(--u) * -.4); }
+
+  .colon { display: flex; flex-direction: column; gap: calc(var(--u) * 3.2); margin-bottom: calc(var(--u) * 3); }
+  .colon i { width: calc(var(--u) * 1.4); height: calc(var(--u) * 1.4); border-radius: 50%; background: var(--ink); opacity: .85; }
+
+  .meridiem { font-size: max(10px, calc(var(--u) * 2)); letter-spacing: .3em; color: var(--red); align-self: flex-start; margin-top: calc(var(--u) * 1); }
+
+  .bottom { display: flex; flex-direction: column; align-items: center; gap: calc(var(--u) * 1.4); width: calc(var(--u) * 70); max-width: 100%; }
+  .date { font-size: max(10px, calc(var(--u) * 2.2)); letter-spacing: .32em; text-transform: uppercase; color: #bdb8ae; }
+  .sweep { position: relative; width: 100%; height: 2px; background: #1e1e1e; border-radius: 2px; overflow: hidden; }
+  .sweep b { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--red); transition: width .9s linear; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .flap.go .leaf.top-h, .flap.go .leaf.bot-h { animation-duration: 0s; animation-delay: 0s; }
+    .top .dot { animation: none; }
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="top"><span class="live"><span class="dot"></span><span id="zone">Local</span></span><span id="week">KW --</span></div>
+  <div class="clock">
+    <div class="unit"><div class="flap" id="h"></div><div class="label">HRS</div></div>
+    <div class="colon"><i></i><i></i></div>
+    <div class="unit"><div class="flap" id="m"></div><div class="label">MIN</div></div>
+    <div class="meridiem" id="ampm" hidden></div>
+  </div>
+  <div class="bottom">
+    <div class="date" id="date"></div>
+    <div class="sweep"><b id="sec"></b></div>
+  </div>
+</div>
+<script>
+  const locale = navigator.language || "en";
+  const twelveHour = /h1[12]/.test(new Intl.DateTimeFormat(locale, { hour: "numeric" }).resolvedOptions().hourCycle || "");
+
+  function build(el, v) {
+    el.innerHTML =
+      '<div class="half top-h"><span>' + v + '</span></div>' +
+      '<div class="half bot-h"><span>' + v + '</span></div>' +
+      '<div class="half top-h leaf"><span>' + v + '</span></div>' +
+      '<div class="half bot-h leaf"><span>' + v + '</span></div>' +
+      '<div class="hinge"></div>';
+    el.dataset.v = v;
+  }
+
+  // Static top shows the new value, static bottom keeps the old one until the lower leaf lands on it.
+  function flip(el, v) {
+    if (el.dataset.v === v) return;
+    const [top, bot, leafTop, leafBot] = el.querySelectorAll(".half");
+    top.firstChild.textContent = v;
+    leafTop.firstChild.textContent = el.dataset.v;
+    leafBot.firstChild.textContent = v;
+    el.dataset.v = v;
+    el.classList.remove("go");
+    void el.offsetWidth;
+    el.classList.add("go");
+    setTimeout(() => { bot.firstChild.textContent = v; el.classList.remove("go"); }, 680);
+  }
+
+  function isoWeek(d) {
+    const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+    const day = t.getUTCDay() || 7;
+    t.setUTCDate(t.getUTCDate() + 4 - day);
+    return Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7);
+  }
+
+  const H = document.getElementById("h"), M = document.getElementById("m");
+  const pad = n => String(n).padStart(2, "0");
+
+  function parts(now) {
+    let h = now.getHours();
+    if (twelveHour) h = h % 12 || 12;
+    return [pad(h), pad(now.getMinutes())];
+  }
+
+  function tick() {
+    const now = new Date();
+    const [h, m] = parts(now);
+    flip(H, h); flip(M, m);
+    if (twelveHour) {
+      const ap = document.getElementById("ampm");
+      ap.hidden = false; ap.textContent = now.getHours() < 12 ? "AM" : "PM";
+    }
+    document.getElementById("date").textContent = now.toLocaleDateString(locale, { weekday: "short", day: "2-digit", month: "short" }).replace(/[.,]/g, "").replace(/\s+/g, " · ");
+    document.getElementById("week").textContent = (locale.startsWith("de") ? "KW " : "WK ") + pad(isoWeek(now));
+    document.getElementById("sec").style.width = (now.getSeconds() / 59 * 100) + "%";
+  }
+
+  const [h0, m0] = parts(new Date());
+  build(H, h0); build(M, m0);
+  try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+    document.getElementById("zone").textContent = tz.split("/").pop().replace(/_/g, " ") || "Local";
+  } catch (e) {}
+  tick();
+  setInterval(tick, 1000);
+</script>
+</body>
+</html>
