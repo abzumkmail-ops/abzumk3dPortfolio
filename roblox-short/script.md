@@ -1,56 +1,44 @@
-# Script v2 — "In This World, Your Roblox Avatar Follows You Around"
+# Script v3: "In This World, Everyone Has A Like Counter"
 
-Status: DRAFT for approval. Target 50 s. Narrator pace measured at ~209 wpm (ElevenLabs "Liam", speed 1.12) → budget ≈ 175 words.
+Status: DRAFT, waiting for approval. Target length is about 50 s. The narrator is one male kid voice (Valf) at 1.25x, about 214 wpm, so the script is about 185 words.
+The visual style stays the same: blocky Roblox-style cartoon characters. The story itself is a general "In this world" premise, not about Roblox.
 
-## Style rules taken from the channel transcripts
-(From "In This World, Paintings Can Talk" and "Hugging Charges Your Battery": both ~2:11, ~240 wpm, first person.)
-1. Open with **"In this world, …"** + the rule in one breath.
-2. **"You see, …"** — explain the rule's mechanics in 1–2 sentences.
-3. 1–2 **world-building jokes** showing how everyday life works under the rule ("Museums are the loudest places in town").
-4. **"Me? I'm the …"** — underdog intro + **"Kids call me …"** nickname.
-5. One loyal relationship (best friend / sibling).
-6. **"Then one day, …"** — the event.
-7. **Mid-video CTA at the cliffhanger** ("Subscribe because I had one percent left…").
-8. **"That's when I realized something."** — the hero uses the world's own rule to win.
-9. **Callback ending** + poetic justice for the antagonist.
-10. Close with **"Subscribe if …"**.
+## Premise
+Everyone has a number floating above their head. It shows how many people *really* like you, and you can't fake it.
+Nubi has exactly one. He has always assumed that one is his mom.
 
-## Voice
-One male kid narrator voices **every** character (like the channel's own Shorts), delivered at ~1.25x. Other characters are distinguished by delivery, captions and the animation. Voice: TBD — candidates in `voice_tests/pick2/` and `voice_tests/pick/`.
+## Script (one narrator voices everyone)
 
-## Script
+| # | Line |
+|---|---|
+| 1 | In this world, everyone has a number above their head. It shows how many people *really* like you. |
+| 2 | You see, you can't fake it. Pop stars have millions. My dog has six. |
+| 3 | And Grandma? Four hundred. She bakes cookies. |
+| 4 | Me? I have exactly one. Kids call me Lonely One. |
+| 5 | I always figured my one was Mom. |
+| 6 | Then one day, Brayden — nine hundred likes — laughed in my face. |
+| 7 | (Brayden) "Bet you can't hit ten by Friday." |
+| 8 | So I tried everything. Free candy. Still one. A backflip… onto the teacher. Still one. |
+| 9 | Friday. School dance. My number? One. |
+| 10 | Subscribe, because that's when everything went wrong. |
+| 11 | Brayden slipped on stage. His pants ripped. Everyone laughed. |
+| 12 | His number started falling. Nine hundred. Two hundred. Ten. |
+| 13 | That's when I realized something. Likes aren't something you get. They're something you give. |
+| 14 | So I walked up, tied my hoodie around his waist, and said, "Nice moves, man." |
+| 15 | Ding. Ding. Ding. Two. Twenty. Fifty! |
+| 16 | But nobody was looking at my number. They were looking at Lily, the quiet girl in the back. |
+| 17 | Her number was one too. |
+| 18 | My one was never Mom. It was her. |
+| 19 | And her one… was me. |
+| 20 | Subscribe if you've got a one. |
 
-| # | Speaker | Line |
-|---|---|---|
-| 1 | NUBI | In this world, your Roblox avatar follows you around in real life. |
-| 2 | NUBI | You see, it walks right next to you, and it copies whatever you *really* feel. |
-| 3 | NUBI | So when Mom says "pizza," Dad stays cool… and his avatar breakdances. |
-| 4 | NUBI | Me? I've never spent a single Robux. So mine's a default noob. |
-| 5 | NUBI | Kids call me Noob Nubi. |
-| 6 | NUBI | Brayden's avatar has dragon wings. Mine trips over air. |
-| 7 | NUBI | Then came photo day. |
-| 8 | MS. OKAFOR | Photo in ten seconds! |
-| 9 | NUBI | And the new girl, Lily, sat right next to me. |
-| 10 | NUBI | My noob looked at her… and started drawing hearts. Giant ones. |
-| 11 | TOBI | Bro. It's spelling her NAME. |
-| 12 | NUBI | Subscribe, because I had five seconds to stop it. |
-| 13 | NUBI | I tackled my noob. It slipped. It sprinted straight to her desk. |
-| 14 | NUBI | Three. Two. |
-| 15 | NUBI | That's when I realized something. You can't hide what you feel. So I stopped trying. |
-| 16 | NUBI | I looked at Lily… and smiled. |
-| 17 | — | *(FLASH — camera shutter)* |
-| 18 | NUBI | Everyone stared… at Lily's avatar. |
-| 19 | NUBI | It was a default noob too. Holding a sign that said… NUBI. |
-| 20 | LILY | So… wanna be noobs together? |
-| 21 | NUBI | Now that photo hangs in the hallway. Brayden's dragon cried for a week. |
-| 22 | NUBI | Subscribe if your avatar would draw hearts too. |
-
-≈ 186 spoken words (~1,050 characters per full take, ~10% of the monthly free credits). At ~209 wpm this lands at ~53–55 s; if the real take runs long I will trim lines 3 or 21 rather than speed the voice up.
+About 185 words.
 
 ## Story checks
-- **Hook (0–3 s):** rule + visual (kid and avatar walking) in the first sentence.
-- **Rules + urgency:** "copies what you really feel" + "Photo in ten seconds!" timer.
-- **Twist:** the rule that makes avatars honest exposes Nubi's crush.
-- **Payoff:** the same rule exposes Lily's crush back — her avatar is also a default noob.
-- **Love:** a small, sweet beat in the last 8 seconds only.
-- **Loop:** last shot is the hallway from shot 1; Nubi + noob walk in again.
+- **Hook (0–3 s):** the rule and a crowd of floating numbers on screen in the first sentence.
+- **Rules + urgency:** "you can't fake it" plus Brayden's bet. A HUD goal tracker reads "GOAL 1/10 · FRIDAY", with a day countdown.
+- **First tries:** candy and a backflip both fail ("Still one"), which keeps the jokes coming.
+- **Escalation and twist:** at the dance the bully's number collapses, and Nubi's chance to look better becomes a choice to be kind.
+- **Payoff:** kindness makes his number jump, so he wins the bet without trying.
+- **Love beat (end only):** his single like was always Lily, and hers was him.
+- **Loop:** the last shot shows both numbers reading "1" side by side, matching the "1" above Nubi's head in the opening.
