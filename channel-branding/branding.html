@@ -24,8 +24,8 @@ function silhouette(name, p, k, dx, eyes = 'happy') {   // talking-shadow look f
 }
 function title(x, y, s = 1) {
   ctx.save(); ctx.translate(x, y); ctx.scale(s, s); ctx.rotate(-.03);
-  txt(ctx, 'IN THIS', 0, -78, 118, '#fff', '#000', 24);
-  txt(ctx, 'WORLD...', 0, 46, 170, '#FFD447', '#000', 30);
+  txt(ctx, 'THE', -222, -86, 90, '#fff', '#000', 22);
+  txt(ctx, 'NUBIVERSE', 0, 30, 138, '#FFD447', '#000', 30);
   ctx.restore();
 }
 async function go() {
@@ -56,9 +56,9 @@ async function go() {
     drawDog(ctx, 1140, FL + 10, .62, T);
     for (const [x, y, r] of [[1655, 700, 20], [1690, 660, 14], [1720, 715, 12]]) { heartPath(ctx, x, y, r); fillStroke(ctx, '#FF5B9B', 4); }
     // title block
-    title(890, 660, 1.0);
-    box(ctx, 590, 790, 600, 84, 42, '#FF5B9B', 8); txt(ctx, 'NEW STORY EVERY WEEK', 890, 834, 52, '#fff', '#000', 8);
-    txt(ctx, '@NubiRobloxx', 890, 912, 50, '#fff', '#000', 10);
+    title(905, 660, 1.0);
+    box(ctx, 530, 790, 720, 84, 42, '#FF5B9B', 8); txt(ctx, 'IN THIS WORLD... EVERY WEEK', 890, 834, 50, '#fff', '#000', 8);
+    txt(ctx, '@TheNubiverse', 890, 912, 50, '#fff', '#000', 10);
     if (mode === 'banner_safe') { ctx.setLineDash([24, 16]); ctx.lineWidth = 6; ctx.strokeStyle = '#30CE65'; ctx.strokeRect(507, 508, 1546, 423); ctx.strokeStyle = '#EE384A'; ctx.strokeRect(0, 509, 2560, 423);
       txt(ctx, 'mobile + desktop safe area', 1280, 480, 34, '#30CE65', '#000', 6); }
   } else {

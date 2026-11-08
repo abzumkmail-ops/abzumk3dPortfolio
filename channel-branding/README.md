@@ -1,4 +1,4 @@
-# Channel packaging: NubiRobloxx
+# Channel packaging: The Nubiverse (@TheNubiverse)
 
 All art is drawn with the same code characters as the videos, so the channel and the Shorts match exactly.
 To regenerate, open `branding.html?mode=banner|banner_safe|icon|icon_preview`, or run
@@ -12,21 +12,18 @@ To regenerate, open `branding.html?mode=banner|banner_safe|icon|icon_preview`, o
 | `icon.png` | **Upload this as the profile picture** | 800×800 PNG |
 | `icon_preview.png` | How it looks in YouTube's circle crop | Reference only |
 
-## Name and handle
+## Name and handle (chosen)
 
-**Recommended name: `Nubi | In This World`**
-- "Nubi" is the brand and the main character, so people remember him.
-- "In This World" is the series. It's what people search for after watching a Short, and it matches every video title.
+- **Channel name:** `The Nubiverse`
+- **Handle:** `@TheNubiverse`
+- **Tagline (on the banner):** "In this world… every week"
 
-Other options: `Nubi Stories` · `In This World with Nubi` · `Nubi's World`
-
-**Handle: keep `@NubiRobloxx`.** Your existing videos, views and links already use it, and the banner shows it.
-If you want a handle without "Roblox" (the stories aren't about Roblox gameplay anymore), these are good options:
-`@NubiInThisWorld` · `@NubiStories` · `@InThisWorldNubi`. Check availability in YouTube Studio, under Customization → Basic info.
-Changing your handle can break old links that use @NubiRobloxx, so only switch if you really want the new one.
+On the day this was made, `youtube.com/@TheNubiverse` had no channel. Plain `@Nubiverse` was taken.
+YouTube confirms availability when you claim the handle in **YouTube Studio → Customization → Basic info**. Claim it soon.
+Once you switch, links that use the old @NubiRobloxx handle may stop working, so update any links you've shared.
 
 ## Channel description (copy-paste)
 
 > In this world… anything can happen. 🌎
-> Nubi is an ordinary 6th grader in a world with one magical rule per episode: shadows that say what you're thinking, numbers that show who really likes you, and more.
+> Welcome to The Nubiverse! Nubi is an ordinary 6th grader in a world with one magical rule per episode: shadows that say what you're thinking, numbers that show who really likes you, and more.
 > New animated story every week. Comment the next "In this world…" rule you want to see!
