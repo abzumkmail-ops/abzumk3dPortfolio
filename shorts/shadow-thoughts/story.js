@@ -65,6 +65,25 @@ function holdDrawing(ctx) { ctx.save(); ctx.translate(0, 40); ctx.rotate(-.06); 
 
 // ---------------- Talent-show stage (gym set with its own banner; stage floor at y 1190) ----------------
 function envStage(ctx, T, cam, o = {}) { envGym(ctx, T, cam, Object.assign({ banner: 'TALENT SHOW', bannerC: '#7B4BFF', noLights: true, dim: .35 }, o)); }
+// Reverse angle: the audience side of the gym (light back wall, mats, EXIT sign) — for crowd and Brayden shots.
+function envAudience(ctx, T, cam, o = {}) {
+  envGym(ctx, T, cam, { noLights: true, banner: 'TALENT SHOW', bannerC: '#7B4BFF' });   // reuse the gym floor
+  const { dx } = par(cam, .92);
+  ctx.save(); ctx.translate(dx, 0);
+  const g = ctx.createLinearGradient(0, 200, 0, FLOOR); g.addColorStop(0, '#4A3E86'); g.addColorStop(1, '#7464B6');
+  ctx.fillStyle = g; ctx.fillRect(-2500, -2500, 6500, FLOOR + 2500 - 2);
+  ctx.strokeStyle = 'rgba(20,10,50,.2)'; ctx.lineWidth = 4; ctx.beginPath();
+  for (let r = 0; r < 22; r++) { const y = 150 + r * 64; ctx.moveTo(-2500, y); ctx.lineTo(4000, y); if (y < 1240) for (let i = -18; i < 30; i++) { const x = i * 140 + (r % 2) * 70; ctx.moveTo(x, y); ctx.lineTo(x, y + 64); } }
+  ctx.stroke();
+  box(ctx, -200, 300, 1500, 70, 10, '#2B1E5C', 8);                                  // painted stripe
+  txt(ctx, 'GO TIGERS', 540, 336, 54, '#FFD447', OUTLINE, 8);
+  box(ctx, 60, 520, 170, 78, 10, '#1E7A3A', 7); txt(ctx, 'EXIT', 145, 561, 48, '#9BFFB4');
+  for (let i = -8; i < 16; i++) box(ctx, i * 200, 1236, 196, 266, 14, '#2E62C9', 7);   // wall mats
+  ctx.restore();
+  ctx.fillStyle = OUTLINE; ctx.fillRect(-3000, FLOOR - 3, 9000, 8);
+  ctx.fillStyle = `rgba(10,8,30,${o.dim ?? .3})`; ctx.fillRect(-3000, -3000, 9000, 9000);
+}
+
 // Emergency lights: red rotating beams + tint (screen space, use in ui)
 function emergencyLights(ctx, T, a = 1) {
   if (a <= 0) return; ctx.save(); ctx.globalAlpha = a;

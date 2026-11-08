@@ -18,7 +18,7 @@ shots(() => {
   const gaspT = ws('L17', 'gasped'), brayT = ws('L17', 'brayden'), turnT = ws('L17', 'turned'), redT = ws('L17', 'red');
   const cam18 = lt => camAt(520 + lt * 14, 1230, 1.18 + lt * .07);
   S.push({ id: 'S18', start: st('L17'), trans: 'cut', capY: 1650,
-    bg: (ctx, T, cam) => envStage(ctx, T, cam, { dim: .5 }),
+    bg: (ctx, T, cam) => envAudience(ctx, T, cam),
     cam: cam18,
     draw(ctx, T, lt) {
       const g = T - gaspT;
@@ -34,7 +34,7 @@ shots(() => {
 
   // ===== S18b — Brayden turned bright red. (close-up; split from S18 so the red has time to read) =====
   S.push({ id: 'S18b', start: brayT - .08, trans: 'zoom', capY: 1690,
-    bg: (ctx, T, cam) => { envStage(ctx, T, cam, { dim: .5 }); const k = smooth(inv(redT - .05, redT + .15, T));
+    bg: (ctx, T, cam) => { envAudience(ctx, T, cam); const k = smooth(inv(redT - .05, redT + .15, T));
       if (k > 0) { ctx.save(); ctx.globalAlpha = k * .85; ctx.translate(cam.x - 540, cam.y - 900); envBurst(ctx, T, '#FF8A8A', '#EE384A', .4); ctx.restore(); } },
     cam: lt => { const T = lt + brayT - .08; const sh = T > redT ? Math.sin(T * 60) * 9 * Math.exp(-(T - redT) * 4) : 0; return camAt(540 + sh, 1130, 2.15 + lt * .08); },
     draw(ctx, T, lt) {
@@ -132,7 +132,7 @@ shots(() => {
   // ===== S23 — Then Lily's shadow whispered... finally. =====
   const lsT = ws('L22', "lily's"), whispT = ws('L22', 'whispered'), finT = ws('L22', 'finally');
   S.push({ id: 'S23', start: st('L22'), trans: 'cut', capY: 1680,
-    bg: (ctx, T, cam) => envStage(ctx, T, cam, { dim: .55 }),
+    bg: (ctx, T, cam) => envAudience(ctx, T, cam),
     cam: lt => camAt(560 + lt * 10, 1150, 1.45 + lt * .05),
     draw(ctx, T, lt) {
       // pink glow on the wall behind her
