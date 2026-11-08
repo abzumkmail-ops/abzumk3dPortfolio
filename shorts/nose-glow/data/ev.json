@@ -1,0 +1,1157 @@
+{
+ "END": 54.875,
+ "fps": 60,
+ "events": [
+  {
+   "t": 0,
+   "type": "shot",
+   "id": "S1",
+   "trans": "none",
+   "end": 2.079
+  },
+  {
+   "t": 0,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 0.15,
+   "type": "line",
+   "id": "L0",
+   "text": "In this world, every lie makes your nose glow.",
+   "end": 2.059
+  },
+  {
+   "t": 0.91,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 1.65,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.5
+  },
+  {
+   "t": 1.65,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.079,
+   "type": "shot",
+   "id": "S2",
+   "trans": "cut",
+   "end": 2.999
+  },
+  {
+   "t": 2.159,
+   "type": "line",
+   "id": "L1",
+   "text": "Small lies? A blink. Big lies? Lighthouse.",
+   "end": 4.09
+  },
+  {
+   "t": 2.379,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.799,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.6
+  },
+  {
+   "t": 2.799,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.999,
+   "type": "shot",
+   "id": "S3",
+   "trans": "zoom",
+   "end": 4.36
+  },
+  {
+   "t": 2.999,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 3.139,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.599,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.6
+  },
+  {
+   "t": 3.599,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.36,
+   "type": "shot",
+   "id": "S4",
+   "trans": "whip",
+   "end": 7.028
+  },
+  {
+   "t": 4.36,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 4.44,
+   "type": "line",
+   "id": "L2",
+   "text": "Dentists say this won't hurt, so their offices are discos.",
+   "end": 6.808
+  },
+  {
+   "t": 4.44,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 5.26,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 5.26,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 6.28,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.6
+  },
+  {
+   "t": 6.28,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 7.028,
+   "type": "shot",
+   "id": "S5",
+   "trans": "cut",
+   "end": 9.028
+  },
+  {
+   "t": 7.108,
+   "type": "line",
+   "id": "L3",
+   "text": "And Grandma? She says she's thirty-nine.",
+   "end": 8.708
+  },
+  {
+   "t": 7.108,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.5
+  },
+  {
+   "t": 7.168,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.028,
+   "type": "shot",
+   "id": "S6",
+   "trans": "whip",
+   "end": 10.64
+  },
+  {
+   "t": 9.028,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 9.108,
+   "type": "line",
+   "id": "L4",
+   "text": "Boats use her to find the shore.",
+   "end": 10.42
+  },
+  {
+   "t": 9.108,
+   "type": "sfx",
+   "name": "bell",
+   "vol": 0.6
+  },
+  {
+   "t": 9.108,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.528,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 10.048,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.6
+  },
+  {
+   "t": 10.64,
+   "type": "shot",
+   "id": "S7",
+   "trans": "zoom",
+   "end": 12.095
+  },
+  {
+   "t": 10.64,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 10.72,
+   "type": "line",
+   "id": "L5",
+   "text": "Me? I'm the worst liar alive.",
+   "end": 12.075
+  },
+  {
+   "t": 11.2,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 11.2,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.095,
+   "type": "shot",
+   "id": "S8",
+   "trans": "cut",
+   "end": 13.295
+  },
+  {
+   "t": 12.175,
+   "type": "line",
+   "id": "L6",
+   "text": "I said I'm fine once. The neighbors called the fire department.",
+   "end": 14.767
+  },
+  {
+   "t": 12.555,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.6
+  },
+  {
+   "t": 13.295,
+   "type": "shot",
+   "id": "S9",
+   "trans": "whip",
+   "end": 15.037
+  },
+  {
+   "t": 13.295,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 14.055,
+   "type": "sfx",
+   "name": "alarm",
+   "vol": 0.6
+  },
+  {
+   "t": 14.055,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 14.355,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.3
+  },
+  {
+   "t": 15.037,
+   "type": "shot",
+   "id": "S10",
+   "trans": "cut",
+   "end": 16.435
+  },
+  {
+   "t": 15.117,
+   "type": "line",
+   "id": "L7",
+   "text": "Kids call me Night Light.",
+   "end": 16.215
+  },
+  {
+   "t": 15.637,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.787,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.6
+  },
+  {
+   "t": 15.797,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 16.435,
+   "type": "shot",
+   "id": "S11",
+   "trans": "whip",
+   "end": 18.135
+  },
+  {
+   "t": 16.435,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 16.515,
+   "type": "line",
+   "id": "L8",
+   "text": "Then came the school dance. And Lily.",
+   "end": 18.115
+  },
+  {
+   "t": 17.095,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.755,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.4
+  },
+  {
+   "t": 17.755,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 18.135,
+   "type": "shot",
+   "id": "S12",
+   "trans": "cut",
+   "end": 20.014
+  },
+  {
+   "t": 18.215,
+   "type": "line",
+   "id": "L9",
+   "text": "Bet you can't talk to her without glowing.",
+   "end": 19.794
+  },
+  {
+   "t": 19.015,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 19.295,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 20.014,
+   "type": "shot",
+   "id": "S13",
+   "trans": "cut",
+   "end": 21.334
+  },
+  {
+   "t": 20.094,
+   "type": "line",
+   "id": "L10",
+   "text": "Nice weather, huh? It was pouring. Glow.",
+   "end": 21.726
+  },
+  {
+   "t": 20.904,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.3
+  },
+  {
+   "t": 20.954,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 21.334,
+   "type": "shot",
+   "id": "S14",
+   "trans": "zoom",
+   "end": 21.746
+  },
+  {
+   "t": 21.334,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 21.414,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 21.434,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 21.746,
+   "type": "shot",
+   "id": "S15",
+   "trans": "cut",
+   "end": 23.339
+  },
+  {
+   "t": 21.826,
+   "type": "line",
+   "id": "L11",
+   "text": "I'm totally relaxed. Brighter.",
+   "end": 23.319
+  },
+  {
+   "t": 22.246,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.906,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.5
+  },
+  {
+   "t": 22.906,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 23.339,
+   "type": "shot",
+   "id": "S16",
+   "trans": "cut",
+   "end": 24.839
+  },
+  {
+   "t": 23.419,
+   "type": "line",
+   "id": "L12",
+   "text": "I definitely didn't practice this. Lily put on sunglasses.",
+   "end": 26.086
+  },
+  {
+   "t": 24.159,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.5
+  },
+  {
+   "t": 24.839,
+   "type": "shot",
+   "id": "S17",
+   "trans": "zoom",
+   "end": 26.406
+  },
+  {
+   "t": 24.839,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 24.919,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 25.419,
+   "type": "sfx",
+   "name": "bling",
+   "vol": 0.7
+  },
+  {
+   "t": 25.419,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 26.406,
+   "type": "shot",
+   "id": "S18",
+   "trans": "cut",
+   "end": 28.519
+  },
+  {
+   "t": 26.486,
+   "type": "line",
+   "id": "L13",
+   "text": "Subscribe, because that's when the lights went out.",
+   "end": 28.299
+  },
+  {
+   "t": 26.486,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.006,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.8
+  },
+  {
+   "t": 28.006,
+   "type": "sfx",
+   "name": "glitch",
+   "vol": 0.4
+  },
+  {
+   "t": 28.006,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.499,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 28.519,
+   "type": "shot",
+   "id": "S19",
+   "trans": "cut",
+   "end": 30.079
+  },
+  {
+   "t": 28.599,
+   "type": "line",
+   "id": "L14",
+   "text": "Total darkness. Someone screamed... It was Brayden.",
+   "end": 30.711
+  },
+  {
+   "t": 28.819,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 29.619,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 29.619,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 30.079,
+   "type": "shot",
+   "id": "S20",
+   "trans": "zoom",
+   "end": 31.031
+  },
+  {
+   "t": 30.079,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 30.079,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 30.279,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 31.031,
+   "type": "shot",
+   "id": "S21",
+   "trans": "cut",
+   "end": 33.134
+  },
+  {
+   "t": 31.111,
+   "type": "line",
+   "id": "L15",
+   "text": "I'm not scared! His nose? Birthday candle.",
+   "end": 32.914
+  },
+  {
+   "t": 31.311,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 32.251,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 32.431,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 32.431,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 33.114,
+   "type": "music",
+   "mode": "calm"
+  },
+  {
+   "t": 33.134,
+   "type": "shot",
+   "id": "S22",
+   "trans": "cut",
+   "end": 34.525
+  },
+  {
+   "t": 33.214,
+   "type": "line",
+   "id": "L16",
+   "text": "That's when I realized something.",
+   "end": 34.505
+  },
+  {
+   "t": 33.674,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.6
+  },
+  {
+   "t": 34.525,
+   "type": "shot",
+   "id": "S23",
+   "trans": "cut",
+   "end": 36.645
+  },
+  {
+   "t": 34.605,
+   "type": "line",
+   "id": "L17",
+   "text": "I'm the worst liar here... so I'm the brightest.",
+   "end": 36.375
+  },
+  {
+   "t": 34.805,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 35.865,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.4
+  },
+  {
+   "t": 35.865,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 36.645,
+   "type": "shot",
+   "id": "S24",
+   "trans": "whip",
+   "end": 39.068
+  },
+  {
+   "t": 36.645,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 36.645,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 36.725,
+   "type": "line",
+   "id": "L18",
+   "text": "So I yelled the biggest lie ever... I love homework!",
+   "end": 38.848
+  },
+  {
+   "t": 36.965,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.5
+  },
+  {
+   "t": 37.445,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.185,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.345,
+   "type": "sfx",
+   "name": "power",
+   "vol": 1
+  },
+  {
+   "t": 38.345,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.345,
+   "type": "music",
+   "mode": "party"
+  },
+  {
+   "t": 39.068,
+   "type": "shot",
+   "id": "S25",
+   "trans": "cut",
+   "end": 41.536
+  },
+  {
+   "t": 39.148,
+   "type": "line",
+   "id": "L19",
+   "text": "Everyone joined in. I love broccoli! I'm a unicorn!",
+   "end": 41.516
+  },
+  {
+   "t": 39.388,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.4
+  },
+  {
+   "t": 39.388,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 40.228,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 40.388,
+   "type": "sfx",
+   "name": "ding2",
+   "vol": 0.6
+  },
+  {
+   "t": 40.388,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.028,
+   "type": "sfx",
+   "name": "ding3",
+   "vol": 0.65
+  },
+  {
+   "t": 41.028,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.536,
+   "type": "shot",
+   "id": "S26",
+   "trans": "cut",
+   "end": 43.835
+  },
+  {
+   "t": 41.616,
+   "type": "line",
+   "id": "L20",
+   "text": "And Grandma said she's thirty-nine. Daylight.",
+   "end": 43.515
+  },
+  {
+   "t": 41.616,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.5
+  },
+  {
+   "t": 41.676,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 43.076,
+   "type": "sfx",
+   "name": "flash",
+   "vol": 0.7
+  },
+  {
+   "t": 43.076,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 43.126,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.6
+  },
+  {
+   "t": 43.815,
+   "type": "music",
+   "mode": "love"
+  },
+  {
+   "t": 43.835,
+   "type": "shot",
+   "id": "S27",
+   "trans": "whip",
+   "end": 44.969
+  },
+  {
+   "t": 43.835,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 43.835,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 43.915,
+   "type": "line",
+   "id": "L21",
+   "text": "Then Lily walked over.",
+   "end": 44.949
+  },
+  {
+   "t": 44.035,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 44.055,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 44.435,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 44.835,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 44.969,
+   "type": "shot",
+   "id": "S28",
+   "trans": "cut",
+   "end": 46.094
+  },
+  {
+   "t": 45.049,
+   "type": "line",
+   "id": "L22",
+   "text": "Do you like anyone?",
+   "end": 45.924
+  },
+  {
+   "t": 45.409,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.35
+  },
+  {
+   "t": 45.409,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 46.094,
+   "type": "shot",
+   "id": "S29",
+   "trans": "zoom",
+   "end": 48.179
+  },
+  {
+   "t": 46.094,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 46.174,
+   "type": "line",
+   "id": "L23",
+   "text": "Nope, I said. My nose lit up the sky.",
+   "end": 47.859
+  },
+  {
+   "t": 46.174,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.7
+  },
+  {
+   "t": 46.174,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 46.934,
+   "type": "sfx",
+   "name": "power",
+   "vol": 1
+  },
+  {
+   "t": 47.494,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 48.179,
+   "type": "shot",
+   "id": "S30",
+   "trans": "cut",
+   "end": 50.379
+  },
+  {
+   "t": 48.259,
+   "type": "line",
+   "id": "L24",
+   "text": "She said, me neither. Her nose glowed too.",
+   "end": 50.009
+  },
+  {
+   "t": 48.679,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 49.099,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 49.359,
+   "type": "sfx",
+   "name": "magic",
+   "vol": 0.6
+  },
+  {
+   "t": 49.359,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 49.739,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 50.379,
+   "type": "shot",
+   "id": "S31",
+   "trans": "cut",
+   "end": 52.801
+  },
+  {
+   "t": 50.379,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.5
+  },
+  {
+   "t": 50.459,
+   "type": "line",
+   "id": "L25",
+   "text": "Kids still call me Night Light. Now it's a compliment.",
+   "end": 52.581
+  },
+  {
+   "t": 51.139,
+   "type": "sfx",
+   "name": "bling",
+   "vol": 0.45
+  },
+  {
+   "t": 51.139,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 51.299,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 52.099,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 52.801,
+   "type": "shot",
+   "id": "S32",
+   "trans": "zoom",
+   "end": 54.875
+  },
+  {
+   "t": 52.801,
+   "type": "sfx",
+   "name": "bling",
+   "vol": 0.5
+  },
+  {
+   "t": 52.801,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 52.881,
+   "type": "line",
+   "id": "L26",
+   "text": "Subscribe if you've ever glowed.",
+   "end": 54.225
+  },
+  {
+   "t": 52.881,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 53.781,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.4
+  },
+  {
+   "t": 53.781,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 54.875,
+   "type": "music",
+   "mode": "end"
+  }
+ ]
+}

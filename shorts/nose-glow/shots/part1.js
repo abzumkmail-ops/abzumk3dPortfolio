@@ -22,7 +22,7 @@ shots(() => {
       for (let i = 0; i < 9; i++) { const r = hash(i + 5), r2 = hash(i + 50); ellipse(ctx, n.x + (r - .5) * 90 * n.k, n.y + (44 + r2 * 30) * n.k, (4 + r2 * 3) * n.k, (3.5 + r * 2) * n.k, '#7a4a22', 2); }
       noseGlow(ctx, 'nubi', p, 1.6 + .4 * ramp(tGlow, .15, T) + .1 * Math.sin((T - tGlow) * 14) * (after ? Math.exp(-(T - tGlow) * 2) : 0), T);
     },
-    ui(ctx, T, lt) { popText(ctx, 'POV: "I DIDN\'T EAT IT"', 540, 420, T, { size: 58, fill: '#FFFFFF', dur: 6 }); },
+    ui(ctx, T, lt) { popText(ctx, 'POV: "I DIDN\'T EAT IT"', 540, 420, T + .5, { size: 92, fill: '#FFFFFF', dur: 6 }); },
     sfx: [[tGlow, 'power', .5]] });
 
   // ===== S2 — Small lies? A blink. =====
