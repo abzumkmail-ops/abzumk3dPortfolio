@@ -68,7 +68,7 @@ shots(() => {
           else { p.armR = 1.1 + .2 * Math.exp(-(T - tWave) * 6); p.handR = .3; p.flip = 1; p.head = .05; } // freezes mid-point, turns to Kayla
           return { hair: BRAY_PINK(T), expr: T > tWave ? 'love' : T > tPinkB ? 'surprised' : 'laughing', red: T > tWave ? .8 : 0, blush: T > tPinkB, sweat: T > tPinkB && T < tWave };
         }
-        if (n === 'kidC') { p.view = 'q34'; p.flip = -1;
+        if (n === 'kidC') { p.view = 'q34'; p.flip = -1; p.bodyY -= 75 * smooth(inv(tKayla - .3, tKayla, T)) + 20; p.x += 70;   // on tiptoes so she reads over Lily
           if (T > tWave) { p.armR = 2.2 + Math.sin((T - tWave) * 14) * .35; p.handR = -.2; }
           return { expr: T > tWave ? 'happy' : 'neutral', blush: T > tWave }; }
         if (n === 'nubi') { p.squash = .92; return { ...NUBI(T), expr: T > tPinkB ? 'surprised' : 'nervous', lookY: -.6, lookX: .3 }; }
@@ -103,7 +103,7 @@ shots(() => {
         return { expr: 'neutral' };
       });
       for (const [n, t0] of waves) { const p = ps[n]; hairPop(ctx, p.x, headY(n, p) - 30, 'love', T - t0, .7); }
-      const np = ps.nubi; burst(ctx, np.x, headY('nubi', np) - 120, T - tReal, { kind: 'sparkle', n: 16, speed: 420, gravity: 0, life: .9, size: 24, seed: 4 });
+      const np = ps.nubi; burst(ctx, np.x - 150, headY('nubi', np) - 230, T - tReal, { kind: 'sparkle', n: 16, speed: 420, gravity: 0, life: .9, size: 24, seed: 4 });
     },
     sfx: [[tReal - st('L20'), 'magic', .55], [waves[0][1] - st('L20'), 'pop', .35], [waves[2][1] - st('L20'), 'pop', .35], [waves[4][1] - st('L20'), 'sparkle', .4]] });
 
@@ -144,8 +144,8 @@ shots(() => {
       const lp = idle(P({ x: lerp(650, 610, lean), y: 1500, s: .78, view: 'q34', flip: -1 }), T, 2); lp.lean = .12 * lean;
       if (T > tMine) { lp.armR = 2.6; lp.handR = -.6; }
       C(ctx, 'lily', lp, { hair: LILY_PINK, expr: 'shy', mouth: T > tLook - .05 ? lipShape(T, ['L22']) : null, hairGlow: T > tMine, lookX: -.4 }, T);
-      bubble(ctx, 'look at mine...', 720, 900, 640, 1010, T - tLook, { size: 52, dash: true, fill: '#FF4FA3' });
-      burst(ctx, lp.x, headY('lily', lp) - 120, T - tMine, { kind: 'sparkle', n: 14, speed: 300, gravity: 0, life: 1, size: 20, seed: 9 });
+      bubble(ctx, 'look at mine...', 600, 905, 625, 1010, T - tLook, { size: 44, dash: true, fill: '#FF4FA3' });
+      burst(ctx, lp.x + 90, headY('lily', lp) - 230, T - tMine, { kind: 'sparkle', n: 14, speed: 300, gravity: 0, life: 1, size: 20, seed: 9 });
     },
     ui(ctx, T) { pinkWash(ctx, .6 + .4 * smooth(inv(tMine, tMine + .4, T))); },
     sfx: [[tLook - st('L22'), 'chime', .5], [tMine - st('L22'), 'sparkle', .45]] });
@@ -185,8 +185,8 @@ shots(() => {
   const tNever = ws('L24', 'never'), tShoes = ws('L24', 'shoes');
   S.push({ id: 'S26', start: st('L24'), trans: 'cut', capY: 1680,
     bg: (ctx, T, cam) => envHallway(ctx, T, cam),
-    cam: lt => { const T = lt + st('L24'); const x = lerp(440, 640, inv(st('L24'), LINE.L24.end, T)), k = smooth(inv(tShoes - .1, tShoes + .3, T));
-      return camAt(x + 80 * k, lerp(1110, 1240, k), lerp(1.3, 1.55, k)); },
+    cam: lt => { const T = lt + st('L24'); const x = 490 + (T - st('L24')) * 150, k = smooth(inv(tShoes - .1, tShoes + .3, T));
+      return camAt(x + 120 * k, lerp(1110, 1240, k), lerp(1.3, 1.5, k)); },
     draw(ctx, T, lt) {
       const t0 = st('L24'), u = T - t0;
       const lp = walk(P({ x: 340 + u * 150, y: 1500, s: .78, view: 'q34' }), T, .9); lp.armR = 2.3 + Math.sin(T * 12) * .35; lp.handR = -.2;
@@ -204,7 +204,7 @@ shots(() => {
   const tClick = ws('L25', 'click'), tBest = ws('L25', 'best');
   S.push({ id: 'S27', start: st('L25'), trans: 'flash', capY: 1700,
     bg: (ctx, T, cam) => envPhoto(ctx, T, cam),
-    cam: lt => { const T = lt + st('L25'); return camAt(540, 1110, T < tClick ? 1.05 : 1.0 + (T - tClick) * .02); },
+    cam: lt => { const T = lt + st('L25'); return camAt(540, 1250, T < tClick ? 1.3 : 1.25 + (T - tClick) * .02); },
     draw(ctx, T, lt) {
       const Tf = Math.min(T, tClick + .02);   // freeze-frame at the click
       lineup(ctx, Tf, (n, p) => {
@@ -236,7 +236,7 @@ shots(() => {
     bg: (ctx, T, cam) => envPhoto(ctx, T, cam),
     cam: lt => { const T = lt + st('L26'); const k = easeInOut(inv(tSub + .3, tEnd, T)); return camAt(lerp(540, 430, k), lerp(1110, 1140, k), lerp(1.25, 1.85, k)); },
     draw(ctx, T, lt) {
-      const lp = idle(P({ x: 640, y: 1500, s: .8, view: 'q34', flip: -1 }), T, 2); lp.lean = .05;
+      const lp = idle(P({ x: 690, y: 1500, s: .8, view: 'q34', flip: -1 }), T, 2); lp.lean = .05;
       C(ctx, 'lily', lp, { hair: LILY_PINK, hairGlow: true, expr: 'happy', blush: true, lookX: -.4 }, T);
       const np = idle(P({ x: 430, y: 1500, s: .8 }), T, 1);
       if (T > tPinkEnd) np.bodyY -= 14 * pop(T - tPinkEnd);
