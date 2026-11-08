@@ -1,0 +1,1189 @@
+{
+ "END": 50.391,
+ "fps": 60,
+ "events": [
+  {
+   "t": 0,
+   "type": "shot",
+   "id": "S01",
+   "trans": "none",
+   "end": 2.154
+  },
+  {
+   "t": 0,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 0.15,
+   "type": "line",
+   "id": "L0",
+   "text": "In this world, your hair changes color with your mood.",
+   "end": 2.134
+  },
+  {
+   "t": 0.93,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.45
+  },
+  {
+   "t": 1.18,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 1.43,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.55
+  },
+  {
+   "t": 1.83,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.6000000000000001
+  },
+  {
+   "t": 2.154,
+   "type": "shot",
+   "id": "S02",
+   "trans": "cut",
+   "end": 4.153
+  },
+  {
+   "t": 2.234,
+   "type": "line",
+   "id": "L1",
+   "text": "Happy is yellow. Mad is red. Sad is blue.",
+   "end": 4.133
+  },
+  {
+   "t": 2.234,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.574,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 2.574,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.874,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.174,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.5
+  },
+  {
+   "t": 3.174,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.554,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.794,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.35
+  },
+  {
+   "t": 3.794,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.153,
+   "type": "shot",
+   "id": "S03",
+   "trans": "zoom",
+   "end": 5.751
+  },
+  {
+   "t": 4.153,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 4.233,
+   "type": "line",
+   "id": "L2",
+   "text": "And pink... means you like someone.",
+   "end": 5.481
+  },
+  {
+   "t": 4.313,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.5
+  },
+  {
+   "t": 4.313,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.893,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 5.033,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 5.033,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 5.751,
+   "type": "shot",
+   "id": "S04",
+   "trans": "whip",
+   "end": 8.293
+  },
+  {
+   "t": 5.751,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 5.751,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 5.831,
+   "type": "line",
+   "id": "L3",
+   "text": "Grandma's hair goes red when she loses the TV remote.",
+   "end": 8.273
+  },
+  {
+   "t": 6.551,
+   "type": "sfx",
+   "name": "scratch",
+   "vol": 0.5
+  },
+  {
+   "t": 6.551,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 7.811,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.55
+  },
+  {
+   "t": 7.811,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 8.293,
+   "type": "shot",
+   "id": "S05",
+   "trans": "cut",
+   "end": 10.537
+  },
+  {
+   "t": 8.373,
+   "type": "line",
+   "id": "L4",
+   "text": "And my teacher's hair turns blue every Monday morning.",
+   "end": 10.517
+  },
+  {
+   "t": 9.493,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.45
+  },
+  {
+   "t": 9.493,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.893,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.45
+  },
+  {
+   "t": 9.893,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 10.537,
+   "type": "shot",
+   "id": "S06",
+   "trans": "cut",
+   "end": 12.899
+  },
+  {
+   "t": 10.617,
+   "type": "line",
+   "id": "L5",
+   "text": "Me? Every time I see Lily, my hair goes bright pink.",
+   "end": 12.879
+  },
+  {
+   "t": 11.577,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.55
+  },
+  {
+   "t": 11.577,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.317,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 12.517,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.899,
+   "type": "shot",
+   "id": "S07",
+   "trans": "zoom",
+   "end": 14.588
+  },
+  {
+   "t": 12.899,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 12.979,
+   "type": "line",
+   "id": "L6",
+   "text": "So I wear a cap. Every single day.",
+   "end": 14.568
+  },
+  {
+   "t": 13.399,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.55
+  },
+  {
+   "t": 13.399,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 13.599,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 13.919,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 14.139,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 14.588,
+   "type": "shot",
+   "id": "S08",
+   "trans": "cut",
+   "end": 15.755
+  },
+  {
+   "t": 14.668,
+   "type": "line",
+   "id": "L7",
+   "text": "Kids call me Hat Boy.",
+   "end": 15.735
+  },
+  {
+   "t": 15.068,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.6
+  },
+  {
+   "t": 15.168,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.328,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.35
+  },
+  {
+   "t": 15.328,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.755,
+   "type": "shot",
+   "id": "S09",
+   "trans": "whip",
+   "end": 17.374
+  },
+  {
+   "t": 15.755,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 15.755,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 15.805,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.4
+  },
+  {
+   "t": 15.835,
+   "type": "line",
+   "id": "L8",
+   "text": "Then one day... picture day.",
+   "end": 17.104
+  },
+  {
+   "t": 16.515,
+   "type": "sfx",
+   "name": "bell",
+   "vol": 0.6
+  },
+  {
+   "t": 16.515,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.374,
+   "type": "shot",
+   "id": "S10",
+   "trans": "cut",
+   "end": 18.434
+  },
+  {
+   "t": 17.454,
+   "type": "line",
+   "id": "L9",
+   "text": "The photographer yelled, hats off, everybody!",
+   "end": 19.438
+  },
+  {
+   "t": 17.534,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.934,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.55
+  },
+  {
+   "t": 17.934,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 18.434,
+   "type": "shot",
+   "id": "S11",
+   "trans": "cut",
+   "end": 19.458
+  },
+  {
+   "t": 18.514,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 18.514,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 18.634,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.6
+  },
+  {
+   "t": 18.634,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 18.954,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 19.458,
+   "type": "shot",
+   "id": "S12",
+   "trans": "cut",
+   "end": 21.451
+  },
+  {
+   "t": 19.538,
+   "type": "line",
+   "id": "L10",
+   "text": "And guess who was standing right next to me?",
+   "end": 21.181
+  },
+  {
+   "t": 19.638,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 19.798,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.5
+  },
+  {
+   "t": 20.998,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.55
+  },
+  {
+   "t": 21.451,
+   "type": "shot",
+   "id": "S13",
+   "trans": "zoom",
+   "end": 22.331
+  },
+  {
+   "t": 21.451,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 21.531,
+   "type": "line",
+   "id": "L11",
+   "text": "Lily.",
+   "end": 22.011
+  },
+  {
+   "t": 21.531,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.6
+  },
+  {
+   "t": 21.531,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 21.851,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.6
+  },
+  {
+   "t": 22.331,
+   "type": "shot",
+   "id": "S14",
+   "trans": "cut",
+   "end": 24.561
+  },
+  {
+   "t": 22.411,
+   "type": "line",
+   "id": "L12",
+   "text": "Subscribe, because my hair was about to snitch.",
+   "end": 24.341
+  },
+  {
+   "t": 22.411,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.931,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.6
+  },
+  {
+   "t": 23.911,
+   "type": "sfx",
+   "name": "alarm",
+   "vol": 0.5
+  },
+  {
+   "t": 23.911,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 24.561,
+   "type": "shot",
+   "id": "S15",
+   "trans": "zoom",
+   "end": 25.909
+  },
+  {
+   "t": 24.561,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 24.641,
+   "type": "line",
+   "id": "L13",
+   "text": "I thought about homework. Blue!",
+   "end": 25.889
+  },
+  {
+   "t": 24.721,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 25.021,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 25.461,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 25.461,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 25.909,
+   "type": "shot",
+   "id": "S16",
+   "trans": "cut",
+   "end": 27.268
+  },
+  {
+   "t": 25.989,
+   "type": "line",
+   "id": "L14",
+   "text": "Then Lily said hi. Pink!",
+   "end": 27.248
+  },
+  {
+   "t": 26.149,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 26.549,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.45
+  },
+  {
+   "t": 26.929,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.6
+  },
+  {
+   "t": 26.929,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 27.268,
+   "type": "shot",
+   "id": "S17",
+   "trans": "zoom",
+   "end": 28.701
+  },
+  {
+   "t": 27.268,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 27.348,
+   "type": "line",
+   "id": "L15",
+   "text": "I thought about broccoli. Blue!",
+   "end": 28.681
+  },
+  {
+   "t": 27.728,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.45
+  },
+  {
+   "t": 27.728,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.268,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 28.268,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.701,
+   "type": "shot",
+   "id": "S18",
+   "trans": "cut",
+   "end": 30.125
+  },
+  {
+   "t": 28.781,
+   "type": "line",
+   "id": "L16",
+   "text": "Lily giggled. Super pink!",
+   "end": 29.955
+  },
+  {
+   "t": 28.781,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.941,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.45
+  },
+  {
+   "t": 28.941,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 29.361,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.65
+  },
+  {
+   "t": 29.411,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.55
+  },
+  {
+   "t": 29.541,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 30.125,
+   "type": "shot",
+   "id": "S19",
+   "trans": "whip",
+   "end": 32.433
+  },
+  {
+   "t": 30.125,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 30.205,
+   "type": "line",
+   "id": "L17",
+   "text": "Then Brayden pointed and yelled, Nubi likes somebody!",
+   "end": 32.413
+  },
+  {
+   "t": 30.525,
+   "type": "sfx",
+   "name": "scratch",
+   "vol": 0.5
+  },
+  {
+   "t": 30.525,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 31.065,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.45
+  },
+  {
+   "t": 31.065,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 31.805,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 31.945,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 32.433,
+   "type": "shot",
+   "id": "S20",
+   "trans": "cut",
+   "end": 33.97
+  },
+  {
+   "t": 32.513,
+   "type": "line",
+   "id": "L18",
+   "text": "The whole class turned around.",
+   "end": 33.75
+  },
+  {
+   "t": 33.053,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.55
+  },
+  {
+   "t": 33.97,
+   "type": "shot",
+   "id": "S21",
+   "trans": "cut",
+   "end": 36.926
+  },
+  {
+   "t": 34.05,
+   "type": "line",
+   "id": "L19",
+   "text": "But Brayden's hair was pink too. Kayla had just waved at him.",
+   "end": 36.706
+  },
+  {
+   "t": 34.81,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.6
+  },
+  {
+   "t": 34.81,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 35.61,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 36.09,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.55
+  },
+  {
+   "t": 36.906,
+   "type": "music",
+   "mode": "calm"
+  },
+  {
+   "t": 36.926,
+   "type": "shot",
+   "id": "S22",
+   "trans": "cut",
+   "end": 39.789
+  },
+  {
+   "t": 37.006,
+   "type": "line",
+   "id": "L20",
+   "text": "That's when I realized something. Everybody goes pink for someone.",
+   "end": 39.769
+  },
+  {
+   "t": 37.406,
+   "type": "sfx",
+   "name": "magic",
+   "vol": 0.55
+  },
+  {
+   "t": 37.406,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.366,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.35
+  },
+  {
+   "t": 38.366,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.946,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.35
+  },
+  {
+   "t": 38.946,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 39.366,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.4
+  },
+  {
+   "t": 39.366,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 39.789,
+   "type": "shot",
+   "id": "S23",
+   "trans": "cut",
+   "end": 40.931
+  },
+  {
+   "t": 39.869,
+   "type": "line",
+   "id": "L21",
+   "text": "So why hide it?",
+   "end": 40.711
+  },
+  {
+   "t": 40.209,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.6
+  },
+  {
+   "t": 40.209,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 40.309,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.45
+  },
+  {
+   "t": 40.931,
+   "type": "shot",
+   "id": "S24",
+   "trans": "zoom",
+   "end": 42.761
+  },
+  {
+   "t": 40.931,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 41.011,
+   "type": "line",
+   "id": "L22",
+   "text": "Then Lily whispered... look at mine.",
+   "end": 42.441
+  },
+  {
+   "t": 41.151,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.891,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.5
+  },
+  {
+   "t": 42.091,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.45
+  },
+  {
+   "t": 42.091,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.091,
+   "type": "music",
+   "mode": "love"
+  },
+  {
+   "t": 42.761,
+   "type": "shot",
+   "id": "S25",
+   "trans": "cut",
+   "end": 44.674
+  },
+  {
+   "t": 42.841,
+   "type": "line",
+   "id": "L23",
+   "text": "Her hair was pink. It had been pink all year.",
+   "end": 44.654
+  },
+  {
+   "t": 43.241,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 43.241,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 43.801,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.45
+  },
+  {
+   "t": 43.921,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 44.674,
+   "type": "shot",
+   "id": "S26",
+   "trans": "cut",
+   "end": 46.499
+  },
+  {
+   "t": 44.754,
+   "type": "line",
+   "id": "L24",
+   "text": "I just never looked up from my shoes.",
+   "end": 46.279
+  },
+  {
+   "t": 44.994,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 45.834,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.3
+  },
+  {
+   "t": 46.499,
+   "type": "shot",
+   "id": "S27",
+   "trans": "flash",
+   "end": 47.901
+  },
+  {
+   "t": 46.579,
+   "type": "line",
+   "id": "L25",
+   "text": "Click. Best class photo ever.",
+   "end": 47.881
+  },
+  {
+   "t": 46.579,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.7
+  },
+  {
+   "t": 46.579,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 46.699,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.45
+  },
+  {
+   "t": 46.699,
+   "type": "sfx",
+   "name": "confetti",
+   "vol": 0.4
+  },
+  {
+   "t": 47.179,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 47.901,
+   "type": "shot",
+   "id": "S28",
+   "trans": "cut",
+   "end": 50.391
+  },
+  {
+   "t": 47.981,
+   "type": "line",
+   "id": "L26",
+   "text": "Subscribe if your hair would go pink too.",
+   "end": 49.741
+  },
+  {
+   "t": 47.981,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 48.531,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.6
+  },
+  {
+   "t": 49.121,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 49.121,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 50.391,
+   "type": "music",
+   "mode": "end"
+  }
+ ]
+}
