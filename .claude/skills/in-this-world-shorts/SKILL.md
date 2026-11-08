@@ -1,6 +1,6 @@
 ---
 name: in-this-world-shorts
-description: Produce a complete, fully animated vertical YouTube Short (1080×1920, 60 fps, ~50 s MP4 with kid narrator voice, word-synced captions, SFX and music) in the "In This World…" story format of the NubiRobloxx channel, using a ready-made code animation engine with a recurring cast of blocky Roblox-style characters (Nubi, Lily, Brayden, classmates, family). Use this skill whenever the user wants a new Short, episode, animated story video, "In this world" / "what if" story, or anything with Nubi and his friends, even if they only give a premise ("make one about shadows that talk") or just say "make the next video". Also use it to re-voice, re-edit or re-render an existing Short made with this engine.
+description: Produce a complete, fully animated vertical YouTube Short (1080×1920, 60 fps, ~50 s MP4 with kid narrator voice, word-synced captions, SFX and music) in the "In This World…" story format of the channel The Nubiverse (@TheNubiverse, formerly NubiRobloxx), using a ready-made code animation engine with a recurring cast of blocky Roblox-style characters (Nubi, Lily, Brayden, classmates, family). Use this skill whenever the user wants a new Short, episode, animated story video, "In this world" / "what if" story, or anything with Nubi and his friends, even if they only give a premise ("make one about shadows that talk") or just say "make the next video". Also use it to re-voice, re-edit or re-render an existing Short made with this engine.
 ---
 
 # "In This World" Shorts: fast production
@@ -8,6 +8,8 @@ description: Produce a complete, fully animated vertical YouTube Short (1080×19
 Every Short reuses the same engine, characters, sets, captions, HUD, sound library, music and narrator voice. A new video only needs
 **a script**, **a story file** and **shot files**. The slow parts run in parallel: the voice generates while three shot-writer agents
 animate their thirds of the story, and the audio mix runs while frames render. Target: **finished MP4 in about 25–35 minutes**.
+
+Channel: **The Nubiverse** (@TheNubiverse). Video titles follow the pattern "Your Shadow Says What You're REALLY Thinking 👀" / "In This World, Everyone Has A Like Counter ❤️".
 
 The user wants the **final product**, not a series of approval stops. Make good decisions yourself, deliver the video, then iterate on
 feedback. (If the user explicitly asks to approve the script first, show it and wait.)

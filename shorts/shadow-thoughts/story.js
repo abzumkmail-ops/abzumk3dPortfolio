@@ -8,11 +8,10 @@
 // o: { k=1.5, dx=0, dy=0, alpha=.62, lines=[], eyes:'normal'|'happy'|'wide'|'shy'|'closed', mouth (override shape name), skew=0 }
 function shadowOf(ctx, name, pose, T, o = {}) {
   const k = o.k ?? 1.5, sp = Object.assign({}, pose, { x: pose.x + (o.dx || 0), y: pose.y + (o.dy || 0), s: pose.s * k, alpha: 1 });
-  ctx.save(); ctx.globalAlpha = (o.alpha ?? .62) * (pose.alpha ?? 1);
-  ctx.filter = 'brightness(0)';
-  if (o.skew) { ctx.translate(sp.x, sp.y); ctx.transform(1, 0, o.skew, 1, 0, 0); ctx.translate(-sp.x, -sp.y); }
-  drawCharacter(ctx, name, sp, Object.assign({ expr: 'neutral' }, o.face || {}), T);
-  ctx.filter = 'none'; ctx.restore();
+  drawSilhouette(ctx, c2 => {
+    if (o.skew) { c2.translate(sp.x, sp.y); c2.transform(1, 0, o.skew, 1, 0, 0); c2.translate(-sp.x, -sp.y); }
+    drawCharacter(c2, name, sp, Object.assign({ expr: 'neutral' }, o.face || {}), T);
+  }, Math.min(1, (o.alpha ?? .62) * 1.45) * (pose.alpha ?? 1) * ctx.globalAlpha);   // flat silhouette: ×1.45 matches the old stacked-alpha darkness
   // glowing face on the shadow's head
   const c = CAST[name], S = sp.s * (c.tall || 1);
   const hx = sp.x + (o.skew ? -o.skew * (RIG.legH + RIG.torsoH + RIG.headH * .45) * S : 0) + (sp.view === 'q34' ? RIG.headW * .1 * S * sp.flip : 0);
@@ -37,7 +36,7 @@ function shadowFace(ctx, x, y, S, T, o = {}) {
 }
 // Dog shadow (the dog rig drawn as a silhouette)
 function dogShadow(ctx, x, y, s, T, o = {}) {
-  ctx.save(); ctx.globalAlpha = o.alpha ?? .62; ctx.filter = 'brightness(0)'; drawDog(ctx, x, y, s, T, o); ctx.filter = 'none'; ctx.restore();
+  drawSilhouette(ctx, c2 => drawDog(c2, x, y, s, T, o), Math.min(1, (o.alpha ?? .62) * 1.45) * ctx.globalAlpha);
   shadowFace(ctx, x + 125 * s, y - 225 * s, s * .55, T, { lines: o.lines, eyes: 'wide', seed: 9 });
 }
 

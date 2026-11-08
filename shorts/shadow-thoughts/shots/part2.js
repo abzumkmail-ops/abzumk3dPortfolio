@@ -17,10 +17,9 @@ shots(() => {
   }
   // Dark backs-of-heads audience in front of the stage (world space, below the stage lip).
   function crowdBacks(ctx, T, y = 1960, s = .95) {
-    ctx.save(); ctx.filter = 'brightness(.3)';
-    [[90, 'kidB'], [320, 'kidE'], [540, 'kidD'], [760, 'kidF'], [990, 'kidA']].forEach(([x, n], i) => {
-      const p = idle(P({ x, y: y + (i % 2) * 40, s, view: 'back' }), T, i + 4, .7); drawCharacter(ctx, n, p, {}, T); });
-    ctx.restore();
+    // flat dark silhouettes (fast; ctx.filter is extremely slow to render)
+    drawSilhouette(ctx, c2 => [[90, 'kidB'], [320, 'kidE'], [540, 'kidD'], [760, 'kidF'], [990, 'kidA']].forEach(([x, n], i) => {
+      const p = idle(P({ x, y: y + (i % 2) * 40, s, view: 'back' }), T, i + 4, .7); drawCharacter(c2, n, p, {}, T); }), .95 * ctx.globalAlpha, '#1B1733');
   }
   // Gym floor seen from the stage: cinder-block back wall (light enough for shadows to read), blue wall mats, EXIT sign.
   // envAudience() lives in story.js (shared with part 3)

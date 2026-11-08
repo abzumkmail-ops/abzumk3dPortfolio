@@ -1,4 +1,4 @@
-# Story style: the "In This World" series (channel @NubiRobloxx)
+# Story style: the "In This World" series (channel: The Nubiverse, @TheNubiverse, formerly @NubiRobloxx)
 
 This is distilled from transcripts of the channel's own Shorts ("In This World, Paintings Can Talk" and "Hugging Charges Your Battery")
 and the user's direction. The series uses **one magical world rule** told by **a 5th–7th grade kid in first person**,

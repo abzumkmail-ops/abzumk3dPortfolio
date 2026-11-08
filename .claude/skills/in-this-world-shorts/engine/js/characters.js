@@ -446,3 +446,18 @@ function drawDog(ctx, x, y, s, t, o = {}) {
   ctx.restore();
   ctx.restore();
 }
+
+// ---------------- Fast silhouettes ----------------
+// Draws `drawFn(ctx)` as a flat-colour silhouette. Much faster than ctx.filter = 'brightness(0)' (which re-rasterises
+// every path through a filter): draw once to a reusable offscreen layer, tint it with 'source-in', composite back.
+let _silCv = null;
+function drawSilhouette(ctx, drawFn, alpha = .62, color = '#000') {
+  const cv = ctx.canvas;
+  if (!_silCv || _silCv.width !== cv.width || _silCv.height !== cv.height) { _silCv = document.createElement('canvas'); _silCv.width = cv.width; _silCv.height = cv.height; }
+  const s = _silCv.getContext('2d');
+  s.setTransform(1, 0, 0, 1, 0, 0); s.globalCompositeOperation = 'source-over'; s.globalAlpha = 1; s.clearRect(0, 0, cv.width, cv.height);
+  s.setTransform(ctx.getTransform());
+  drawFn(s);
+  s.setTransform(1, 0, 0, 1, 0, 0); s.globalCompositeOperation = 'source-in'; s.fillStyle = color; s.fillRect(0, 0, cv.width, cv.height);
+  ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha *= alpha; ctx.drawImage(_silCv, 0, 0); ctx.restore();
+}

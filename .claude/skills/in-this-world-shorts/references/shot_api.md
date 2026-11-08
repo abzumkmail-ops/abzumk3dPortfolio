@@ -107,6 +107,12 @@ pop, tick, click, whoosh, zoom, ding, ding2, ding3, chime, bling, sparkle, magic
 impact, slip, rip, scratch, record, alarm, glitch, fall, hud, flash, step, toss, confetti, bell, bark, laugh, cheer.
 Aim for one or two per shot, on the word that causes them. Typical volume is .4–.7.
 
+## Performance (renders must stay fast)
+- **Never use `ctx.filter`** (brightness, blur, etc.) in shots. It made frames about 40x slower (6 s instead of 0.15 s each) and turned a 4-minute render into 28 minutes.
+  For dark silhouettes and shadow people, use `drawSilhouette(ctx, c2 => drawCharacter(c2, ...), alpha, color)`. It's fast and looks the same.
+- Use `shadowBlur` glows sparingly (a few small elements per frame). Keep particle counts at 60 or fewer per burst.
+- Profile if in doubt: `seek(t)` should take under about 80 ms at 1080p.
+
 ## Layout rules learned the hard way
 1. At most 5 characters across at s .8, with x spacing of 190 px or more. Put extra people in a back row (y 1390, s .6).
 2. Counters on tall hair (brayden, mom, teacher, popstar, grandma, lunchlady) sit higher automatically. Still check close-ups against the HUD.
