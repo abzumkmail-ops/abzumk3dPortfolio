@@ -1,0 +1,1304 @@
+{
+ "END": 54.53,
+ "fps": 60,
+ "events": [
+  {
+   "t": 0,
+   "type": "shot",
+   "id": "S01",
+   "trans": "none",
+   "end": 2.36
+  },
+  {
+   "t": 0,
+   "type": "sfx",
+   "name": "bell",
+   "vol": 0.5
+  },
+  {
+   "t": 0,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 0.05,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 0.24,
+   "type": "line",
+   "id": "L0",
+   "text": "In this world, everyone has a number above their head.",
+   "end": 2.26
+  },
+  {
+   "t": 0.25,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 0.45,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 0.6,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 0.75,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 0.95,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 1.15,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 1.48,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.36,
+   "type": "shot",
+   "id": "S02",
+   "trans": "zoom",
+   "end": 4.26
+  },
+  {
+   "t": 2.36,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 2.44,
+   "type": "line",
+   "id": "L1",
+   "text": "It shows how many people really like you.",
+   "end": 4.02
+  },
+  {
+   "t": 3.06,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.45
+  },
+  {
+   "t": 3.36,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.41,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.45
+  },
+  {
+   "t": 3.76,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.45
+  },
+  {
+   "t": 4.06,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.45
+  },
+  {
+   "t": 4.26,
+   "type": "shot",
+   "id": "S03",
+   "trans": "whip",
+   "end": 6.46
+  },
+  {
+   "t": 4.26,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 4.34,
+   "type": "line",
+   "id": "L2",
+   "text": "You see, you can't fake it. And family doesn't count.",
+   "end": 6.26
+  },
+  {
+   "t": 5,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.7
+  },
+  {
+   "t": 5,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 5.05,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.45
+  },
+  {
+   "t": 6.31,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.6
+  },
+  {
+   "t": 6.46,
+   "type": "shot",
+   "id": "S04",
+   "trans": "cut",
+   "end": 7.76
+  },
+  {
+   "t": 6.46,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.55
+  },
+  {
+   "t": 6.51,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 6.54,
+   "type": "line",
+   "id": "L3",
+   "text": "Pop stars have millions.",
+   "end": 7.46
+  },
+  {
+   "t": 7.22,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 7.76,
+   "type": "shot",
+   "id": "S05",
+   "trans": "whip",
+   "end": 8.82
+  },
+  {
+   "t": 7.76,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 7.84,
+   "type": "line",
+   "id": "L4",
+   "text": "My dog has six.",
+   "end": 8.6
+  },
+  {
+   "t": 7.96,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 8.01,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 8.06,
+   "type": "sfx",
+   "name": "bark",
+   "vol": 0.6
+  },
+  {
+   "t": 8.38,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 8.82,
+   "type": "shot",
+   "id": "S06",
+   "trans": "cut",
+   "end": 10.88
+  },
+  {
+   "t": 8.9,
+   "type": "line",
+   "id": "L5",
+   "text": "And Grandma? Four hundred. She bakes cookies.",
+   "end": 10.48
+  },
+  {
+   "t": 9,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.5,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.55
+  },
+  {
+   "t": 9.62,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 10.26,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.35
+  },
+  {
+   "t": 10.26,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 10.88,
+   "type": "shot",
+   "id": "S07",
+   "trans": "zoom",
+   "end": 12.18
+  },
+  {
+   "t": 10.88,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 10.96,
+   "type": "line",
+   "id": "L6",
+   "text": "Me? I have exactly one.",
+   "end": 11.98
+  },
+  {
+   "t": 10.96,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 11.76,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.55
+  },
+  {
+   "t": 11.76,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.18,
+   "type": "shot",
+   "id": "S08",
+   "trans": "cut",
+   "end": 13.42
+  },
+  {
+   "t": 12.26,
+   "type": "line",
+   "id": "L7",
+   "text": "Kids call me Lonely One.",
+   "end": 13.18
+  },
+  {
+   "t": 12.33,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.55
+  },
+  {
+   "t": 12.62,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.74,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 13,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 13.42,
+   "type": "shot",
+   "id": "S09",
+   "trans": "whip",
+   "end": 15.72
+  },
+  {
+   "t": 13.42,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 13.5,
+   "type": "line",
+   "id": "L8",
+   "text": "I always figured my one was the lunch lady.",
+   "end": 15.32
+  },
+  {
+   "t": 13.72,
+   "type": "sfx",
+   "name": "magic",
+   "vol": 0.4
+  },
+  {
+   "t": 14.4,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.72,
+   "type": "shot",
+   "id": "S10",
+   "trans": "whip",
+   "end": 18.34
+  },
+  {
+   "t": 15.72,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 15.72,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 15.8,
+   "type": "line",
+   "id": "L9",
+   "text": "Then one day, Brayden, nine hundred likes, laughed in my face.",
+   "end": 18.16
+  },
+  {
+   "t": 15.92,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 16.72,
+   "type": "sfx",
+   "name": "bling",
+   "vol": 0.6
+  },
+  {
+   "t": 16.86,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.08,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.5,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.55
+  },
+  {
+   "t": 17.5,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 18.34,
+   "type": "shot",
+   "id": "S11",
+   "trans": "cut",
+   "end": 20.08
+  },
+  {
+   "t": 18.42,
+   "type": "line",
+   "id": "L10",
+   "text": "Bet you can't hit ten by Friday.",
+   "end": 19.7
+  },
+  {
+   "t": 18.96,
+   "type": "sfx",
+   "name": "hud",
+   "vol": 0.6
+  },
+  {
+   "t": 18.96,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 19.4,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 20.08,
+   "type": "shot",
+   "id": "S12",
+   "trans": "zoom",
+   "end": 21.36
+  },
+  {
+   "t": 20.08,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 20.16,
+   "type": "line",
+   "id": "L11",
+   "text": "So I tried everything.",
+   "end": 21.08
+  },
+  {
+   "t": 20.23,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.5
+  },
+  {
+   "t": 21.36,
+   "type": "shot",
+   "id": "S13",
+   "trans": "whip",
+   "end": 22.54
+  },
+  {
+   "t": 21.36,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 21.44,
+   "type": "line",
+   "id": "L12",
+   "text": "Free candy. Still one.",
+   "end": 22.34
+  },
+  {
+   "t": 21.6,
+   "type": "sfx",
+   "name": "toss",
+   "vol": 0.5
+  },
+  {
+   "t": 21.6,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.02,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.55
+  },
+  {
+   "t": 22.02,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.14,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.54,
+   "type": "shot",
+   "id": "S14",
+   "trans": "cut",
+   "end": 24.56
+  },
+  {
+   "t": 22.62,
+   "type": "line",
+   "id": "L13",
+   "text": "A backflip... onto the teacher. Still one.",
+   "end": 24.26
+  },
+  {
+   "t": 22.72,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.6
+  },
+  {
+   "t": 22.72,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 23.3,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.65
+  },
+  {
+   "t": 23.3,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 23.86,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.55
+  },
+  {
+   "t": 23.86,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 24.02,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 24.56,
+   "type": "shot",
+   "id": "S15",
+   "trans": "flash",
+   "end": 26.5
+  },
+  {
+   "t": 24.56,
+   "type": "sfx",
+   "name": "flash",
+   "vol": 0.4
+  },
+  {
+   "t": 24.64,
+   "type": "line",
+   "id": "L14",
+   "text": "Friday. School dance. My number? One.",
+   "end": 26.16
+  },
+  {
+   "t": 24.64,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 25.18,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 25.68,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 26.04,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 26.04,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 26.5,
+   "type": "shot",
+   "id": "S16",
+   "trans": "cut",
+   "end": 28.82
+  },
+  {
+   "t": 26.58,
+   "type": "line",
+   "id": "L15",
+   "text": "Subscribe, because that's when everything went wrong.",
+   "end": 28.46
+  },
+  {
+   "t": 26.58,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 27.1,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.6
+  },
+  {
+   "t": 28.26,
+   "type": "sfx",
+   "name": "alarm",
+   "vol": 0.5
+  },
+  {
+   "t": 28.26,
+   "type": "sfx",
+   "name": "scratch",
+   "vol": 0.5
+  },
+  {
+   "t": 28.26,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.26,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 28.82,
+   "type": "shot",
+   "id": "S17",
+   "trans": "whip",
+   "end": 31.66
+  },
+  {
+   "t": 28.82,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 28.9,
+   "type": "line",
+   "id": "L16",
+   "text": "Brayden slipped on stage. His pants ripped. Everyone laughed.",
+   "end": 31.46
+  },
+  {
+   "t": 29.18,
+   "type": "sfx",
+   "name": "slip",
+   "vol": 0.6
+  },
+  {
+   "t": 29.18,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 29.48,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.6
+  },
+  {
+   "t": 30.2,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 30.4,
+   "type": "sfx",
+   "name": "rip",
+   "vol": 0.75
+  },
+  {
+   "t": 30.4,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 31.12,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.7
+  },
+  {
+   "t": 31.12,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 31.66,
+   "type": "shot",
+   "id": "S18",
+   "trans": "cut",
+   "end": 34.58
+  },
+  {
+   "t": 31.74,
+   "type": "line",
+   "id": "L17",
+   "text": "His number started falling. Nine hundred. Two hundred. Ten.",
+   "end": 34.08
+  },
+  {
+   "t": 31.8,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 32.26,
+   "type": "sfx",
+   "name": "fall",
+   "vol": 0.55
+  },
+  {
+   "t": 32.26,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 33.06,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 33.5,
+   "type": "sfx",
+   "name": "glitch",
+   "vol": 0.5
+  },
+  {
+   "t": 33.5,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 33.58,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 33.96,
+   "type": "sfx",
+   "name": "glitch",
+   "vol": 0.55
+  },
+  {
+   "t": 33.96,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 34.56,
+   "type": "music",
+   "mode": "calm"
+  },
+  {
+   "t": 34.58,
+   "type": "shot",
+   "id": "S19",
+   "trans": "cut",
+   "end": 35.96
+  },
+  {
+   "t": 34.66,
+   "type": "line",
+   "id": "L18",
+   "text": "That's when I realized something.",
+   "end": 35.7
+  },
+  {
+   "t": 35.08,
+   "type": "sfx",
+   "name": "magic",
+   "vol": 0.55
+  },
+  {
+   "t": 35.96,
+   "type": "shot",
+   "id": "S20",
+   "trans": "zoom",
+   "end": 38.18
+  },
+  {
+   "t": 35.96,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 36.04,
+   "type": "line",
+   "id": "L19",
+   "text": "Likes aren't something you get. They're something you give.",
+   "end": 37.8
+  },
+  {
+   "t": 36.04,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 37.62,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.55
+  },
+  {
+   "t": 37.62,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.18,
+   "type": "shot",
+   "id": "S21",
+   "trans": "cut",
+   "end": 41.72
+  },
+  {
+   "t": 38.18,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 38.26,
+   "type": "line",
+   "id": "L20",
+   "text": "So I walked up, tied my hoodie around his waist, and said, nice moves, man.",
+   "end": 41.32
+  },
+  {
+   "t": 39,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.6
+  },
+  {
+   "t": 39.28,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 40.58,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.4
+  },
+  {
+   "t": 41.72,
+   "type": "shot",
+   "id": "S22",
+   "trans": "cut",
+   "end": 43.6
+  },
+  {
+   "t": 41.8,
+   "type": "line",
+   "id": "L21",
+   "text": "Ding. Ding. Ding. Two. Twenty. Fifty!",
+   "end": 43.06
+  },
+  {
+   "t": 41.8,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 41.8,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.8,
+   "type": "music",
+   "mode": "party"
+  },
+  {
+   "t": 41.9,
+   "type": "sfx",
+   "name": "ding2",
+   "vol": 0.6
+  },
+  {
+   "t": 41.9,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.16,
+   "type": "sfx",
+   "name": "ding3",
+   "vol": 0.6
+  },
+  {
+   "t": 42.16,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.3,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.54,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.82,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.7
+  },
+  {
+   "t": 42.82,
+   "type": "sfx",
+   "name": "confetti",
+   "vol": 0.6
+  },
+  {
+   "t": 42.82,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 43.6,
+   "type": "shot",
+   "id": "S23",
+   "trans": "cut",
+   "end": 45.22
+  },
+  {
+   "t": 43.68,
+   "type": "line",
+   "id": "L22",
+   "text": "But nobody was looking at my number.",
+   "end": 45.02
+  },
+  {
+   "t": 43.78,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.5
+  },
+  {
+   "t": 44.68,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 44.78,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 45.2,
+   "type": "music",
+   "mode": "love"
+  },
+  {
+   "t": 45.22,
+   "type": "shot",
+   "id": "S24",
+   "trans": "whip",
+   "end": 47.42
+  },
+  {
+   "t": 45.22,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 45.22,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 45.3,
+   "type": "line",
+   "id": "L23",
+   "text": "They were looking at Lily, the quiet girl in the back.",
+   "end": 47.08
+  },
+  {
+   "t": 45.78,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.5
+  },
+  {
+   "t": 45.78,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 46.26,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 47.42,
+   "type": "shot",
+   "id": "S25",
+   "trans": "zoom",
+   "end": 48.9
+  },
+  {
+   "t": 47.42,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 47.5,
+   "type": "line",
+   "id": "L24",
+   "text": "Her number was one too.",
+   "end": 48.98
+  },
+  {
+   "t": 47.5,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 47.58,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 47.98,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.55
+  },
+  {
+   "t": 47.98,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 48.03,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.4
+  },
+  {
+   "t": 48.9,
+   "type": "shot",
+   "id": "S26",
+   "trans": "cut",
+   "end": 51.12
+  },
+  {
+   "t": 48.98,
+   "type": "line",
+   "id": "L25",
+   "text": "My one was never the lunch lady. It was her.",
+   "end": 50.84
+  },
+  {
+   "t": 49.12,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 49.92,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.45
+  },
+  {
+   "t": 50.66,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.6
+  },
+  {
+   "t": 50.66,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 51.12,
+   "type": "shot",
+   "id": "S27",
+   "trans": "cut",
+   "end": 52.58
+  },
+  {
+   "t": 51.2,
+   "type": "line",
+   "id": "L26",
+   "text": "And her one... was me.",
+   "end": 52.08
+  },
+  {
+   "t": 51.34,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 51.48,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 51.86,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.6
+  },
+  {
+   "t": 51.86,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.5
+  },
+  {
+   "t": 51.86,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 52.58,
+   "type": "shot",
+   "id": "S28",
+   "trans": "cut",
+   "end": 54.53
+  },
+  {
+   "t": 52.66,
+   "type": "line",
+   "id": "L27",
+   "text": "Subscribe if you've got a one.",
+   "end": 53.88
+  },
+  {
+   "t": 52.66,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 53.18,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.5
+  },
+  {
+   "t": 53.74,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 53.74,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 54.53,
+   "type": "music",
+   "mode": "end"
+  }
+ ]
+}

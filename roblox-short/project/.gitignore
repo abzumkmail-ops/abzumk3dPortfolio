@@ -1,0 +1,7 @@
+audio/tts_models/
+audio/design/
+out/frames/
+out/*.mp4
+out/*.wav
+!out/final_video.mp4
+__pycache__/

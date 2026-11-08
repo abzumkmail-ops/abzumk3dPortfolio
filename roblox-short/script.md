@@ -1,38 +1,44 @@
 # Script v3: "In This World, Everyone Has A Like Counter"
 
-Status: DRAFT, waiting for approval. Target length is about 50 s. The narrator is one male kid voice (Valf) at 1.25x, about 214 wpm, so the script is about 195 words.
+Status: FINAL (used in final_video.mp4). Target length is about 50 s. The narrator is one male kid voice (Valf) at 1.25x, about 214 wpm, so the script is about 195 words.
 The visual style stays the same: blocky Roblox-style cartoon characters. The story itself is a general "In this world" premise, not about Roblox.
 
 ## Premise
 Everyone has a number floating above their head. It shows how many people *really* like you, and you can't fake it.
-Nubi has exactly one. He has always assumed that one is his mom.
+Family doesn't count. Nubi has exactly one, and he has always assumed it's the lunch lady.
 
-## Script (one narrator voices everyone)
+## Script (one narrator voices everyone; this is the exact text sent to the voice engine)
 
-| # | Line |
+| Line | Text |
 |---|---|
-| 1 | In this world, everyone has a number above their head. It shows how many people *really* like you. |
-| 2 | You see, you can't fake it. Pop stars have millions. My dog has six. |
-| 3 | And Grandma? Four hundred. She bakes cookies. |
-| 4 | Me? I have exactly one. Kids call me Lonely One. |
-| 5 | I always figured my one was Mom. |
-| 6 | Then one day, Brayden — nine hundred likes — laughed in my face. |
-| 7 | (Brayden) "Bet you can't hit ten by Friday." |
-| 8 | So I tried everything. Free candy. Still one. A backflip… onto the teacher. Still one. |
-| 9 | Friday. School dance. My number? One. |
-| 10 | Subscribe, because that's when everything went wrong. |
-| 11 | Brayden slipped on stage. His pants ripped. Everyone laughed. |
-| 12 | His number started falling. Nine hundred. Two hundred. Ten. |
-| 13 | That's when I realized something. Likes aren't something you get. They're something you give. |
-| 14 | So I walked up, tied my hoodie around his waist, and said, "Nice moves, man." |
-| 15 | Ding. Ding. Ding. Two. Twenty. Fifty! |
-| 16 | But nobody was looking at my number. They were looking at Lily, the quiet girl in the back. |
-| 17 | Her number was one too. |
-| 18 | My one was never Mom. It was her. |
-| 19 | And her one… was me. |
-| 20 | Subscribe if you've got a one. |
-
-About 195 words, roughly 54–55 s at 1.25x. If the real take runs long, I will trim line 3 or line 8 instead of speeding the voice up.
+| L0 | In this world, everyone has a number above their head. |
+| L1 | It shows how many people really like you. |
+| L2 | You see, you can't fake it. And family doesn't count. |
+| L3 | Pop stars have millions. |
+| L4 | My dog has six. |
+| L5 | And Grandma? Four hundred. She bakes cookies. |
+| L6 | Me? I have exactly one. |
+| L7 | Kids call me Lonely One. |
+| L8 | I always figured my one was the lunch lady. |
+| L9 | Then one day, Brayden, nine hundred likes, laughed in my face. |
+| L10 | Bet you can't hit ten by Friday. |
+| L11 | So I tried everything. |
+| L12 | Free candy. Still one. |
+| L13 | A backflip... onto the teacher. Still one. |
+| L14 | Friday. School dance. My number? One. |
+| L15 | Subscribe, because that's when everything went wrong. |
+| L16 | Brayden slipped on stage. His pants ripped. Everyone laughed. |
+| L17 | His number started falling. Nine hundred. Two hundred. Ten. |
+| L18 | That's when I realized something. |
+| L19 | Likes aren't something you get. They're something you give. |
+| L20 | So I walked up, tied my hoodie around his waist, and said, nice moves, man. |
+| L21 | Ding. Ding. Ding. Two. Twenty. Fifty! |
+| L22 | But nobody was looking at my number. |
+| L23 | They were looking at Lily, the quiet girl in the back. |
+| L24 | Her number was one too. |
+| L25 | My one was never the lunch lady. It was her. |
+| L26 | And her one... was me. |
+| L27 | Subscribe if you've got a one. |
 
 ## Story checks
 - **Hook (0–3 s):** the rule and a crowd of floating numbers on screen in the first sentence.

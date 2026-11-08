@@ -1,0 +1,12 @@
+END=54.53s  frames 0..3272 (3272) @60fps 1080px  workers=4
+  300/3272 frames  17s
+  600/3272 frames  53s
+  900/3272 frames  143s
+  1200/3272 frames  195s
+  1500/3272 frames  256s
+  1800/3272 frames  281s
+  2100/3272 frames  309s
+  2400/3272 frames  506s
+  2700/3272 frames  571s
+  3000/3272 frames  624s
+wrote /home/user/abzumk3dPortfolio/roblox-short/project/out/video_noaudio.mp4 in 1011s
