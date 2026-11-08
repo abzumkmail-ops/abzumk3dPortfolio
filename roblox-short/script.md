@@ -15,13 +15,8 @@ Status: DRAFT for approval. Target 50 s. Narrator pace measured at ~209 wpm (Ele
 9. **Callback ending** + poetic justice for the antagonist.
 10. Close with **"Subscribe if …"**.
 
-## Cast & voices (ElevenLabs premade voices — usable on the free plan)
-| Character | Voice | Lines |
-|---|---|---|
-| NUBI (narrator, 6th grade) | Liam — energetic young male | all narration |
-| LILY (new girl, side crush) | Jessica — playful, bright | 1 line |
-| TOBI (best friend) | Will — relaxed young male | 1 line |
-| MS. OKAFOR (teacher) | Matilda — upbeat | 1 line |
+## Voice
+One male kid narrator voices **every** character (like the channel's own Shorts), delivered at ~1.25x. Other characters are distinguished by delivery, captions and the animation. Voice: TBD — candidates in `voice_tests/pick2/` and `voice_tests/pick/`.
 
 ## Script
 
