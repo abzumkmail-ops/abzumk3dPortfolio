@@ -1,6 +1,6 @@
 # Script v3: "In This World, Everyone Has A Like Counter"
 
-Status: DRAFT, waiting for approval. Target length is about 50 s. The narrator is one male kid voice (Valf) at 1.25x, about 214 wpm, so the script is about 185 words.
+Status: DRAFT, waiting for approval. Target length is about 50 s. The narrator is one male kid voice (Valf) at 1.25x, about 214 wpm, so the script is about 195 words.
 The visual style stays the same: blocky Roblox-style cartoon characters. The story itself is a general "In this world" premise, not about Roblox.
 
 ## Premise
@@ -32,7 +32,7 @@ Nubi has exactly one. He has always assumed that one is his mom.
 | 19 | And her one… was me. |
 | 20 | Subscribe if you've got a one. |
 
-About 185 words.
+About 195 words, roughly 54–55 s at 1.25x. If the real take runs long, I will trim line 3 or line 8 instead of speeding the voice up.
 
 ## Story checks
 - **Hook (0–3 s):** the rule and a crowd of floating numbers on screen in the first sentence.
