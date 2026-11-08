@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: new-episode-from-premise
+expected_outcome: |
+  A finished, fully animated 1080x1920 60 fps MP4 Short (45-56 s) built with the shared engine and recurring cast,
+  in the channel's "In this world" first-person format with a mid-video subscribe line, a twist, a small Lily love payoff
+  at the end and a closing "Subscribe if" line; shots written by three parallel shot agents; delivered quickly (under ~45 min).
