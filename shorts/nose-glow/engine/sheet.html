@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'Lilita One';src:url(fonts/LilitaOne-Regular.ttf)}
+@font-face{font-family:'Fredoka';src:url(fonts/Fredoka-Variable.ttf);font-weight:300 700}
+body{margin:0;background:#333}</style></head><body><canvas id="c"></canvas>
+<script src="js/core.js"></script><script src="js/characters.js"></script>
+<script>
+// Character / expression / pose QA sheet. ?mode=cast|expr|poses|views
+const q=new URLSearchParams(location.search), mode=q.get('mode')||'cast';
+const cv=document.getElementById('c'), ctx=cv.getContext('2d');
+async function go(){ await document.fonts.load('40px "Lilita One"');
+ const label=(s,x,y)=>{ctx.font='34px Lilita One';ctx.textAlign='center';ctx.fillStyle='#fff';ctx.strokeStyle='#000';ctx.lineWidth=6;ctx.strokeText(s,x,y);ctx.fillText(s,x,y);};
+ if(mode==='cast'){ const names=Object.keys(CAST); cv.width=2400; cv.height=1500; ctx.fillStyle='#80CDF5';ctx.fillRect(0,0,cv.width,cv.height);
+   names.forEach((n,i)=>{const x=170+(i%7)*340,y=680+Math.floor(i/7)*740; drawShadow(ctx,basePose({x,y,s:.55})); drawCharacter(ctx,n,basePose({x,y,s:.55}),{expr:'happy'},0.5); label(n,x,y+60);});
+   drawDog(ctx,2050,1420,.6,0.3);}
+ if(mode==='expr'){ const ex=Object.keys(EXPR); cv.width=2400; cv.height=1600; ctx.fillStyle='#24225B';ctx.fillRect(0,0,cv.width,cv.height);
+   ex.forEach((e,i)=>{const x=170+(i%6)*400,y=480+Math.floor(i/6)*540; drawCharacter(ctx,i%2?'lily':'nubi',basePose({x,y:y+40,s:.9}),{expr:e,noBlink:true},1); label(e,x,y+80);});}
+ if(mode==='poses'){ cv.width=2400; cv.height=1500; ctx.fillStyle='#65C75A';ctx.fillRect(0,0,cv.width,cv.height);
+   const P=[['idle',p=>idle(p,1)],['walk',p=>walk(Object.assign(p,{view:'q34'}),.2)],['run',p=>run(Object.assign(p,{view:'side'}),.15)],['jump',p=>{p.bodyY=-120;p.legL=.5;p.legR=-.4;p.armL=2.2;p.armR=2.2;return p}],
+     ['surprised',p=>surprise(p,.25)],['angry',p=>{p.lean=.12;p.armL=.9;p.armR=.9;return p}],['celebrate',p=>celebrate(p,.1)],['laugh',p=>laugh(p,.1)],['talk',p=>talk(p,.7)],['side view',p=>Object.assign(p,{view:'side'})],['3/4 view',p=>Object.assign(p,{view:'q34'})],['back view',p=>Object.assign(p,{view:'back'})]];
+   const ex={surprised:'surprised',angry:'angry',celebrate:'excited',laugh:'laughing',talk:'happy'};
+   P.forEach(([n,f],i)=>{const x=200+(i%6)*400,y=640+Math.floor(i/6)*720; const p=f(basePose({x,y,s:.6})); drawShadow(ctx,p); drawCharacter(ctx,'nubi',p,{expr:ex[n]||'neutral',mouth:n==='talk'?'wideOpen':undefined},1); label(n,x,y+60);});}
+ window.DONE=true;}
+go();
+</script></body></html>
