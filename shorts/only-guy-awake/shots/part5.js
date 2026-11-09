@@ -201,11 +201,11 @@ shots(() => {
   // ===== S93 — Lily alone, far back =====
   S.push({ id: 'S93', start: st('L93'), trans: 'cut', capY: 960,
     bg: (ctx, T, cam) => envGym(ctx, T, cam, { dim: .6, banner: 'WINTER DANCE' }),
-    cam: lt => camAt(540, lerp(1150, 1260, smooth(inv(0, 3.5, lt))), lerp(1.0, 1.7, smooth(inv(0, 3.5, lt)))),
+    cam: lt => camAt(540, lerp(1150, 1290, smooth(inv(0, 3.5, lt))), lerp(1.0, 1.5, smooth(inv(0, 3.5, lt)))),
     draw(ctx, T, lt) {
       const l = idle(P({ x: 540, y: 1400, s: .6, view: 'q34' }), T, 5); l.armR = 1.1 + Math.sin(T * 5) * .15; l.armL = .4;
       C(ctx, 'lily', l, { expr: 'happy', lookY: .4, holding: { L: holdSketchbook } }, T);
-      for (const [n, x] of [['kidA', 150], ['kidC', 330], ['kidE', 780], ['kidF', 960]]) { const g = idle(P({ x, y: 1600, s: .95, view: 'back' }), T, x); C(ctx, n, g, { expr: 'happy' }, T); }
+      for (const [n, x] of [['kidA', 100], ['kidC', 260], ['kidE', 820], ['kidF', 980]]) { const g = idle(P({ x, y: 1560, s: .7, view: 'back' }), T, x); C(ctx, n, g, { expr: 'happy' }, T); }
     },
     sfx: [[ws('L93', 'lily') - st('L93'), 'tick', .4]] });
 
