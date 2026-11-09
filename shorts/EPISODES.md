@@ -1,0 +1,2 @@
+dad-joke-damage | dad jokes deal real damage (groans hurt, real laughs heal) | dad, Lily's dad, mom | supermarket, frontYard, diningRoom | mom's dinner helmet, milk hits orbit, "Zero Damage" nickname pays off as Lily laughs
+popcorn-main-character | eating popcorn makes you the main character (spotlight, music, wind) | teenSister, grandpa, popstar | movieTheater, downtown, carInside | "EXTRA #7" becomes LEAD, screen dinosaur roars at sister, popstar sequel "PART 2"
