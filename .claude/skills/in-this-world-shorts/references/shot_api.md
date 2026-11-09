@@ -84,6 +84,17 @@ Moving across the floor: `x: lerp(x0, x1, easeOut(inv(tStart, tEnd, T)))` togeth
 - Blinking is automatic (jittered every 2.5–4 s).
 - Props go in `holding` (drawn in hand space): `holdTray`, `holdMic`, `holdBucket`, `holdBook`, `holdSign('TEXT')`, or your own `ctx => {...}`.
 
+## Asset packs (lots more people and places)
+`references/asset_catalog.md` lists **46 characters** (family: dad, grandpa, teenSister, littleBrother, babySister, aunt, uncle, cousin,
+mom2/dad2; community: lifeguard, coach, doctor, police, firefighter, chef…; kids kidA–kidL) and **31 sets**: home (livingRoom,
+kidsBedroom, bathroom, diningRoom, garage, carInside, frontYard, treehouse), outdoor (pool, beach, playground, amusementPark, campsite,
+snowyStreet, soccerField, downtown, farm) and public (classroom, cafeteria, library, supermarket, doctorOffice, birthdayParty,
+movieTheater, arcade, pizzeria). It also has outfits, hats, beards, props (`holdMug`, `holdPhone`, …) and costume changes for anyone:
+`{ style: STYLE.swim('nubi') }` (also pajamas, winter, party, sports). Sets with a front layer (`envPoolFront`, `envClassroomFront`,
+`envDiningRoomFront`, `envCarInsideFront`, `envMovieTheaterFront`, …) need that function called **after** drawing the characters.
+Each pack file's top comment block gives exact seat heights, water lines and stand positions. To see everything:
+`engine/catalog.html?mode=people|sets|set&name=pool`.
+
 ## Sets: `bg(ctx, T, cam)`
 `envHallway(ctx,T,cam)` (lockers, posters) · `envKitchen(ctx,T,cam,{night})` (also the cafeteria, if you draw a serving counter in `draw`) · `envBackyard` · `envConcert` (+ `concertCrowd(ctx,T)` in front, inside `draw`) ·
 `envGym(ctx,T,cam,{dim:0..1, noLights, banner:'TALENT SHOW', bannerC})` (school dance / assemblies, stage at y 1190) · `envBurst(ctx,T,c1,c2,spin)` (radial rays for hype close-ups) · `envSoft(ctx,T,c1,c2)` (floating hearts for emotional or love beats).

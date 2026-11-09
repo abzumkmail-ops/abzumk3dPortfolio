@@ -19,7 +19,7 @@ feedback. (If the user explicitly asks to approve the script first, show it and 
 <skill>/engine/        index.html, js/{core,characters,env,fx_ui,shotkit,main}.js, fonts/, sheet.html  (shared: don't fork per video)
 <skill>/assets/audio/  sfx/*.wav (37 sounds), music/{main,tense,calm,party,love}.wav (8 s seamless loops)
 <skill>/scripts/       setup.sh, new_project.sh, make_voice.py, render.js, contact.js, make_audio.py, build.sh, qa_final.sh
-<skill>/references/    story_style.md (writing formula), shot_api.md (everything a shot writer needs)
+<skill>/references/    story_style.md (writing formula), shot_api.md (everything a shot writer needs), asset_catalog.md (46 characters, 31 sets, costumes, props)
 <skill>/examples/like-counter/   a complete finished episode: script_lines.json, story.js, shots/part1-3.js
 ```
 A project (one video) is self-contained: `new_project.sh` copies the engine, tools and audio library into it.
@@ -44,6 +44,7 @@ Start it in the background right away and write the story while it runs.
    If the premise needs a recurring visual device (talking shadows, counters, a meter), build it here as a helper function so all agents draw it the same way.
 6. Write **`plan.md`**: the contract for the shot writers. Include one row per shot (id, line id, set, characters and positions, action on which word, camera, transition, sfx).
    Also list continuity facts: who wears what when, counter values over time, and where recurring characters stand.
+   Pick sets and people from `references/asset_catalog.md`: home, pool, park, party, car and family scenes all exist, so don't keep everything at school.
    Aim for a new visual beat every 1–3 s, about 25–30 shots. Mix wides, two-shots and close-ups, and put a reaction close-up after each big moment.
    Split the rows into **3 contiguous parts** of roughly equal duration.
 

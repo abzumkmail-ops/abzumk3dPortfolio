@@ -15,9 +15,9 @@ def add(pattern):
     for p in sorted(glob.glob(os.path.join(ROOT, pattern), recursive=True)):
         if os.path.isfile(p): FILES.append(os.path.relpath(p, ROOT))
 
-for pat in [f"{SK}/SKILL.md", f"{SK}/references/*.md", f"{SK}/engine/index.html", f"{SK}/engine/sheet.html", f"{SK}/engine/js/*.js",
+for pat in [f"{SK}/SKILL.md", f"{SK}/references/*.md", f"{SK}/engine/index.html", f"{SK}/engine/sheet.html", f"{SK}/engine/catalog.html", f"{SK}/engine/js/*.js",
             f"{SK}/engine/fonts/OFL.txt", f"{SK}/scripts/*", f"{SK}/examples/**/*", f"{SK}/evals/**/*",
-            "channel-branding/branding.html", "channel-branding/README.md"]:
+            "channel-branding/branding.html", "channel-branding/README.md", "asset-pack/README.md"]:
     add(pat)
 FILES = [f for f in dict.fromkeys(FILES) if not f.endswith((".png", ".jpg", ".mp4", ".wav", ".ttf", ".onnx", ".bin", ".pyc", "make_handoff.py"))]
 
