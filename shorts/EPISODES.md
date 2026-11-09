@@ -1,0 +1,1 @@
+bad-jokes-real-damage | every bad joke does real physical damage (puns launch people), only moms are immune | B family chaos | dad, mom, cashier, thief | supermarket, livingRoom | kicker (dog launched) | dad-joke pressure meter, joke leaks out his ear, cashier hit twice (melons, freezer)

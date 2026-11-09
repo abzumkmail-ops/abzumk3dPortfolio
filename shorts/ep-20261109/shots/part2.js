@@ -39,10 +39,10 @@ shots(() => {
         ctx.beginPath(); ctx.arc(x - 10, 1244, 26, 0, TAU); fillStroke(ctx, '#A6E87F', 5); }
       const k = smooth(inv(redT - .1, redT + .5, T));
       const np = idle(P({ x: 330, y: 1500, s: .8, view: 'q34' }), T, 1);
-      C(ctx, 'nubi', np, { expr: T > redT ? 'nervous' : 'neutral', sweat: T > redT ? 1 : 0 }, T); wrap(ctx, np, T); badgeOver(ctx, 'nubi', np, 1, { t: T });
+      C(ctx, 'nubi', np, { expr: T > redT ? 'nervous' : 'neutral', sweat: T > redT ? 1 : 0 }, T); wrap(ctx, np, T);
       const dp = dadPose(T, 760, 1500, .84); if (T > lett) { dp.lean += .1; dp.head = .1 * Math.sin(T * 30) * k; }
       C(ctx, 'dad', dp, { expr: T > redT ? 'angry' : (T > lett ? 'nervous' : 'neutral'), red: k, vein: k > .5, holding: { L: holdShoppingBag } }, T);
-      badgeOver(ctx, 'dad', dp, 0, { t: T, state: 'normal' });
+     
       if (T > redT) burst(ctx, 760, 900, T - redT, { kind: 'star', n: 8, speed: 400, gravity: 0, life: .5, size: 18, colors: ['#EE384A', '#FFB02E'], seed: 2 });
     },
     ui(ctx, T) { if (T > redT) popText(ctx, '!!', 760, 640, T - redT, { size: 110, fill: '#EE384A', rot: .1, dur: .9 }); },
@@ -64,7 +64,7 @@ shots(() => {
         ctx.beginPath(); ctx.arc(cx, cy, 44 * big, 0, TAU); fillStroke(ctx, '#F56B5C', 7);
         ctx.beginPath(); ctx.arc(cx - sx * 10, cy - 10, 12 * big, 0, TAU); ctx.fillStyle = 'rgba(255,255,255,.5)'; ctx.fill();
       }
-      badgeOver(ctx, 'dad', p, 0, { t: T });
+     
     },
     ui(ctx, T) { if (T > puffT) popText(ctx, 'PUFF!', 840, 560, T - puffT, { size: 100, fill: '#FFB02E', rot: .15, dur: 1 }); },
     sfx: [[puffT - st('L9'), 'pop', .6]] });
@@ -80,10 +80,10 @@ shots(() => {
       for (const sx of [-1, 1]) { const cx = 700 + sx * 62, cy = 1500 - 360 * .84; ctx.beginPath(); ctx.arc(cx, cy, 38, 0, TAU); fillStroke(ctx, '#F56B5C', 7); }
       const np = idle(P({ x: 380, y: 1500, s: .8, view: 'q34' }), T, 1);
       const reach = smooth(inv(covT - .2, covT + .15, T)); np.armR = lerp(.2, 2.1, reach); np.lean += .12 * reach;
-      C(ctx, 'nubi', np, { expr: T > earT ? 'surprised' : 'determined' }, T); wrap(ctx, np, T); badgeOver(ctx, 'nubi', np, 1, { t: T });
+      C(ctx, 'nubi', np, { expr: T > earT ? 'surprised' : 'determined' }, T); wrap(ctx, np, T);
       // hand clamp over mouth
       if (T > covT) { ctx.beginPath(); ctx.ellipse(676, 1500 - 300 * .84, 36, 26, 0, 0, TAU); fillStroke(ctx, '#FFD7B5', 7); }
-      badgeOver(ctx, 'dad', dp, 0, { t: T });
+     
     },
     ui(ctx, T) {
       if (T > earT) {
@@ -147,7 +147,7 @@ shots(() => {
       for (const [x, y, r] of [[110, 1320, 70], [250, 1440, 60], [830, 1330, 66], [960, 1450, 72], [690, 1470, 50], [400, 1470, 44]]) cheese(ctx, x, y, r);
       const p = talk(idle(P({ x: 540, y: 1500, s: .8 }), T, 1), T, 1, .5);
       if (T > subT) { p.armR = 2.0 + Math.sin(T * 12) * .15; p.handR = .3; }
-      C(ctx, 'nubi', p, { expr: T > surT ? 'terrified' : 'smug', mouth: lipShape(T, ['L13']) }, T); wrap(ctx, p, T); badgeOver(ctx, 'nubi', p, 1, { t: T });
+      C(ctx, 'nubi', p, { expr: T > surT ? 'terrified' : 'smug', mouth: lipShape(T, ['L13']) }, T); wrap(ctx, p, T);
     },
     ui(ctx, T, lt) {
       if (T > subT) { popText(ctx, 'SUBSCRIBE', 540, 760, T - subT, { size: 96, fill: '#5BD16B', rot: -.06, dur: 1.4 }); }
@@ -191,8 +191,8 @@ shots(() => {
       const np = idle(P({ x: 380, y: 1500, s: .8, view: 'q34' }), T, 1);
       const nod = T > nowT ? Math.sin(clamp((T - nowT) / .35) * Math.PI) * .35 : 0; np.head = nod; np.headY = nod * 14;
       C(ctx, 'nubi', np, { expr: T > nowT ? 'determined' : 'neutral', eyes: T > nowT ? undefined : { open: .55, pupil: .8, shape: 'flat' }, noBlink: true, lookX: T > dadT - .1 ? 1 : 0, mouth: lipShape(T, ['L15']) }, T);
-      wrap(ctx, np, T); badgeOver(ctx, 'nubi', np, 1, { t: T });
-      badgeOver(ctx, 'dad', dp, 0, { t: T });
+      wrap(ctx, np, T);
+     
     },
     ui(ctx, T) { if (T > nowT) popText(ctx, 'NOW.', 380, 700, T - nowT, { size: 96, fill: '#EE384A', rot: -.05, dur: 1.2 }); },
     sfx: [[nowT - st('L15'), 'impact', .6]] });

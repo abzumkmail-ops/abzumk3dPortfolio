@@ -1,0 +1,982 @@
+{
+ "END": 48.781,
+ "fps": 30,
+ "events": [
+  {
+   "t": 0,
+   "type": "shot",
+   "id": "S1",
+   "trans": "none",
+   "end": 2.367
+  },
+  {
+   "t": 0,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 0.15,
+   "type": "line",
+   "id": "L0",
+   "text": "In this world, every bad joke does real damage.",
+   "end": 2.347
+  },
+  {
+   "t": 1.15,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 1.15,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 1.81,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.6
+  },
+  {
+   "t": 1.81,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 1.86,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 2.367,
+   "type": "shot",
+   "id": "S2",
+   "trans": "whip",
+   "end": 3.961
+  },
+  {
+   "t": 2.367,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.3
+  },
+  {
+   "t": 2.367,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 2.447,
+   "type": "line",
+   "id": "L1",
+   "text": "The worse the joke, the harder the hit.",
+   "end": 3.941
+  },
+  {
+   "t": 2.867,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.627,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.7
+  },
+  {
+   "t": 3.627,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.961,
+   "type": "shot",
+   "id": "S3",
+   "trans": "cut",
+   "end": 6.309
+  },
+  {
+   "t": 4.041,
+   "type": "line",
+   "id": "L2",
+   "text": "Knock-knock jokes sting. Puns send you flying.",
+   "end": 6.089
+  },
+  {
+   "t": 4.461,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.621,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 5.181,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 5.641,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.65
+  },
+  {
+   "t": 5.641,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 6.309,
+   "type": "shot",
+   "id": "S4",
+   "trans": "cut",
+   "end": 8.425
+  },
+  {
+   "t": 6.389,
+   "type": "line",
+   "id": "L3",
+   "text": "Only moms are immune. They just roll their eyes.",
+   "end": 8.405
+  },
+  {
+   "t": 6.969,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 6.969,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 8.425,
+   "type": "shot",
+   "id": "S5",
+   "trans": "zoom",
+   "end": 9.975
+  },
+  {
+   "t": 8.425,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 8.505,
+   "type": "line",
+   "id": "L4",
+   "text": "My dad? Worst jokes in town.",
+   "end": 9.955
+  },
+  {
+   "t": 8.605,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 8.985,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.5
+  },
+  {
+   "t": 9.085,
+   "type": "sfx",
+   "name": "bling",
+   "vol": 0.5
+  },
+  {
+   "t": 9.085,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.225,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.975,
+   "type": "shot",
+   "id": "S6",
+   "trans": "zoom",
+   "end": 11.851
+  },
+  {
+   "t": 9.975,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 10.055,
+   "type": "line",
+   "id": "L5",
+   "text": "So I wear bubble wrap. Everywhere.",
+   "end": 11.581
+  },
+  {
+   "t": 10.435,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 10.655,
+   "type": "sfx",
+   "name": "rip",
+   "vol": 0.5
+  },
+  {
+   "t": 10.655,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 10.975,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.6
+  },
+  {
+   "t": 11.225,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 11.851,
+   "type": "shot",
+   "id": "S7",
+   "trans": "cut",
+   "end": 13.285
+  },
+  {
+   "t": 11.931,
+   "type": "line",
+   "id": "L6",
+   "text": "Kids call me Bubble Boy.",
+   "end": 13.115
+  },
+  {
+   "t": 11.931,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.5
+  },
+  {
+   "t": 12.431,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.651,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 13.285,
+   "type": "shot",
+   "id": "S8",
+   "trans": "cut",
+   "end": 15.721
+  },
+  {
+   "t": 13.365,
+   "type": "line",
+   "id": "L7",
+   "text": "Then Mom sent us shopping. Rule one: no jokes.",
+   "end": 15.701
+  },
+  {
+   "t": 13.465,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 14.665,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 15.105,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.185,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.285,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.55
+  },
+  {
+   "t": 15.721,
+   "type": "shot",
+   "id": "S9",
+   "trans": "cut",
+   "end": 17.474
+  },
+  {
+   "t": 15.801,
+   "type": "line",
+   "id": "L8",
+   "text": "Aisle one, lettuce. His face went red.",
+   "end": 17.454
+  },
+  {
+   "t": 15.801,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 17.141,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.55
+  },
+  {
+   "t": 17.141,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.474,
+   "type": "shot",
+   "id": "S10",
+   "trans": "cut",
+   "end": 19.249
+  },
+  {
+   "t": 17.554,
+   "type": "line",
+   "id": "L9",
+   "text": "Aisle two, bread. His cheeks puffed up.",
+   "end": 19.229
+  },
+  {
+   "t": 18.654,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.6
+  },
+  {
+   "t": 19.249,
+   "type": "shot",
+   "id": "S11",
+   "trans": "cut",
+   "end": 21.277
+  },
+  {
+   "t": 19.329,
+   "type": "line",
+   "id": "L10",
+   "text": "I covered his mouth. It leaked out his ear.",
+   "end": 21.057
+  },
+  {
+   "t": 19.409,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 20.769,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 20.769,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 21.277,
+   "type": "shot",
+   "id": "S12",
+   "trans": "cut",
+   "end": 23.105
+  },
+  {
+   "t": 21.357,
+   "type": "line",
+   "id": "L11",
+   "text": "The cashier backflipped into the melons.",
+   "end": 22.935
+  },
+  {
+   "t": 21.777,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 22.497,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.6
+  },
+  {
+   "t": 22.497,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.847,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.45
+  },
+  {
+   "t": 23.105,
+   "type": "shot",
+   "id": "S13",
+   "trans": "zoom",
+   "end": 24.743
+  },
+  {
+   "t": 23.105,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.3
+  },
+  {
+   "t": 23.105,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 23.185,
+   "type": "line",
+   "id": "L12",
+   "text": "Then we reached... the cheese aisle.",
+   "end": 24.423
+  },
+  {
+   "t": 23.805,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 23.805,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 24.743,
+   "type": "shot",
+   "id": "S14",
+   "trans": "cut",
+   "end": 27.008
+  },
+  {
+   "t": 24.823,
+   "type": "line",
+   "id": "L13",
+   "text": "Subscribe, because nobody survives the cheese aisle.",
+   "end": 26.988
+  },
+  {
+   "t": 24.823,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 24.823,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 26.463,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 27.008,
+   "type": "shot",
+   "id": "S15",
+   "trans": "flash",
+   "end": 28.591
+  },
+  {
+   "t": 27.008,
+   "type": "sfx",
+   "name": "glitch",
+   "vol": 0.35
+  },
+  {
+   "t": 27.088,
+   "type": "line",
+   "id": "L14",
+   "text": "Then a thief grabbed a lady's purse!",
+   "end": 28.571
+  },
+  {
+   "t": 27.308,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 27.568,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.6
+  },
+  {
+   "t": 28.591,
+   "type": "shot",
+   "id": "S16",
+   "trans": "cut",
+   "end": 30.196
+  },
+  {
+   "t": 28.671,
+   "type": "line",
+   "id": "L15",
+   "text": "I looked at Dad. Dad... now.",
+   "end": 29.876
+  },
+  {
+   "t": 29.051,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 29.371,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 29.491,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 29.491,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 30.196,
+   "type": "shot",
+   "id": "S17",
+   "trans": "zoom",
+   "end": 32.729
+  },
+  {
+   "t": 30.196,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 30.246,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 30.276,
+   "type": "line",
+   "id": "L16",
+   "text": "Why did the robber take a bath? To make a clean getaway!",
+   "end": 32.559
+  },
+  {
+   "t": 31.156,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 32.036,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 32.036,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 32.729,
+   "type": "shot",
+   "id": "S18",
+   "trans": "cut",
+   "end": 34.29
+  },
+  {
+   "t": 32.779,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 32.809,
+   "type": "line",
+   "id": "L17",
+   "text": "Boom. The thief flew into the freezer.",
+   "end": 34.27
+  },
+  {
+   "t": 32.809,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 32.809,
+   "type": "music",
+   "mode": "party"
+  },
+  {
+   "t": 33.229,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 33.869,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.7
+  },
+  {
+   "t": 33.869,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 34.29,
+   "type": "shot",
+   "id": "S19",
+   "trans": "cut",
+   "end": 36.318
+  },
+  {
+   "t": 34.37,
+   "type": "line",
+   "id": "L18",
+   "text": "So did the shoppers. And the cashier. Again.",
+   "end": 36.098
+  },
+  {
+   "t": 34.67,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.6
+  },
+  {
+   "t": 35.73,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.5
+  },
+  {
+   "t": 36.318,
+   "type": "shot",
+   "id": "S20",
+   "trans": "cut",
+   "end": 38.295
+  },
+  {
+   "t": 36.398,
+   "type": "line",
+   "id": "L19",
+   "text": "Only I was standing. Thanks, bubble wrap.",
+   "end": 38.275
+  },
+  {
+   "t": 36.818,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 37.718,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 37.878,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.6
+  },
+  {
+   "t": 37.878,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.078,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.45
+  },
+  {
+   "t": 38.295,
+   "type": "shot",
+   "id": "S21",
+   "trans": "cut",
+   "end": 40.006
+  },
+  {
+   "t": 38.375,
+   "type": "line",
+   "id": "L20",
+   "text": "The store made Dad head of security.",
+   "end": 39.986
+  },
+  {
+   "t": 38.875,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 39.395,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 39.395,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 39.545,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.4
+  },
+  {
+   "t": 39.986,
+   "type": "music",
+   "mode": "calm"
+  },
+  {
+   "t": 40.006,
+   "type": "shot",
+   "id": "S22",
+   "trans": "whip",
+   "end": 41.578
+  },
+  {
+   "t": 40.006,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 40.006,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 40.086,
+   "type": "line",
+   "id": "L21",
+   "text": "At home, Mom asked: any jokes?",
+   "end": 41.558
+  },
+  {
+   "t": 40.466,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.046,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.578,
+   "type": "shot",
+   "id": "S23",
+   "trans": "cut",
+   "end": 43.208
+  },
+  {
+   "t": 41.658,
+   "type": "line",
+   "id": "L22",
+   "text": "Nope. I was just being cheesy.",
+   "end": 42.938
+  },
+  {
+   "t": 42.398,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 42.398,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 43.208,
+   "type": "shot",
+   "id": "S24",
+   "trans": "cut",
+   "end": 46.301
+  },
+  {
+   "t": 43.288,
+   "type": "line",
+   "id": "L23",
+   "text": "Mom rolled her eyes. Immune.",
+   "end": 44.664
+  },
+  {
+   "t": 43.288,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 44.228,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 44.228,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 45.064,
+   "type": "line",
+   "id": "L24",
+   "text": "The dog was not.",
+   "end": 45.981
+  },
+  {
+   "t": 45.164,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 45.584,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 45.584,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 45.834,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.5
+  },
+  {
+   "t": 46.301,
+   "type": "shot",
+   "id": "S25",
+   "trans": "cut",
+   "end": 48.781
+  },
+  {
+   "t": 46.381,
+   "type": "line",
+   "id": "L25",
+   "text": "Subscribe if your dad's jokes hurt too.",
+   "end": 48.131
+  },
+  {
+   "t": 46.381,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 46.381,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 47.381,
+   "type": "sfx",
+   "name": "bark",
+   "vol": 0.4
+  },
+  {
+   "t": 47.381,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 48.781,
+   "type": "music",
+   "mode": "end"
+  }
+ ]
+}
