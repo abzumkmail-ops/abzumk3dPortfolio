@@ -1,0 +1,659 @@
+[
+ {
+  "id": "L0",
+  "text": "I woke up this morning... and every single guy on Earth was gone.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L1",
+  "text": "No dads. No brothers. No annoying guys in my group chat.",
+  "speaker": "n"
+ },
+ {
+  "id": "L2",
+  "text": "Just me.",
+  "speaker": "n",
+  "gap": 0.35
+ },
+ {
+  "id": "L3",
+  "text": "Okay. Not gone. Asleep.",
+  "speaker": "n"
+ },
+ {
+  "id": "L4",
+  "text": "Because in this world... guys hibernate.",
+  "speaker": "n",
+  "gap": 0.2
+ },
+ {
+  "id": "L5",
+  "text": "On the first snow of the year, every boy and every man falls asleep like a bear, and doesn't wake up until spring.",
+  "speaker": "n"
+ },
+ {
+  "id": "L6",
+  "text": "You see, every November, dads start eating like it's their full time job.",
+  "speaker": "n"
+ },
+ {
+  "id": "L7",
+  "text": "My dad calls it bulking for winter.",
+  "speaker": "n"
+ },
+ {
+  "id": "L8",
+  "text": "My mom calls it the annual fridge crisis.",
+  "speaker": "n",
+  "gap": 0.25
+ },
+ {
+  "id": "L9",
+  "text": "He even has a secret snack stash, with a lock, and a sign that says...",
+  "speaker": "n"
+ },
+ {
+  "id": "L10",
+  "text": "Don't touch. I'll know.",
+  "speaker": "dad",
+  "gap": 0.3
+ },
+ {
+  "id": "L11",
+  "text": "Every school turns its gym into a giant hibernation hall.",
+  "speaker": "n"
+ },
+ {
+  "id": "L12",
+  "text": "Three hundred guys in sleeping bags, snoring in perfect harmony.",
+  "speaker": "n"
+ },
+ {
+  "id": "L13",
+  "text": "And my grandpa snores so loud, the news reports it as an earthquake.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L14",
+  "text": "Me? I have never hibernated. Not once in fifteen years.",
+  "speaker": "n"
+ },
+ {
+  "id": "L15",
+  "text": "The doctor says my sleep gene is broken. Like a loading bar that's stuck at ninety nine percent.",
+  "speaker": "n",
+  "gap": 0.25
+ },
+ {
+  "id": "L16",
+  "text": "So every winter, I'm the only guy awake in the whole town.",
+  "speaker": "n"
+ },
+ {
+  "id": "L17",
+  "text": "Kids call me The Night Shift.",
+  "speaker": "n",
+  "gap": 0.35
+ },
+ {
+  "id": "L18",
+  "text": "Usually, my mom lets me stay home all winter. Just me, my games, and a lot of silence.",
+  "speaker": "n"
+ },
+ {
+  "id": "L19",
+  "text": "But this year, I turned fifteen. And my mom had other plans.",
+  "speaker": "n",
+  "gap": 0.2
+ },
+ {
+  "id": "L20",
+  "text": "Then last Monday, the first snowflake fell.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L21",
+  "text": "Brayden was in the middle of his favorite thing. Talking about Brayden.",
+  "speaker": "n"
+ },
+ {
+  "id": "L22",
+  "text": "This year, I'm finally asking Lily to the Winter Dance, because let's be honest, I'm basically the most...",
+  "speaker": "brayden",
+  "gap": 0.1
+ },
+ {
+  "id": "L23",
+  "text": "Face first. Into the snow. Mid sentence.",
+  "speaker": "n",
+  "gap": 0.35
+ },
+ {
+  "id": "L24",
+  "text": "My dad fell asleep with a slice of pizza still in his mouth.",
+  "speaker": "n"
+ },
+ {
+  "id": "L25",
+  "text": "Coach fell asleep mid whistle. The whistle kept going for three hours.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L26",
+  "text": "In five minutes, every guy in town was out cold.",
+  "speaker": "n"
+ },
+ {
+  "id": "L27",
+  "text": "Except me.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L28",
+  "text": "You know what this means.",
+  "speaker": "mom"
+ },
+ {
+  "id": "L29",
+  "text": "I get to play video games for four months straight?",
+  "speaker": "n",
+  "gap": 0.2
+ },
+ {
+  "id": "L30",
+  "text": "It means you're going to school.",
+  "speaker": "mom",
+  "gap": 0.4
+ },
+ {
+  "id": "L31",
+  "text": "So on Tuesday, I walked into Maple High as the only guy in the entire building.",
+  "speaker": "n"
+ },
+ {
+  "id": "L32",
+  "text": "Six hundred girls. One me.",
+  "speaker": "n",
+  "gap": 0.5
+ },
+ {
+  "id": "L33",
+  "text": "Nobody said a word. For like... ten whole seconds.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L34",
+  "text": "And then everyone had questions.",
+  "speaker": "n"
+ },
+ {
+  "id": "L35",
+  "text": "Why aren't you asleep? Are you a vampire? Can you open this jar?",
+  "speaker": "girl",
+  "gap": 0.2
+ },
+ {
+  "id": "L36",
+  "text": "Turns out, when you're the only guy, everyone thinks you're an expert in guy stuff.",
+  "speaker": "n"
+ },
+ {
+  "id": "L37",
+  "text": "Attempt one. The jar.",
+  "speaker": "n"
+ },
+ {
+  "id": "L38",
+  "text": "I pulled so hard I saw my ancestors. The jar did not move.",
+  "speaker": "n",
+  "gap": 0.25
+ },
+ {
+  "id": "L39",
+  "text": "She opened it with one hand. While texting.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L40",
+  "text": "Attempt two. The spider.",
+  "speaker": "n"
+ },
+ {
+  "id": "L41",
+  "text": "I screamed louder than the entire class combined.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L42",
+  "text": "Attempt three. Fix the projector.",
+  "speaker": "n"
+ },
+ {
+  "id": "L43",
+  "text": "I pressed one button. The fire alarm went off. I still don't know how.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L44",
+  "text": "My big sister found me in the hallway.",
+  "speaker": "n"
+ },
+ {
+  "id": "L45",
+  "text": "You are embarrassing the entire male species.",
+  "speaker": "sis",
+  "gap": 0.2
+ },
+ {
+  "id": "L46",
+  "text": "Technically... I am the entire male species right now.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L47",
+  "text": "Then, at lunch, the principal made an announcement.",
+  "speaker": "n"
+ },
+ {
+  "id": "L48",
+  "text": "The Winter Dance will still happen, on the last night of winter. Everyone, bring a partner.",
+  "speaker": "principal",
+  "gap": 0.3
+ },
+ {
+  "id": "L49",
+  "text": "Six hundred heads turned. Slowly. Toward me.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L50",
+  "text": "There was exactly one partner available in the whole school. And it was me.",
+  "speaker": "n"
+ },
+ {
+  "id": "L51",
+  "text": "By the end of lunch, there was a sign up sheet on my locker.",
+  "speaker": "n"
+ },
+ {
+  "id": "L52",
+  "text": "Two hundred names by fourth period. Five hundred by sixth.",
+  "speaker": "n"
+ },
+ {
+  "id": "L53",
+  "text": "By the end of the day, even my sister had signed it. Just so she could cross her name out.",
+  "speaker": "n",
+  "gap": 0.35
+ },
+ {
+  "id": "L54",
+  "text": "But honestly, there was only one name I cared about.",
+  "speaker": "n",
+  "gap": 0.2
+ },
+ {
+  "id": "L55",
+  "text": "Lily. She sits in the back of art class, and draws in a little blue sketchbook.",
+  "speaker": "n"
+ },
+ {
+  "id": "L56",
+  "text": "She was the only person who never asked me for anything.",
+  "speaker": "n"
+ },
+ {
+  "id": "L57",
+  "text": "And every morning, there was a hot chocolate waiting on my locker. No name. Just a tiny drawing of a snowflake.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L58",
+  "text": "I had no idea who it was from.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L59",
+  "text": "Subscribe, because this is where things get really weird.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L60",
+  "text": "Because that night, I got hungry. At three in the morning.",
+  "speaker": "n"
+ },
+ {
+  "id": "L61",
+  "text": "And my dad's secret snack stash was open.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L62",
+  "text": "Half of it was gone. And the sign still said...",
+  "speaker": "n"
+ },
+ {
+  "id": "L63",
+  "text": "I'll know.",
+  "speaker": "dad",
+  "gap": 0.3
+ },
+ {
+  "id": "L64",
+  "text": "But my dad was in his room. Asleep. Snoring.",
+  "speaker": "n"
+ },
+ {
+  "id": "L65",
+  "text": "Which meant only one thing. Someone else in this house was awake.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L66",
+  "text": "So I set traps.",
+  "speaker": "n"
+ },
+ {
+  "id": "L67",
+  "text": "Night one. Flour on the floor. In the morning, there were footprints. Fuzzy slipper footprints.",
+  "speaker": "n"
+ },
+ {
+  "id": "L68",
+  "text": "Night two. A bell on the cupboard. It didn't ring. Someone had stuffed a sock in it.",
+  "speaker": "n"
+ },
+ {
+  "id": "L69",
+  "text": "Night three. I hid in the pantry. And I waited.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L70",
+  "text": "At three in the morning, the fridge light came on.",
+  "speaker": "n"
+ },
+ {
+  "id": "L71",
+  "text": "Someone in a bathrobe was eating my dad's cookies.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L72",
+  "text": "It was... Grandpa.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L73",
+  "text": "Evening, kiddo. Want a cookie?",
+  "speaker": "grandpa",
+  "gap": 0.3
+ },
+ {
+  "id": "L74",
+  "text": "You're awake?",
+  "speaker": "n"
+ },
+ {
+  "id": "L75",
+  "text": "Every winter. For sixty years.",
+  "speaker": "grandpa",
+  "gap": 0.3
+ },
+ {
+  "id": "L76",
+  "text": "But the earthquake snoring?",
+  "speaker": "n"
+ },
+ {
+  "id": "L77",
+  "text": "Bluetooth speaker.",
+  "speaker": "grandpa",
+  "gap": 0.4
+ },
+ {
+  "id": "L78",
+  "text": "The broken sleep gene runs in the family. It skips a generation.",
+  "speaker": "grandpa"
+ },
+ {
+  "id": "L79",
+  "text": "Then why do you pretend to be asleep?",
+  "speaker": "n"
+ },
+ {
+  "id": "L80",
+  "text": "Because when you're the only guy awake, everybody wants something from you. You've noticed, huh?",
+  "speaker": "grandpa",
+  "gap": 0.3
+ },
+ {
+  "id": "L81",
+  "text": "Fifty years ago, I stopped pretending for one winter. For one girl.",
+  "speaker": "grandpa"
+ },
+ {
+  "id": "L82",
+  "text": "He showed me an old photo. Him and Grandma, at the Winter Dance. The only couple on the dance floor.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L83",
+  "text": "Six hundred people want a dance partner, kiddo. Only one of them wants you.",
+  "speaker": "grandpa",
+  "gap": 0.4
+ },
+ {
+  "id": "L84",
+  "text": "That's when I realized something.",
+  "speaker": "n",
+  "gap": 0.2
+ },
+ {
+  "id": "L85",
+  "text": "Nobody needed me. They needed a partner. Any partner.",
+  "speaker": "n"
+ },
+ {
+  "id": "L86",
+  "text": "And three hundred partners were already in the gym. Asleep.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L87",
+  "text": "So I went to the principal with a plan.",
+  "speaker": "n"
+ },
+ {
+  "id": "L88",
+  "text": "Start the dance at eleven thirty. On the last night of winter. In the gym. Right next to the hibernation hall.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L89",
+  "text": "And why would I do that?",
+  "speaker": "principal"
+ },
+ {
+  "id": "L90",
+  "text": "Because the forecast says the snow melts at midnight.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L91",
+  "text": "The night of the dance, the gym looked amazing. Lights, music, and three hundred snoring guys along the wall.",
+  "speaker": "n"
+ },
+ {
+  "id": "L92",
+  "text": "And six hundred girls in one very long line. All waiting for me.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L93",
+  "text": "Eleven fifty eight. I could see Lily in the back. Alone. Drawing.",
+  "speaker": "n"
+ },
+ {
+  "id": "L94",
+  "text": "I walked past the whole line.",
+  "speaker": "n"
+ },
+ {
+  "id": "L95",
+  "text": "Sorry. I'm taken. Well, I'm hoping.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L96",
+  "text": "Eleven fifty nine.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L97",
+  "text": "Midnight.",
+  "speaker": "n",
+  "gap": 0.5
+ },
+ {
+  "id": "L98",
+  "text": "The snow melted. Spring came. And three hundred guys sat up at the exact same time.",
+  "speaker": "n"
+ },
+ {
+  "id": "L99",
+  "text": "...handsome guy in this whole entire school!",
+  "speaker": "brayden",
+  "gap": 0.3
+ },
+ {
+  "id": "L100",
+  "text": "He finished his sentence. Four months later. In his pajamas.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L101",
+  "text": "Suddenly, everyone had a partner. And the dance went absolutely crazy.",
+  "speaker": "n"
+ },
+ {
+  "id": "L102",
+  "text": "But I was at the back of the gym.",
+  "speaker": "n"
+ },
+ {
+  "id": "L103",
+  "text": "Was it you? The hot chocolate?",
+  "speaker": "n"
+ },
+ {
+  "id": "L104",
+  "text": "Lily didn't say anything. She just opened her sketchbook.",
+  "speaker": "n"
+ },
+ {
+  "id": "L105",
+  "text": "It was full of tiny snowflakes. And drawings of me. Losing to a jar.",
+  "speaker": "n",
+  "gap": 0.35
+ },
+ {
+  "id": "L106",
+  "text": "You looked lonely. Being the only one awake.",
+  "speaker": "lily"
+ },
+ {
+  "id": "L107",
+  "text": "Everyone wanted the only guy. I just wanted you to have a hot chocolate.",
+  "speaker": "lily",
+  "gap": 0.3
+ },
+ {
+  "id": "L108",
+  "text": "So I asked her the only question that mattered.",
+  "speaker": "n"
+ },
+ {
+  "id": "L109",
+  "text": "Do you want to dance?",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L110",
+  "text": "I thought you'd never ask.",
+  "speaker": "lily",
+  "gap": 0.4
+ },
+ {
+  "id": "L111",
+  "text": "And for the first time ever, I was glad I was awake.",
+  "speaker": "n",
+  "gap": 0.5
+ },
+ {
+  "id": "L112",
+  "text": "The next morning, my dad woke up and walked straight to his snack stash.",
+  "speaker": "n"
+ },
+ {
+  "id": "L113",
+  "text": "It was empty. And the sign still said...",
+  "speaker": "n"
+ },
+ {
+  "id": "L114",
+  "text": "I'll know.",
+  "speaker": "dad",
+  "gap": 0.3
+ },
+ {
+  "id": "L115",
+  "text": "He looked at me. I looked at Grandpa.",
+  "speaker": "n"
+ },
+ {
+  "id": "L116",
+  "text": "Grandpa was snoring. Very loudly. With a speaker in his pocket.",
+  "speaker": "n",
+  "gap": 0.3
+ },
+ {
+  "id": "L117",
+  "text": "Fifty years. And Grandpa has never once been caught.",
+  "speaker": "n",
+  "gap": 0.4
+ },
+ {
+  "id": "L118",
+  "text": "Subscribe if you would stay awake for someone. And comment what you would do if you were the only guy awake.",
+  "speaker": "n"
+ }
+]

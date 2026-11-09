@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>In This World Short</title>
+<style>
+@font-face{font-family:'Lilita One';src:url(engine/fonts/LilitaOne-Regular.ttf)}
+@font-face{font-family:'Fredoka';src:url(engine/fonts/Fredoka-Variable.ttf);font-weight:300 700}
+html,body{margin:0;background:#111}canvas{display:block;max-height:100vh;margin:auto}
+</style></head>
+<body><canvas id="c"></canvas>
+<script src="data/words.js"></script>
+<script src="engine/js/core.js"></script>
+<script src="engine/js/characters.js"></script>
+<script src="engine/js/env.js"></script>
+<script src="engine/js/fx_ui.js"></script>
+<script src="engine/js/pack_people.js"></script>
+<script src="engine/js/pack_home.js"></script>
+<script src="engine/js/pack_outdoor.js"></script>
+<script src="engine/js/pack_public.js"></script>
+<script src="engine/js/shotkit.js"></script>
+<script src="story.js"></script>
+<!-- one file per shot-writer agent; missing files are simply skipped -->
+<script src="shots/part1.js"></script>
+<script src="shots/part2.js"></script>
+<script src="shots/part3.js"></script>
+<script src="shots/part4.js"></script>
+<script src="shots/part5.js"></script>
+<script src="shots/part6.js"></script>
+<script src="engine/js/main.js"></script>
+<script>
+// Open index.html?play=1 in a browser to watch it live (no audio); index.html?t=12.5 shows one frame.
+if (new URLSearchParams(location.search).has('play')) { const t0 = performance.now();
+  const loop = () => { if (window.READY) seek(((performance.now() - t0) / 1000) % window.END); requestAnimationFrame(loop); }; requestAnimationFrame(loop); }
+</script>
+</body></html>
