@@ -144,7 +144,7 @@ shots(() => {
   const wint = ws('L48', 'winter');
   S.push({ id: 'S48', start: st('L48'), trans: 'cut',
     bg: (ctx, T, cam) => envCafeteria(ctx, T, cam, {}),
-    cam: lt => camAt(540, 1230, 2.1 + lt * .03),
+    cam: lt => camAt(540, 1110, 1.9 + lt * .03),
     draw(ctx, T, lt) {
       const p = talk(idle(P({ x: 540, y: 1500, s: .82 }), T, 3), T, 3, .5);
       C(ctx, 'principalF', p, { expr: 'happy', mouth: lipShape(T, ['L48']), holding: { R: holdMic } }, T);
