@@ -1,0 +1,3911 @@
+{
+ "END": 341.105,
+ "fps": 30,
+ "events": [
+  {
+   "t": 0,
+   "type": "shot",
+   "id": "S0",
+   "trans": "none",
+   "end": 3.621
+  },
+  {
+   "t": 0,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.3
+  },
+  {
+   "t": 0,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 0.15,
+   "type": "line",
+   "id": "L0",
+   "text": "I woke up this morning... and every single guy on Earth was gone.",
+   "end": 3.201
+  },
+  {
+   "t": 1.93,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.79,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.3
+  },
+  {
+   "t": 2.79,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.621,
+   "type": "shot",
+   "id": "S1",
+   "trans": "cut",
+   "end": 6.633
+  },
+  {
+   "t": 3.621,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 3.701,
+   "type": "line",
+   "id": "L1",
+   "text": "No dads. No brothers. No annoying guys in my group chat.",
+   "end": 6.613
+  },
+  {
+   "t": 3.701,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.301,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 4.321,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.961,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 4.961,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 6.633,
+   "type": "shot",
+   "id": "S2",
+   "trans": "zoom",
+   "end": 7.755
+  },
+  {
+   "t": 6.633,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 6.713,
+   "type": "line",
+   "id": "L2",
+   "text": "Just me.",
+   "end": 7.385
+  },
+  {
+   "t": 6.933,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.6
+  },
+  {
+   "t": 6.933,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 7.755,
+   "type": "shot",
+   "id": "S3",
+   "trans": "cut",
+   "end": 9.145
+  },
+  {
+   "t": 7.835,
+   "type": "line",
+   "id": "L3",
+   "text": "Okay. Not gone. Asleep.",
+   "end": 9.125
+  },
+  {
+   "t": 7.835,
+   "type": "sfx",
+   "name": "scratch",
+   "vol": 0.5
+  },
+  {
+   "t": 8.315,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 8.655,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.145,
+   "type": "shot",
+   "id": "S4",
+   "trans": "flash",
+   "end": 11.205
+  },
+  {
+   "t": 9.145,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 9.225,
+   "type": "line",
+   "id": "L4",
+   "text": "Because in this world... guys hibernate.",
+   "end": 10.985
+  },
+  {
+   "t": 10.305,
+   "type": "sfx",
+   "name": "magic",
+   "vol": 0.5
+  },
+  {
+   "t": 10.305,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 11.205,
+   "type": "shot",
+   "id": "S5",
+   "trans": "cut",
+   "end": 16.852
+  },
+  {
+   "t": 11.285,
+   "type": "line",
+   "id": "L5",
+   "text": "On the first snow of the year, every boy and every man falls asleep like a bear, and doesn't wake up until spring.",
+   "end": 16.832
+  },
+  {
+   "t": 11.645,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 13.845,
+   "type": "sfx",
+   "name": "fall",
+   "vol": 0.5
+  },
+  {
+   "t": 14.085,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 14.245,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.6
+  },
+  {
+   "t": 14.585,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 16.305,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 16.852,
+   "type": "shot",
+   "id": "S6",
+   "trans": "whip",
+   "end": 20.472
+  },
+  {
+   "t": 16.852,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 16.852,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 16.932,
+   "type": "line",
+   "id": "L6",
+   "text": "You see, every November, dads start eating like it's their full time job.",
+   "end": 20.452
+  },
+  {
+   "t": 16.932,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.452,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 19.952,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 20.472,
+   "type": "shot",
+   "id": "S7",
+   "trans": "cut",
+   "end": 22.321
+  },
+  {
+   "t": 20.552,
+   "type": "line",
+   "id": "L7",
+   "text": "My dad calls it bulking for winter.",
+   "end": 22.301
+  },
+  {
+   "t": 21.352,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.6
+  },
+  {
+   "t": 21.812,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.321,
+   "type": "shot",
+   "id": "S8",
+   "trans": "cut",
+   "end": 24.869
+  },
+  {
+   "t": 22.401,
+   "type": "line",
+   "id": "L8",
+   "text": "My mom calls it the annual fridge crisis.",
+   "end": 24.599
+  },
+  {
+   "t": 23.881,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.6
+  },
+  {
+   "t": 24.869,
+   "type": "shot",
+   "id": "S9",
+   "trans": "cut",
+   "end": 28.094
+  },
+  {
+   "t": 24.949,
+   "type": "line",
+   "id": "L9",
+   "text": "He even has a secret snack stash, with a lock, and a sign that says...",
+   "end": 28.074
+  },
+  {
+   "t": 26.689,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.6
+  },
+  {
+   "t": 28.094,
+   "type": "shot",
+   "id": "S10",
+   "trans": "zoom",
+   "end": 29.753
+  },
+  {
+   "t": 28.094,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 28.094,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 28.174,
+   "type": "line",
+   "id": "L10",
+   "text": "Don't touch. I'll know.",
+   "end": 29.433
+  },
+  {
+   "t": 29.014,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 29.753,
+   "type": "shot",
+   "id": "S11",
+   "trans": "cut",
+   "end": 32.797
+  },
+  {
+   "t": 29.753,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 29.833,
+   "type": "line",
+   "id": "L11",
+   "text": "Every school turns its gym into a giant hibernation hall.",
+   "end": 32.777
+  },
+  {
+   "t": 32.393,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 32.797,
+   "type": "shot",
+   "id": "S12",
+   "trans": "cut",
+   "end": 36.075
+  },
+  {
+   "t": 32.877,
+   "type": "line",
+   "id": "L12",
+   "text": "Three hundred guys in sleeping bags, snoring in perfect harmony.",
+   "end": 36.055
+  },
+  {
+   "t": 32.997,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 34.697,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.25
+  },
+  {
+   "t": 35.397,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.25
+  },
+  {
+   "t": 36.075,
+   "type": "shot",
+   "id": "S13",
+   "trans": "cut",
+   "end": 39.942
+  },
+  {
+   "t": 36.097,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.25
+  },
+  {
+   "t": 36.155,
+   "type": "line",
+   "id": "L13",
+   "text": "And my grandpa snores so loud, the news reports it as an earthquake.",
+   "end": 39.622
+  },
+  {
+   "t": 36.275,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 36.355,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 39.075,
+   "type": "sfx",
+   "name": "alarm",
+   "vol": 0.3
+  },
+  {
+   "t": 39.375,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 39.942,
+   "type": "shot",
+   "id": "S14",
+   "trans": "cut",
+   "end": 42.719
+  },
+  {
+   "t": 40.022,
+   "type": "line",
+   "id": "L14",
+   "text": "Me? I have never hibernated. Not once in fifteen years.",
+   "end": 42.699
+  },
+  {
+   "t": 40.522,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.622,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 41.922,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 41.942,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 42.222,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 42.719,
+   "type": "shot",
+   "id": "S15",
+   "trans": "cut",
+   "end": 47.763
+  },
+  {
+   "t": 42.799,
+   "type": "line",
+   "id": "L15",
+   "text": "The doctor says my sleep gene is broken. Like a loading bar that's stuck at ninety nine percent.",
+   "end": 47.493
+  },
+  {
+   "t": 44.359,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 46.499,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.5
+  },
+  {
+   "t": 47.763,
+   "type": "shot",
+   "id": "S16",
+   "trans": "cut",
+   "end": 50.636
+  },
+  {
+   "t": 47.763,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.2
+  },
+  {
+   "t": 47.843,
+   "type": "line",
+   "id": "L16",
+   "text": "So every winter, I'm the only guy awake in the whole town.",
+   "end": 50.616
+  },
+  {
+   "t": 48.183,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 49.463,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 50.636,
+   "type": "shot",
+   "id": "S17",
+   "trans": "zoom",
+   "end": 52.377
+  },
+  {
+   "t": 50.636,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 50.716,
+   "type": "line",
+   "id": "L17",
+   "text": "Kids call me The Night Shift.",
+   "end": 52.007
+  },
+  {
+   "t": 51.516,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.55
+  },
+  {
+   "t": 52.377,
+   "type": "shot",
+   "id": "S18",
+   "trans": "cut",
+   "end": 57.117
+  },
+  {
+   "t": 52.457,
+   "type": "line",
+   "id": "L18",
+   "text": "Usually, my mom lets me stay home all winter. Just me, my games, and a lot of silence.",
+   "end": 57.097
+  },
+  {
+   "t": 54.277,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 55.617,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.5
+  },
+  {
+   "t": 55.817,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.4
+  },
+  {
+   "t": 57.117,
+   "type": "shot",
+   "id": "S19",
+   "trans": "cut",
+   "end": 58.402
+  },
+  {
+   "t": 57.117,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.3
+  },
+  {
+   "t": 57.197,
+   "type": "line",
+   "id": "L19",
+   "text": "But this year, I turned fifteen. And my mom had other plans.",
+   "end": 60.119
+  },
+  {
+   "t": 58.402,
+   "type": "shot",
+   "id": "S19b",
+   "trans": "zoom",
+   "end": 60.339
+  },
+  {
+   "t": 58.402,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 58.622,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.5
+  },
+  {
+   "t": 59.557,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 59.657,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 60.339,
+   "type": "shot",
+   "id": "S20",
+   "trans": "cut",
+   "end": 62.745
+  },
+  {
+   "t": 60.419,
+   "type": "line",
+   "id": "L20",
+   "text": "Then last Monday, the first snowflake fell.",
+   "end": 62.425
+  },
+  {
+   "t": 61.499,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 61.499,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 61.499,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 62.745,
+   "type": "shot",
+   "id": "S21",
+   "trans": "cut",
+   "end": 65.927
+  },
+  {
+   "t": 62.825,
+   "type": "line",
+   "id": "L21",
+   "text": "Brayden was in the middle of his favorite thing. Talking about Brayden.",
+   "end": 65.907
+  },
+  {
+   "t": 64.025,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.35
+  },
+  {
+   "t": 65.927,
+   "type": "shot",
+   "id": "S22",
+   "trans": "cut",
+   "end": 70.714
+  },
+  {
+   "t": 66.007,
+   "type": "line",
+   "id": "L22",
+   "text": "This year, I'm finally asking Lily to the Winter Dance, because let's be honest, I'm basically the most...",
+   "end": 70.594
+  },
+  {
+   "t": 67.247,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 67.787,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 67.967,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 70.247,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 70.714,
+   "type": "shot",
+   "id": "S23",
+   "trans": "cut",
+   "end": 73.116
+  },
+  {
+   "t": 70.794,
+   "type": "line",
+   "id": "L23",
+   "text": "Face first. Into the snow. Mid sentence.",
+   "end": 72.746
+  },
+  {
+   "t": 71.294,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.7
+  },
+  {
+   "t": 71.654,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 73.116,
+   "type": "shot",
+   "id": "S24",
+   "trans": "cut",
+   "end": 76.107
+  },
+  {
+   "t": 73.196,
+   "type": "line",
+   "id": "L24",
+   "text": "My dad fell asleep with a slice of pizza still in his mouth.",
+   "end": 76.087
+  },
+  {
+   "t": 73.616,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.2
+  },
+  {
+   "t": 73.796,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 75.116,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.2
+  },
+  {
+   "t": 76.107,
+   "type": "shot",
+   "id": "S25",
+   "trans": "whip",
+   "end": 79.867
+  },
+  {
+   "t": 76.107,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 76.187,
+   "type": "line",
+   "id": "L25",
+   "text": "Coach fell asleep mid whistle. The whistle kept going for three hours.",
+   "end": 79.547
+  },
+  {
+   "t": 76.647,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 77.227,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.4
+  },
+  {
+   "t": 79.287,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 79.867,
+   "type": "shot",
+   "id": "S26",
+   "trans": "cut",
+   "end": 82.356
+  },
+  {
+   "t": 79.947,
+   "type": "line",
+   "id": "L26",
+   "text": "In five minutes, every guy in town was out cold.",
+   "end": 82.336
+  },
+  {
+   "t": 80.477,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 80.829,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 81.181,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 81.533,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 82.356,
+   "type": "shot",
+   "id": "S27",
+   "trans": "zoom",
+   "end": 83.635
+  },
+  {
+   "t": 82.356,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 82.436,
+   "type": "line",
+   "id": "L27",
+   "text": "Except me.",
+   "end": 83.215
+  },
+  {
+   "t": 82.676,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 82.676,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 83.635,
+   "type": "shot",
+   "id": "S28",
+   "trans": "cut",
+   "end": 84.929
+  },
+  {
+   "t": 83.715,
+   "type": "line",
+   "id": "L28",
+   "text": "You know what this means.",
+   "end": 84.909
+  },
+  {
+   "t": 83.715,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 84.929,
+   "type": "shot",
+   "id": "S29",
+   "trans": "cut",
+   "end": 87.384
+  },
+  {
+   "t": 85.009,
+   "type": "line",
+   "id": "L29",
+   "text": "I get to play video games for four months straight?",
+   "end": 87.164
+  },
+  {
+   "t": 86.509,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 87.384,
+   "type": "shot",
+   "id": "S30",
+   "trans": "zoom",
+   "end": 89.228
+  },
+  {
+   "t": 87.384,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 87.464,
+   "type": "line",
+   "id": "L30",
+   "text": "It means you're going to school.",
+   "end": 88.808
+  },
+  {
+   "t": 88.324,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.6
+  },
+  {
+   "t": 89.208,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 89.228,
+   "type": "shot",
+   "id": "S31",
+   "trans": "cut",
+   "end": 93.499
+  },
+  {
+   "t": 89.308,
+   "type": "line",
+   "id": "L31",
+   "text": "So on Tuesday, I walked into Maple High as the only guy in the entire building.",
+   "end": 93.479
+  },
+  {
+   "t": 89.528,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 90.228,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 90.928,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 91.628,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 93.499,
+   "type": "shot",
+   "id": "S32",
+   "trans": "cut",
+   "end": 95.507
+  },
+  {
+   "t": 93.579,
+   "type": "line",
+   "id": "L32",
+   "text": "Six hundred girls. One me.",
+   "end": 94.987
+  },
+  {
+   "t": 93.579,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 93.579,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 93.739,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 94.639,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 95.507,
+   "type": "shot",
+   "id": "S33",
+   "trans": "cut",
+   "end": 98.385
+  },
+  {
+   "t": 95.587,
+   "type": "line",
+   "id": "L33",
+   "text": "Nobody said a word. For like... ten whole seconds.",
+   "end": 97.965
+  },
+  {
+   "t": 96.307,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 97.307,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 98.307,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 98.385,
+   "type": "shot",
+   "id": "S34",
+   "trans": "whip",
+   "end": 99.968
+  },
+  {
+   "t": 98.385,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 98.385,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 98.465,
+   "type": "line",
+   "id": "L34",
+   "text": "And then everyone had questions.",
+   "end": 99.948
+  },
+  {
+   "t": 99.968,
+   "type": "shot",
+   "id": "S35",
+   "trans": "cut",
+   "end": 100.908
+  },
+  {
+   "t": 100.048,
+   "type": "line",
+   "id": "L35",
+   "text": "Why aren't you asleep? Are you a vampire? Can you open this jar?",
+   "end": 102.917
+  },
+  {
+   "t": 100.068,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 100.368,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 100.428,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 100.908,
+   "type": "shot",
+   "id": "S35b",
+   "trans": "cut",
+   "end": 101.908
+  },
+  {
+   "t": 101.008,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 101.048,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 101.908,
+   "type": "shot",
+   "id": "S35c",
+   "trans": "cut",
+   "end": 103.137
+  },
+  {
+   "t": 102.008,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 102.088,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 102.188,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 102.548,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 103.137,
+   "type": "shot",
+   "id": "S36",
+   "trans": "cut",
+   "end": 107.013
+  },
+  {
+   "t": 103.217,
+   "type": "line",
+   "id": "L36",
+   "text": "Turns out, when you're the only guy, everyone thinks you're an expert in guy stuff.",
+   "end": 106.993
+  },
+  {
+   "t": 105.697,
+   "type": "sfx",
+   "name": "hud",
+   "vol": 0.5
+  },
+  {
+   "t": 106.197,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 106.517,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 107.013,
+   "type": "shot",
+   "id": "S37",
+   "trans": "flash",
+   "end": 108.223
+  },
+  {
+   "t": 107.093,
+   "type": "line",
+   "id": "L37",
+   "text": "Attempt one. The jar.",
+   "end": 108.203
+  },
+  {
+   "t": 107.113,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 107.693,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 108.223,
+   "type": "shot",
+   "id": "S38",
+   "trans": "cut",
+   "end": 111.986
+  },
+  {
+   "t": 108.303,
+   "type": "line",
+   "id": "L38",
+   "text": "I pulled so hard I saw my ancestors. The jar did not move.",
+   "end": 111.716
+  },
+  {
+   "t": 108.423,
+   "type": "sfx",
+   "name": "slip",
+   "vol": 0.4
+  },
+  {
+   "t": 110.663,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 111.083,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.4
+  },
+  {
+   "t": 111.986,
+   "type": "shot",
+   "id": "S39",
+   "trans": "cut",
+   "end": 114.327
+  },
+  {
+   "t": 112.066,
+   "type": "line",
+   "id": "L39",
+   "text": "She opened it with one hand. While texting.",
+   "end": 114.007
+  },
+  {
+   "t": 113.366,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.6
+  },
+  {
+   "t": 113.426,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 114.327,
+   "type": "shot",
+   "id": "S40",
+   "trans": "flash",
+   "end": 115.558
+  },
+  {
+   "t": 114.327,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 114.407,
+   "type": "line",
+   "id": "L40",
+   "text": "Attempt two. The spider.",
+   "end": 115.538
+  },
+  {
+   "t": 114.967,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 115.558,
+   "type": "shot",
+   "id": "S41",
+   "trans": "cut",
+   "end": 118.209
+  },
+  {
+   "t": 115.638,
+   "type": "line",
+   "id": "L41",
+   "text": "I screamed louder than the entire class combined.",
+   "end": 117.889
+  },
+  {
+   "t": 115.718,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 117.178,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.4
+  },
+  {
+   "t": 117.278,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 118.209,
+   "type": "shot",
+   "id": "S42",
+   "trans": "flash",
+   "end": 119.834
+  },
+  {
+   "t": 118.209,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 118.289,
+   "type": "line",
+   "id": "L42",
+   "text": "Attempt three. Fix the projector.",
+   "end": 119.814
+  },
+  {
+   "t": 119.169,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 119.834,
+   "type": "shot",
+   "id": "S43",
+   "trans": "cut",
+   "end": 123.609
+  },
+  {
+   "t": 119.914,
+   "type": "line",
+   "id": "L43",
+   "text": "I pressed one button. The fire alarm went off. I still don't know how.",
+   "end": 123.189
+  },
+  {
+   "t": 120.454,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.6
+  },
+  {
+   "t": 121.014,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 121.254,
+   "type": "sfx",
+   "name": "alarm",
+   "vol": 0.5
+  },
+  {
+   "t": 121.254,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 123.609,
+   "type": "shot",
+   "id": "S44",
+   "trans": "cut",
+   "end": 125.479
+  },
+  {
+   "t": 123.689,
+   "type": "line",
+   "id": "L44",
+   "text": "My big sister found me in the hallway.",
+   "end": 125.459
+  },
+  {
+   "t": 123.709,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.5
+  },
+  {
+   "t": 125.479,
+   "type": "shot",
+   "id": "S45",
+   "trans": "cut",
+   "end": 128.19
+  },
+  {
+   "t": 125.559,
+   "type": "line",
+   "id": "L45",
+   "text": "You are embarrassing the entire male species.",
+   "end": 127.97
+  },
+  {
+   "t": 125.559,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 128.19,
+   "type": "shot",
+   "id": "S46",
+   "trans": "cut",
+   "end": 131.303
+  },
+  {
+   "t": 128.27,
+   "type": "line",
+   "id": "L46",
+   "text": "Technically... I am the entire male species right now.",
+   "end": 130.883
+  },
+  {
+   "t": 128.37,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 131.303,
+   "type": "shot",
+   "id": "S47",
+   "trans": "cut",
+   "end": 133.505
+  },
+  {
+   "t": 131.383,
+   "type": "line",
+   "id": "L47",
+   "text": "Then, at lunch, the principal made an announcement.",
+   "end": 133.485
+  },
+  {
+   "t": 131.603,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.2
+  },
+  {
+   "t": 133.505,
+   "type": "shot",
+   "id": "S48",
+   "trans": "cut",
+   "end": 138.961
+  },
+  {
+   "t": 133.585,
+   "type": "line",
+   "id": "L48",
+   "text": "The Winter Dance will still happen, on the last night of winter. Everyone, bring a partner.",
+   "end": 138.641
+  },
+  {
+   "t": 133.645,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.6
+  },
+  {
+   "t": 133.645,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 133.905,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 136.405,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 138.125,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 138.941,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 138.961,
+   "type": "shot",
+   "id": "S49",
+   "trans": "none",
+   "end": 141.605
+  },
+  {
+   "t": 139.041,
+   "type": "line",
+   "id": "L49",
+   "text": "Six hundred heads turned. Slowly. Toward me.",
+   "end": 141.185
+  },
+  {
+   "t": 139.041,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 139.181,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 140.681,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 141.605,
+   "type": "shot",
+   "id": "S50",
+   "trans": "zoom",
+   "end": 145.225
+  },
+  {
+   "t": 141.605,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 141.605,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 141.685,
+   "type": "line",
+   "id": "L50",
+   "text": "There was exactly one partner available in the whole school. And it was me.",
+   "end": 145.205
+  },
+  {
+   "t": 142.545,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 145.225,
+   "type": "shot",
+   "id": "S51",
+   "trans": "cut",
+   "end": 147.863
+  },
+  {
+   "t": 145.305,
+   "type": "line",
+   "id": "L51",
+   "text": "By the end of lunch, there was a sign up sheet on my locker.",
+   "end": 147.843
+  },
+  {
+   "t": 146.405,
+   "type": "sfx",
+   "name": "rip",
+   "vol": 0.5
+  },
+  {
+   "t": 147.863,
+   "type": "shot",
+   "id": "S52",
+   "trans": "cut",
+   "end": 150.907
+  },
+  {
+   "t": 147.943,
+   "type": "line",
+   "id": "L52",
+   "text": "Two hundred names by fourth period. Five hundred by sixth.",
+   "end": 150.887
+  },
+  {
+   "t": 147.943,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.6
+  },
+  {
+   "t": 148.043,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 149.803,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.7
+  },
+  {
+   "t": 149.963,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 150.907,
+   "type": "shot",
+   "id": "S53",
+   "trans": "cut",
+   "end": 155.315
+  },
+  {
+   "t": 150.987,
+   "type": "line",
+   "id": "L53",
+   "text": "By the end of the day, even my sister had signed it. Just so she could cross her name out.",
+   "end": 154.945
+  },
+  {
+   "t": 154.567,
+   "type": "sfx",
+   "name": "scratch",
+   "vol": 0.5
+  },
+  {
+   "t": 155.295,
+   "type": "music",
+   "mode": "love"
+  },
+  {
+   "t": 155.315,
+   "type": "shot",
+   "id": "S54",
+   "trans": "cut",
+   "end": 157.983
+  },
+  {
+   "t": 155.395,
+   "type": "line",
+   "id": "L54",
+   "text": "But honestly, there was only one name I cared about.",
+   "end": 157.763
+  },
+  {
+   "t": 157.983,
+   "type": "shot",
+   "id": "S55",
+   "trans": "cut",
+   "end": 161.496
+  },
+  {
+   "t": 158.063,
+   "type": "line",
+   "id": "L55",
+   "text": "Lily. She sits in the back of art class, and draws in a little blue sketchbook.",
+   "end": 161.476
+  },
+  {
+   "t": 158.063,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 158.383,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.35
+  },
+  {
+   "t": 160.903,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 161.496,
+   "type": "shot",
+   "id": "S56",
+   "trans": "cut",
+   "end": 164.177
+  },
+  {
+   "t": 161.576,
+   "type": "line",
+   "id": "L56",
+   "text": "She was the only person who never asked me for anything.",
+   "end": 164.157
+  },
+  {
+   "t": 162.876,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 164.177,
+   "type": "shot",
+   "id": "S57",
+   "trans": "cut",
+   "end": 170.273
+  },
+  {
+   "t": 164.257,
+   "type": "line",
+   "id": "L57",
+   "text": "And every morning, there was a hot chocolate waiting on my locker. No name. Just a tiny drawing of a snowflake.",
+   "end": 169.953
+  },
+  {
+   "t": 164.337,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.4
+  },
+  {
+   "t": 165.127,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.4
+  },
+  {
+   "t": 165.477,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 167.337,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 169.277,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 169.277,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 170.273,
+   "type": "shot",
+   "id": "S58",
+   "trans": "cut",
+   "end": 172.188
+  },
+  {
+   "t": 170.353,
+   "type": "line",
+   "id": "L58",
+   "text": "I had no idea who it was from.",
+   "end": 171.868
+  },
+  {
+   "t": 170.593,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 172.168,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 172.188,
+   "type": "shot",
+   "id": "S59",
+   "trans": "zoom",
+   "end": 175.041
+  },
+  {
+   "t": 172.188,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 172.268,
+   "type": "line",
+   "id": "L59",
+   "text": "Subscribe, because this is where things get really weird.",
+   "end": 174.721
+  },
+  {
+   "t": 172.268,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 172.488,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.5
+  },
+  {
+   "t": 172.788,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 174.248,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 175.021,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 175.041,
+   "type": "shot",
+   "id": "S60",
+   "trans": "cut",
+   "end": 177.531
+  },
+  {
+   "t": 175.121,
+   "type": "line",
+   "id": "L60",
+   "text": "Because that night, I got hungry. At three in the morning.",
+   "end": 177.511
+  },
+  {
+   "t": 176.681,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.5
+  },
+  {
+   "t": 177.281,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 177.531,
+   "type": "shot",
+   "id": "S61",
+   "trans": "zoom",
+   "end": 180.153
+  },
+  {
+   "t": 177.531,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 177.611,
+   "type": "line",
+   "id": "L61",
+   "text": "And my dad's secret snack stash was open.",
+   "end": 179.733
+  },
+  {
+   "t": 179.071,
+   "type": "sfx",
+   "name": "scratch",
+   "vol": 0.3
+  },
+  {
+   "t": 179.271,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 180.153,
+   "type": "shot",
+   "id": "S62",
+   "trans": "cut",
+   "end": 182.259
+  },
+  {
+   "t": 180.233,
+   "type": "line",
+   "id": "L62",
+   "text": "Half of it was gone. And the sign still said...",
+   "end": 182.239
+  },
+  {
+   "t": 180.233,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 180.693,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 182.259,
+   "type": "shot",
+   "id": "S63",
+   "trans": "flash",
+   "end": 183.352
+  },
+  {
+   "t": 182.259,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 182.339,
+   "type": "line",
+   "id": "L63",
+   "text": "I'll know.",
+   "end": 183.032
+  },
+  {
+   "t": 183.352,
+   "type": "shot",
+   "id": "S64",
+   "trans": "cut",
+   "end": 185.681
+  },
+  {
+   "t": 183.432,
+   "type": "line",
+   "id": "L64",
+   "text": "But my dad was in his room. Asleep. Snoring.",
+   "end": 185.661
+  },
+  {
+   "t": 184.652,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.2
+  },
+  {
+   "t": 184.652,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 185.552,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.2
+  },
+  {
+   "t": 185.681,
+   "type": "shot",
+   "id": "S65",
+   "trans": "zoom",
+   "end": 189.061
+  },
+  {
+   "t": 185.681,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 185.761,
+   "type": "line",
+   "id": "L65",
+   "text": "Which meant only one thing. Someone else in this house was awake.",
+   "end": 188.641
+  },
+  {
+   "t": 187.101,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 188.181,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 189.061,
+   "type": "shot",
+   "id": "S66",
+   "trans": "flash",
+   "end": 190.111
+  },
+  {
+   "t": 189.061,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.5
+  },
+  {
+   "t": 189.141,
+   "type": "line",
+   "id": "L66",
+   "text": "So I set traps.",
+   "end": 190.091
+  },
+  {
+   "t": 189.501,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 190.111,
+   "type": "shot",
+   "id": "S67",
+   "trans": "cut",
+   "end": 194.243
+  },
+  {
+   "t": 190.191,
+   "type": "line",
+   "id": "L67",
+   "text": "Night one. Flour on the floor. In the morning, there were footprints. Fuzzy slipper footprints.",
+   "end": 194.223
+  },
+  {
+   "t": 193.071,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.4
+  },
+  {
+   "t": 194.243,
+   "type": "shot",
+   "id": "S68",
+   "trans": "cut",
+   "end": 197.863
+  },
+  {
+   "t": 194.323,
+   "type": "line",
+   "id": "L68",
+   "text": "Night two. A bell on the cupboard. It didn't ring. Someone had stuffed a sock in it.",
+   "end": 197.843
+  },
+  {
+   "t": 197.323,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.3
+  },
+  {
+   "t": 197.863,
+   "type": "shot",
+   "id": "S69",
+   "trans": "cut",
+   "end": 200.485
+  },
+  {
+   "t": 197.943,
+   "type": "line",
+   "id": "L69",
+   "text": "Night three. I hid in the pantry. And I waited.",
+   "end": 200.065
+  },
+  {
+   "t": 198.263,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 199.363,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 200.463,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 200.485,
+   "type": "shot",
+   "id": "S70",
+   "trans": "cut",
+   "end": 202.58
+  },
+  {
+   "t": 200.565,
+   "type": "line",
+   "id": "L70",
+   "text": "At three in the morning, the fridge light came on.",
+   "end": 202.56
+  },
+  {
+   "t": 201.525,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.5
+  },
+  {
+   "t": 201.625,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.15
+  },
+  {
+   "t": 202.58,
+   "type": "shot",
+   "id": "S71",
+   "trans": "cut",
+   "end": 205.391
+  },
+  {
+   "t": 202.66,
+   "type": "line",
+   "id": "L71",
+   "text": "Someone in a bathrobe was eating my dad's cookies.",
+   "end": 205.071
+  },
+  {
+   "t": 203.1,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.3
+  },
+  {
+   "t": 204.56,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.3
+  },
+  {
+   "t": 204.56,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 204.96,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.25
+  },
+  {
+   "t": 205.391,
+   "type": "shot",
+   "id": "S72",
+   "trans": "flash",
+   "end": 206.904
+  },
+  {
+   "t": 205.471,
+   "type": "line",
+   "id": "L72",
+   "text": "It was... Grandpa.",
+   "end": 206.484
+  },
+  {
+   "t": 205.751,
+   "type": "sfx",
+   "name": "glitch",
+   "vol": 0.5
+  },
+  {
+   "t": 205.751,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 206.904,
+   "type": "shot",
+   "id": "S73",
+   "trans": "cut",
+   "end": 209.693
+  },
+  {
+   "t": 206.984,
+   "type": "line",
+   "id": "L73",
+   "text": "Evening, kiddo. Want a cookie?",
+   "end": 209.373
+  },
+  {
+   "t": 208.844,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.3
+  },
+  {
+   "t": 209.673,
+   "type": "music",
+   "mode": "calm"
+  },
+  {
+   "t": 209.693,
+   "type": "shot",
+   "id": "S74",
+   "trans": "zoom",
+   "end": 210.455
+  },
+  {
+   "t": 209.693,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 209.693,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 209.773,
+   "type": "line",
+   "id": "L74",
+   "text": "You're awake?",
+   "end": 210.435
+  },
+  {
+   "t": 209.933,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 210.455,
+   "type": "shot",
+   "id": "S75",
+   "trans": "cut",
+   "end": 213.425
+  },
+  {
+   "t": 210.535,
+   "type": "line",
+   "id": "L75",
+   "text": "Every winter. For sixty years.",
+   "end": 213.105
+  },
+  {
+   "t": 210.855,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 212.035,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 212.035,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 213.425,
+   "type": "shot",
+   "id": "S76",
+   "trans": "cut",
+   "end": 214.741
+  },
+  {
+   "t": 213.505,
+   "type": "line",
+   "id": "L76",
+   "text": "But the earthquake snoring?",
+   "end": 214.721
+  },
+  {
+   "t": 214.741,
+   "type": "shot",
+   "id": "S77",
+   "trans": "cut",
+   "end": 216.543
+  },
+  {
+   "t": 214.821,
+   "type": "line",
+   "id": "L77",
+   "text": "Bluetooth speaker.",
+   "end": 216.123
+  },
+  {
+   "t": 214.821,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 215.021,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.45
+  },
+  {
+   "t": 215.241,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 215.721,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.45
+  },
+  {
+   "t": 216.543,
+   "type": "shot",
+   "id": "S78",
+   "trans": "cut",
+   "end": 221.709
+  },
+  {
+   "t": 216.623,
+   "type": "line",
+   "id": "L78",
+   "text": "The broken sleep gene runs in the family. It skips a generation.",
+   "end": 221.689
+  },
+  {
+   "t": 216.703,
+   "type": "sfx",
+   "name": "hud",
+   "vol": 0.4
+  },
+  {
+   "t": 216.703,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 220.923,
+   "type": "sfx",
+   "name": "hud",
+   "vol": 0.4
+  },
+  {
+   "t": 221.423,
+   "type": "sfx",
+   "name": "hud",
+   "vol": 0.4
+  },
+  {
+   "t": 221.709,
+   "type": "shot",
+   "id": "S79",
+   "trans": "cut",
+   "end": 223.399
+  },
+  {
+   "t": 221.789,
+   "type": "line",
+   "id": "L79",
+   "text": "Then why do you pretend to be asleep?",
+   "end": 223.379
+  },
+  {
+   "t": 222.189,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 222.869,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 223.399,
+   "type": "shot",
+   "id": "S80",
+   "trans": "cut",
+   "end": 229.815
+  },
+  {
+   "t": 223.479,
+   "type": "line",
+   "id": "L80",
+   "text": "Because when you're the only guy awake, everybody wants something from you. You've noticed, huh?",
+   "end": 229.495
+  },
+  {
+   "t": 225.139,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 227.499,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 229.795,
+   "type": "music",
+   "mode": "love"
+  },
+  {
+   "t": 229.815,
+   "type": "shot",
+   "id": "S81",
+   "trans": "cut",
+   "end": 234.693
+  },
+  {
+   "t": 229.815,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.4
+  },
+  {
+   "t": 229.895,
+   "type": "line",
+   "id": "L81",
+   "text": "Fifty years ago, I stopped pretending for one winter. For one girl.",
+   "end": 234.673
+  },
+  {
+   "t": 229.895,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 232.755,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 234.693,
+   "type": "shot",
+   "id": "S82",
+   "trans": "zoom",
+   "end": 238.133
+  },
+  {
+   "t": 234.693,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.3
+  },
+  {
+   "t": 234.693,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 234.773,
+   "type": "line",
+   "id": "L82",
+   "text": "He showed me an old photo. Him and Grandma, at the Winter Dance. The only couple on the dance floor.",
+   "end": 239.467
+  },
+  {
+   "t": 236.373,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 237.073,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 237.233,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 238.133,
+   "type": "shot",
+   "id": "S82b",
+   "trans": "cut",
+   "end": 239.787
+  },
+  {
+   "t": 238.133,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.4
+  },
+  {
+   "t": 238.793,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 239.787,
+   "type": "shot",
+   "id": "S83",
+   "trans": "cut",
+   "end": 245.396
+  },
+  {
+   "t": 239.867,
+   "type": "line",
+   "id": "L83",
+   "text": "Six hundred people want a dance partner, kiddo. Only one of them wants you.",
+   "end": 244.976
+  },
+  {
+   "t": 239.867,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 239.867,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 240.067,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 241.527,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 241.887,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 243.827,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 244.587,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 245.376,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 245.396,
+   "type": "shot",
+   "id": "S84",
+   "trans": "zoom",
+   "end": 247.051
+  },
+  {
+   "t": 245.396,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 245.476,
+   "type": "line",
+   "id": "L84",
+   "text": "That's when I realized something.",
+   "end": 246.831
+  },
+  {
+   "t": 245.896,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 247.051,
+   "type": "shot",
+   "id": "S85",
+   "trans": "cut",
+   "end": 249.764
+  },
+  {
+   "t": 247.131,
+   "type": "line",
+   "id": "L85",
+   "text": "Nobody needed me. They needed a partner. Any partner.",
+   "end": 249.744
+  },
+  {
+   "t": 247.411,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.3
+  },
+  {
+   "t": 248.511,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 248.511,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 249.091,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 249.211,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 249.764,
+   "type": "shot",
+   "id": "S86",
+   "trans": "cut",
+   "end": 253.001
+  },
+  {
+   "t": 249.844,
+   "type": "line",
+   "id": "L86",
+   "text": "And three hundred partners were already in the gym. Asleep.",
+   "end": 252.681
+  },
+  {
+   "t": 249.924,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 250.124,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 252.164,
+   "type": "sfx",
+   "name": "magic",
+   "vol": 0.4
+  },
+  {
+   "t": 252.164,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 253.001,
+   "type": "shot",
+   "id": "S87",
+   "trans": "cut",
+   "end": 254.787
+  },
+  {
+   "t": 253.081,
+   "type": "line",
+   "id": "L87",
+   "text": "So I went to the principal with a plan.",
+   "end": 254.767
+  },
+  {
+   "t": 253.201,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 253.701,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 254.201,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 254.301,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 254.787,
+   "type": "shot",
+   "id": "S88",
+   "trans": "cut",
+   "end": 260.563
+  },
+  {
+   "t": 254.867,
+   "type": "line",
+   "id": "L88",
+   "text": "Start the dance at eleven thirty. On the last night of winter. In the gym. Right next to the hibernation hall.",
+   "end": 260.243
+  },
+  {
+   "t": 255.207,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 255.687,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 256.967,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 257.527,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 258.267,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 259.327,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 260.563,
+   "type": "shot",
+   "id": "S89",
+   "trans": "cut",
+   "end": 261.815
+  },
+  {
+   "t": 260.643,
+   "type": "line",
+   "id": "L89",
+   "text": "And why would I do that?",
+   "end": 261.795
+  },
+  {
+   "t": 261.815,
+   "type": "shot",
+   "id": "S90",
+   "trans": "zoom",
+   "end": 264.565
+  },
+  {
+   "t": 261.815,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 261.895,
+   "type": "line",
+   "id": "L90",
+   "text": "Because the forecast says the snow melts at midnight.",
+   "end": 264.145
+  },
+  {
+   "t": 262.215,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 263.055,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 263.275,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 263.735,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 263.735,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 264.565,
+   "type": "shot",
+   "id": "S91",
+   "trans": "cut",
+   "end": 270.105
+  },
+  {
+   "t": 264.565,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.3
+  },
+  {
+   "t": 264.645,
+   "type": "line",
+   "id": "L91",
+   "text": "The night of the dance, the gym looked amazing. Lights, music, and three hundred snoring guys along the wall.",
+   "end": 270.085
+  },
+  {
+   "t": 265.105,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 268.265,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 270.105,
+   "type": "shot",
+   "id": "S92",
+   "trans": "cut",
+   "end": 273.705
+  },
+  {
+   "t": 270.185,
+   "type": "line",
+   "id": "L92",
+   "text": "And six hundred girls in one very long line. All waiting for me.",
+   "end": 273.385
+  },
+  {
+   "t": 270.265,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 270.465,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 273.685,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 273.705,
+   "type": "shot",
+   "id": "S93",
+   "trans": "cut",
+   "end": 276.717
+  },
+  {
+   "t": 273.785,
+   "type": "line",
+   "id": "L93",
+   "text": "Eleven fifty eight. I could see Lily in the back. Alone. Drawing.",
+   "end": 276.697
+  },
+  {
+   "t": 273.785,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 273.965,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 274.985,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 274.985,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 276.717,
+   "type": "shot",
+   "id": "S94",
+   "trans": "cut",
+   "end": 278.129
+  },
+  {
+   "t": 276.797,
+   "type": "line",
+   "id": "L94",
+   "text": "I walked past the whole line.",
+   "end": 278.109
+  },
+  {
+   "t": 277.017,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 277.717,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 278.129,
+   "type": "shot",
+   "id": "S95",
+   "trans": "cut",
+   "end": 280.193
+  },
+  {
+   "t": 278.209,
+   "type": "line",
+   "id": "L95",
+   "text": "Sorry. I'm taken. Well, I'm hoping.",
+   "end": 279.873
+  },
+  {
+   "t": 278.417,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 279.609,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 280.193,
+   "type": "shot",
+   "id": "S96",
+   "trans": "zoom",
+   "end": 281.649
+  },
+  {
+   "t": 280.193,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.5
+  },
+  {
+   "t": 280.193,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 280.273,
+   "type": "line",
+   "id": "L96",
+   "text": "Eleven fifty nine.",
+   "end": 281.329
+  },
+  {
+   "t": 280.273,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 280.513,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 280.693,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.5
+  },
+  {
+   "t": 280.833,
+   "type": "sfx",
+   "name": "hud",
+   "vol": 0.4
+  },
+  {
+   "t": 281.193,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.5
+  },
+  {
+   "t": 281.649,
+   "type": "shot",
+   "id": "S97",
+   "trans": "flash",
+   "end": 282.879
+  },
+  {
+   "t": 281.649,
+   "type": "sfx",
+   "name": "bell",
+   "vol": 0.6
+  },
+  {
+   "t": 281.679,
+   "type": "music",
+   "mode": "party"
+  },
+  {
+   "t": 281.729,
+   "type": "line",
+   "id": "L97",
+   "text": "Midnight.",
+   "end": 282.359
+  },
+  {
+   "t": 281.729,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 281.949,
+   "type": "sfx",
+   "name": "magic",
+   "vol": 0.5
+  },
+  {
+   "t": 282.879,
+   "type": "shot",
+   "id": "S98",
+   "trans": "cut",
+   "end": 287.245
+  },
+  {
+   "t": 282.959,
+   "type": "line",
+   "id": "L98",
+   "text": "The snow melted. Spring came. And three hundred guys sat up at the exact same time.",
+   "end": 287.225
+  },
+  {
+   "t": 283.019,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 283.259,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.4
+  },
+  {
+   "t": 283.819,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 284.939,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 285.519,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 285.619,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.4
+  },
+  {
+   "t": 287.245,
+   "type": "shot",
+   "id": "S99",
+   "trans": "cut",
+   "end": 289.693
+  },
+  {
+   "t": 287.245,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.4
+  },
+  {
+   "t": 287.325,
+   "type": "line",
+   "id": "L99",
+   "text": "...handsome guy in this whole entire school!",
+   "end": 289.373
+  },
+  {
+   "t": 289.693,
+   "type": "shot",
+   "id": "S100",
+   "trans": "cut",
+   "end": 293.084
+  },
+  {
+   "t": 289.773,
+   "type": "line",
+   "id": "L100",
+   "text": "He finished his sentence. Four months later. In his pajamas.",
+   "end": 292.664
+  },
+  {
+   "t": 291.073,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.4
+  },
+  {
+   "t": 291.873,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.5
+  },
+  {
+   "t": 293.084,
+   "type": "shot",
+   "id": "S101",
+   "trans": "cut",
+   "end": 296.597
+  },
+  {
+   "t": 293.164,
+   "type": "line",
+   "id": "L101",
+   "text": "Suddenly, everyone had a partner. And the dance went absolutely crazy.",
+   "end": 296.577
+  },
+  {
+   "t": 294.184,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.5
+  },
+  {
+   "t": 294.184,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 295.004,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 295.864,
+   "type": "sfx",
+   "name": "confetti",
+   "vol": 0.55
+  },
+  {
+   "t": 296.577,
+   "type": "music",
+   "mode": "love"
+  },
+  {
+   "t": 296.597,
+   "type": "shot",
+   "id": "S102",
+   "trans": "cut",
+   "end": 298.105
+  },
+  {
+   "t": 296.677,
+   "type": "line",
+   "id": "L102",
+   "text": "But I was at the back of the gym.",
+   "end": 298.085
+  },
+  {
+   "t": 296.797,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.25
+  },
+  {
+   "t": 298.105,
+   "type": "shot",
+   "id": "S103",
+   "trans": "cut",
+   "end": 299.581
+  },
+  {
+   "t": 298.185,
+   "type": "line",
+   "id": "L103",
+   "text": "Was it you? The hot chocolate?",
+   "end": 299.561
+  },
+  {
+   "t": 298.445,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 298.805,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 298.945,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 299.581,
+   "type": "shot",
+   "id": "S104",
+   "trans": "cut",
+   "end": 302.231
+  },
+  {
+   "t": 299.661,
+   "type": "line",
+   "id": "L104",
+   "text": "Lily didn't say anything. She just opened her sketchbook.",
+   "end": 302.211
+  },
+  {
+   "t": 299.661,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 301.601,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 301.701,
+   "type": "sfx",
+   "name": "rip",
+   "vol": 0.2
+  },
+  {
+   "t": 302.231,
+   "type": "shot",
+   "id": "S105",
+   "trans": "zoom",
+   "end": 306.222
+  },
+  {
+   "t": 302.231,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 302.311,
+   "type": "line",
+   "id": "L105",
+   "text": "It was full of tiny snowflakes. And drawings of me. Losing to a jar.",
+   "end": 305.852
+  },
+  {
+   "t": 303.051,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.4
+  },
+  {
+   "t": 303.051,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 303.971,
+   "type": "sfx",
+   "name": "rip",
+   "vol": 0.25
+  },
+  {
+   "t": 305.411,
+   "type": "sfx",
+   "name": "laugh",
+   "vol": 0.3
+  },
+  {
+   "t": 305.411,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 306.222,
+   "type": "shot",
+   "id": "S106",
+   "trans": "cut",
+   "end": 308.551
+  },
+  {
+   "t": 306.302,
+   "type": "line",
+   "id": "L106",
+   "text": "You looked lonely. Being the only one awake.",
+   "end": 308.531
+  },
+  {
+   "t": 306.302,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 306.602,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 308.082,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 308.551,
+   "type": "shot",
+   "id": "S107",
+   "trans": "cut",
+   "end": 312.749
+  },
+  {
+   "t": 308.631,
+   "type": "line",
+   "id": "L107",
+   "text": "Everyone wanted the only guy. I just wanted you to have a hot chocolate.",
+   "end": 312.429
+  },
+  {
+   "t": 311.131,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 311.791,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 311.791,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 312.749,
+   "type": "shot",
+   "id": "S108",
+   "trans": "cut",
+   "end": 314.95
+  },
+  {
+   "t": 312.829,
+   "type": "line",
+   "id": "L108",
+   "text": "So I asked her the only question that mattered.",
+   "end": 314.93
+  },
+  {
+   "t": 313.869,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 314.93,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.2
+  },
+  {
+   "t": 314.95,
+   "type": "shot",
+   "id": "S109",
+   "trans": "cut",
+   "end": 316.246
+  },
+  {
+   "t": 315.03,
+   "type": "line",
+   "id": "L109",
+   "text": "Do you want to dance?",
+   "end": 315.926
+  },
+  {
+   "t": 315.11,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 315.43,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 316.246,
+   "type": "shot",
+   "id": "S110",
+   "trans": "cut",
+   "end": 317.909
+  },
+  {
+   "t": 316.326,
+   "type": "line",
+   "id": "L110",
+   "text": "I thought you'd never ask.",
+   "end": 317.489
+  },
+  {
+   "t": 316.806,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 317.286,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.5
+  },
+  {
+   "t": 317.909,
+   "type": "shot",
+   "id": "S111",
+   "trans": "cut",
+   "end": 320.919
+  },
+  {
+   "t": 317.989,
+   "type": "line",
+   "id": "L111",
+   "text": "And for the first time ever, I was glad I was awake.",
+   "end": 320.399
+  },
+  {
+   "t": 318.269,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 319.969,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 320.899,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 320.919,
+   "type": "shot",
+   "id": "S112",
+   "trans": "cut",
+   "end": 324.113
+  },
+  {
+   "t": 320.999,
+   "type": "line",
+   "id": "L112",
+   "text": "The next morning, my dad woke up and walked straight to his snack stash.",
+   "end": 324.093
+  },
+  {
+   "t": 322.539,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.35
+  },
+  {
+   "t": 324.113,
+   "type": "shot",
+   "id": "S113",
+   "trans": "cut",
+   "end": 325.983
+  },
+  {
+   "t": 324.193,
+   "type": "line",
+   "id": "L113",
+   "text": "It was empty. And the sign still said...",
+   "end": 325.963
+  },
+  {
+   "t": 324.393,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 324.393,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 325.983,
+   "type": "shot",
+   "id": "S114",
+   "trans": "zoom",
+   "end": 327.077
+  },
+  {
+   "t": 325.983,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 326.063,
+   "type": "line",
+   "id": "L114",
+   "text": "I'll know.",
+   "end": 326.757
+  },
+  {
+   "t": 326.883,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.55
+  },
+  {
+   "t": 327.077,
+   "type": "shot",
+   "id": "S115",
+   "trans": "whip",
+   "end": 328.798
+  },
+  {
+   "t": 327.077,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 327.077,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 327.157,
+   "type": "line",
+   "id": "L115",
+   "text": "He looked at me. I looked at Grandpa.",
+   "end": 328.778
+  },
+  {
+   "t": 328.137,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 328.137,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 328.798,
+   "type": "shot",
+   "id": "S116",
+   "trans": "whip",
+   "end": 332.355
+  },
+  {
+   "t": 328.798,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 328.878,
+   "type": "line",
+   "id": "L116",
+   "text": "Grandpa was snoring. Very loudly. With a speaker in his pocket.",
+   "end": 332.035
+  },
+  {
+   "t": 328.878,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 329.418,
+   "type": "sfx",
+   "name": "buzz",
+   "vol": 0.3
+  },
+  {
+   "t": 330.958,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 332.355,
+   "type": "shot",
+   "id": "S117",
+   "trans": "zoom",
+   "end": 335.287
+  },
+  {
+   "t": 332.355,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 332.435,
+   "type": "line",
+   "id": "L117",
+   "text": "Fifty years. And Grandpa has never once been caught.",
+   "end": 334.867
+  },
+  {
+   "t": 332.435,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 333.175,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 333.815,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 334.455,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 334.455,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 335.287,
+   "type": "shot",
+   "id": "S118",
+   "trans": "cut",
+   "end": 341.105
+  },
+  {
+   "t": 335.367,
+   "type": "line",
+   "id": "L118",
+   "text": "Subscribe if you would stay awake for someone. And comment what you would do if you were the only guy awake.",
+   "end": 340.455
+  },
+  {
+   "t": 335.367,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.5
+  },
+  {
+   "t": 335.367,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 336.107,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 336.527,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 337.847,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.4
+  },
+  {
+   "t": 338.387,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 339.027,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 339.887,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 341.105,
+   "type": "music",
+   "mode": "end"
+  }
+ ]
+}
