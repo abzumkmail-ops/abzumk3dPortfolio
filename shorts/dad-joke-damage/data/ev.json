@@ -1,0 +1,1066 @@
+{
+ "END": 51.675,
+ "fps": 30,
+ "events": [
+  {
+   "t": 0,
+   "type": "shot",
+   "id": "S01",
+   "trans": "none",
+   "end": 2.891
+  },
+  {
+   "t": 0,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 0.1,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.5
+  },
+  {
+   "t": 0.15,
+   "type": "line",
+   "id": "L0",
+   "text": "My dad destroyed a whole supermarket... with one sentence.",
+   "end": 2.571
+  },
+  {
+   "t": 0.25,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 0.45,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.05,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 2.891,
+   "type": "shot",
+   "id": "S02",
+   "trans": "whip",
+   "end": 4.901
+  },
+  {
+   "t": 2.891,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 2.971,
+   "type": "line",
+   "id": "L1",
+   "text": "In this world, dad jokes deal real damage.",
+   "end": 4.881
+  },
+  {
+   "t": 3.511,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.651,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.131,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.351,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 4.351,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 4.901,
+   "type": "shot",
+   "id": "S03",
+   "trans": "cut",
+   "end": 6.313
+  },
+  {
+   "t": 4.981,
+   "type": "line",
+   "id": "L2",
+   "text": "Every groan hits like a punch.",
+   "end": 6.293
+  },
+  {
+   "t": 5.901,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 5.921,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 5.921,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 6.313,
+   "type": "shot",
+   "id": "S04",
+   "trans": "cut",
+   "end": 9.325
+  },
+  {
+   "t": 6.393,
+   "type": "line",
+   "id": "L3",
+   "text": "A tiny pun? Ten damage. Knock knock jokes? Windows explode.",
+   "end": 9.155
+  },
+  {
+   "t": 6.653,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 7.053,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 7.173,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 7.673,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.5
+  },
+  {
+   "t": 7.973,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 8.553,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.7
+  },
+  {
+   "t": 8.553,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.325,
+   "type": "shot",
+   "id": "S05",
+   "trans": "zoom",
+   "end": 11.254
+  },
+  {
+   "t": 9.325,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 9.405,
+   "type": "line",
+   "id": "L4",
+   "text": "That's why Mom wears a helmet at dinner.",
+   "end": 10.984
+  },
+  {
+   "t": 9.765,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 10.325,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 10.325,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 11.254,
+   "type": "shot",
+   "id": "S06",
+   "trans": "cut",
+   "end": 13.861
+  },
+  {
+   "t": 11.334,
+   "type": "line",
+   "id": "L5",
+   "text": "Me? My jokes do zero damage. Nobody even groans.",
+   "end": 13.841
+  },
+  {
+   "t": 11.634,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.014,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.5
+  },
+  {
+   "t": 12.014,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.234,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 13.334,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 13.861,
+   "type": "shot",
+   "id": "S07",
+   "trans": "cut",
+   "end": 15.473
+  },
+  {
+   "t": 13.941,
+   "type": "line",
+   "id": "L6",
+   "text": "Kids call me Zero Damage.",
+   "end": 15.253
+  },
+  {
+   "t": 14.441,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 14.681,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 14.741,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 15.473,
+   "type": "shot",
+   "id": "S08",
+   "trans": "cut",
+   "end": 17.599
+  },
+  {
+   "t": 15.553,
+   "type": "line",
+   "id": "L7",
+   "text": "Then one day, at the supermarket, I saw Lily.",
+   "end": 17.579
+  },
+  {
+   "t": 17.213,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.6
+  },
+  {
+   "t": 17.213,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.599,
+   "type": "shot",
+   "id": "S09",
+   "trans": "zoom",
+   "end": 18.935
+  },
+  {
+   "t": 17.599,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 17.679,
+   "type": "line",
+   "id": "L8",
+   "text": "So did my dad.",
+   "end": 18.565
+  },
+  {
+   "t": 18.039,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 18.139,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 18.439,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.7
+  },
+  {
+   "t": 18.935,
+   "type": "shot",
+   "id": "S10",
+   "trans": "cut",
+   "end": 20.219
+  },
+  {
+   "t": 18.935,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 19.015,
+   "type": "line",
+   "id": "L9",
+   "text": "He grabbed a lettuce and said...",
+   "end": 20.199
+  },
+  {
+   "t": 19.475,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 19.475,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 20.219,
+   "type": "shot",
+   "id": "S11",
+   "trans": "cut",
+   "end": 21.902
+  },
+  {
+   "t": 20.299,
+   "type": "line",
+   "id": "L10",
+   "text": "Lettuce introduce ourselves!",
+   "end": 21.632
+  },
+  {
+   "t": 20.299,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 20.979,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.55
+  },
+  {
+   "t": 21.902,
+   "type": "shot",
+   "id": "S12",
+   "trans": "flash",
+   "end": 23.239
+  },
+  {
+   "t": 21.982,
+   "type": "line",
+   "id": "L11",
+   "text": "Boom. Cereal everywhere.",
+   "end": 23.219
+  },
+  {
+   "t": 21.982,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.7
+  },
+  {
+   "t": 21.982,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.6
+  },
+  {
+   "t": 21.982,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.382,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 23.239,
+   "type": "shot",
+   "id": "S13",
+   "trans": "cut",
+   "end": 25.153
+  },
+  {
+   "t": 23.319,
+   "type": "line",
+   "id": "L12",
+   "text": "I covered his mouth. He licked my hand.",
+   "end": 24.983
+  },
+  {
+   "t": 24.259,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.5
+  },
+  {
+   "t": 24.259,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 24.359,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 25.153,
+   "type": "shot",
+   "id": "S14",
+   "trans": "cut",
+   "end": 27.21
+  },
+  {
+   "t": 25.233,
+   "type": "line",
+   "id": "L13",
+   "text": "I hid in the freezer. He said, chill out.",
+   "end": 26.94
+  },
+  {
+   "t": 25.333,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.4
+  },
+  {
+   "t": 25.633,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 26.433,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.55
+  },
+  {
+   "t": 26.433,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 26.683,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 27.21,
+   "type": "shot",
+   "id": "S15",
+   "trans": "zoom",
+   "end": 30.099
+  },
+  {
+   "t": 27.21,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 27.24,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 27.29,
+   "type": "line",
+   "id": "L14",
+   "text": "Subscribe, because then Lily's dad showed up... holding a melon.",
+   "end": 29.829
+  },
+  {
+   "t": 27.29,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.49,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 29.53,
+   "type": "sfx",
+   "name": "record",
+   "vol": 0.5
+  },
+  {
+   "t": 29.53,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 29.63,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 30.099,
+   "type": "shot",
+   "id": "S16",
+   "trans": "cut",
+   "end": 31.713
+  },
+  {
+   "t": 30.179,
+   "type": "line",
+   "id": "L15",
+   "text": "Two dads. One aisle. Pun battle.",
+   "end": 31.693
+  },
+  {
+   "t": 30.179,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.5
+  },
+  {
+   "t": 31.199,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 31.279,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.6
+  },
+  {
+   "t": 31.279,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 31.713,
+   "type": "shot",
+   "id": "S17",
+   "trans": "cut",
+   "end": 33.741
+  },
+  {
+   "t": 31.793,
+   "type": "line",
+   "id": "L16",
+   "text": "Shopping carts flew. The milk hit orbit.",
+   "end": 33.521
+  },
+  {
+   "t": 32.093,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 32.093,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 32.393,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.5
+  },
+  {
+   "t": 32.813,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 33.133,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.6
+  },
+  {
+   "t": 33.133,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 33.721,
+   "type": "music",
+   "mode": "calm"
+  },
+  {
+   "t": 33.741,
+   "type": "shot",
+   "id": "s18",
+   "trans": "cut",
+   "end": 35.132
+  },
+  {
+   "t": 33.821,
+   "type": "line",
+   "id": "L17",
+   "text": "That's when I realized something.",
+   "end": 35.112
+  },
+  {
+   "t": 34.281,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 35.132,
+   "type": "shot",
+   "id": "s19",
+   "trans": "cut",
+   "end": 36.947
+  },
+  {
+   "t": 35.212,
+   "type": "line",
+   "id": "L18",
+   "text": "Groans hurt. But real laughs heal.",
+   "end": 36.727
+  },
+  {
+   "t": 35.512,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.55
+  },
+  {
+   "t": 35.512,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 35.892,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 36.332,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.55
+  },
+  {
+   "t": 36.332,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 36.947,
+   "type": "shot",
+   "id": "s20",
+   "trans": "cut",
+   "end": 38.775
+  },
+  {
+   "t": 37.027,
+   "type": "line",
+   "id": "L19",
+   "text": "So I told Lily my worst joke ever.",
+   "end": 38.755
+  },
+  {
+   "t": 37.047,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 37.347,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 37.507,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 37.647,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.4
+  },
+  {
+   "t": 38.775,
+   "type": "shot",
+   "id": "s21",
+   "trans": "cut",
+   "end": 41.105
+  },
+  {
+   "t": 38.855,
+   "type": "line",
+   "id": "L20",
+   "text": "Why did the cookie see a doctor? It felt crummy.",
+   "end": 40.785
+  },
+  {
+   "t": 39.195,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 40.375,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 40.725,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.6
+  },
+  {
+   "t": 40.875,
+   "type": "sfx",
+   "name": "click",
+   "vol": 0.6
+  },
+  {
+   "t": 41.105,
+   "type": "shot",
+   "id": "s22",
+   "trans": "flash",
+   "end": 43.219
+  },
+  {
+   "t": 41.125,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.5
+  },
+  {
+   "t": 41.185,
+   "type": "line",
+   "id": "L21",
+   "text": "Zero damage. Because she laughed. For real.",
+   "end": 42.999
+  },
+  {
+   "t": 41.185,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.405,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.025,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.165,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.6
+  },
+  {
+   "t": 42.165,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.165,
+   "type": "music",
+   "mode": "party"
+  },
+  {
+   "t": 42.265,
+   "type": "sfx",
+   "name": "bling",
+   "vol": 0.5
+  },
+  {
+   "t": 42.625,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 43.219,
+   "type": "shot",
+   "id": "s23",
+   "trans": "cut",
+   "end": 45.239
+  },
+  {
+   "t": 43.299,
+   "type": "line",
+   "id": "L22",
+   "text": "Everyone healed. Even the milk came back down.",
+   "end": 45.219
+  },
+  {
+   "t": 43.519,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.55
+  },
+  {
+   "t": 43.519,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 44.299,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 45.009,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.6
+  },
+  {
+   "t": 45.219,
+   "type": "music",
+   "mode": "love"
+  },
+  {
+   "t": 45.239,
+   "type": "shot",
+   "id": "s24",
+   "trans": "zoom",
+   "end": 47.417
+  },
+  {
+   "t": 45.239,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 45.319,
+   "type": "line",
+   "id": "L23",
+   "text": "Then she said, your jokes are my favorite.",
+   "end": 47.047
+  },
+  {
+   "t": 45.339,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.4
+  },
+  {
+   "t": 45.419,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 46.019,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 46.539,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.6
+  },
+  {
+   "t": 46.539,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 47.417,
+   "type": "shot",
+   "id": "s25",
+   "trans": "cut",
+   "end": 49.388
+  },
+  {
+   "t": 47.497,
+   "type": "line",
+   "id": "L24",
+   "text": "Mom showed up... still wearing the helmet.",
+   "end": 49.118
+  },
+  {
+   "t": 47.497,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 48.757,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 48.757,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 49.388,
+   "type": "shot",
+   "id": "s26",
+   "trans": "cut",
+   "end": 51.675
+  },
+  {
+   "t": 49.468,
+   "type": "line",
+   "id": "L25",
+   "text": "Subscribe if your dad is a weapon.",
+   "end": 51.025
+  },
+  {
+   "t": 49.468,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 50.228,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 50.668,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 50.668,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.4
+  },
+  {
+   "t": 50.668,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 51.675,
+   "type": "music",
+   "mode": "end"
+  }
+ ]
+}

@@ -30,7 +30,7 @@ shots(() => {
       C(ctx, 'nubi', np, { expr: seen ? 'love' : 'happy' }, T);
       const lp = idle(P({ x: LX, y: 1500, s: .8 }), T, 4); if (seen) { lp.armL = 1.4; lp.handL = .4; }
       C(ctx, 'lily', lp, { expr: seen ? 'shy' : 'neutral', blush: seen ? .8 : 0 }, T);
-      envMovieTheaterFront(ctx, T, null, {});
+      envMovieTheaterFront(ctx, T, null, { popcorn: [] });
       if (seen) { burst(ctx, LX, 1040, T - lilyT, { kind: 'sparkle', n: 20, speed: 500, gravity: -50, life: 1.0, size: 22, seed: 5 }); burst(ctx, NX, 1000, T - lilyT, { kind: 'heart', n: 8, speed: 350, gravity: -200, life: 1.1, size: 26, seed: 6 }); }
     },
     sfx: [[.1, 'step', .3], [lilyT - t8, 'sparkle', .6]] });
@@ -64,8 +64,8 @@ shots(() => {
       const k = inv(reach, pc + .3, T), np = idle(P({ x: 690, y: 1500, s: .8 }), T, 1);
       np.armL = lerp(.2, 1.0, k * k) + Math.sin(T * 18) * .03 * k; np.handL = Math.sin(T * 12) * .2 * k;
       C(ctx, 'nubi', np, { expr: T > reach ? 'nervous' : 'neutral', lookX: -.6, sweat: T > reach ? 1 : 0 }, T);
+      envMovieTheaterFront(ctx, T, null, { popcorn: [] });
       bucket(ctx, 505, 1380, 1.0, 1);
-      envMovieTheaterFront(ctx, T, null, {});
       roleTag(ctx, 'EXTRA #7', 690, 940, '#9AA3AD', T - t10 - .1, 40);
     },
     sfx: [[reach - t10, 'tick', .4], [reach - t10 + .5, 'tick', .45], [reach - t10 + 1.0, 'tick', .5]] });
@@ -83,8 +83,8 @@ shots(() => {
       const np = idle(P({ x: 690, y: 1500, s: .8 }), T, 1);
       if (T < slap) np.armL = lerp(.2, 1.0, inv(t11, slap, T)); else { np.armL = .3; np.handL = Math.sin((T - slap) * 30) * .5 * Math.exp(-(T - slap) * 3); surprise(np, T - slap); }
       C(ctx, 'nubi', np, { expr: T > slap ? 'surprised' : 'nervous', lookX: -.4 }, T);
+      envMovieTheaterFront(ctx, T, null, { popcorn: [] });
       bucket(ctx, T > mine - .1 ? 440 : 505, T > mine - .1 ? 1370 : 1380, 1.0, 1);
-      envMovieTheaterFront(ctx, T, null, {});
       roleTag(ctx, 'EXTRA #7', 690, 940, '#9AA3AD', 1, 40);
       if (T > slap) burst(ctx, 580, 1180, T - slap, { kind: 'star', n: 10, speed: 700, gravity: 200, life: .6, size: 26, seed: 8 });
     },
@@ -111,13 +111,13 @@ shots(() => {
       np.armL = 1.0 + ext * .2; np.armR = .3;
       C(ctx, 'nubi', np, { expr: sitting ? 'sad' : 'smug', lookX: -.5 }, T);
       // bucket (under her after she sits)
+      envMovieTheaterFront(ctx, T, null, { popcorn: [] });
       bucket(ctx, 440, sitting ? 1420 : 1380, 1.0, sitting ? 0 : 1);
       // long bendy straw from nubi's hand to the bucket
       const hx = 640, hy = 1230, bx = lerp(hx, 470, ext), by = lerp(hy, 1320, ext);
       ctx.save(); ctx.lineCap = 'round'; ctx.lineJoin = 'round';
       for (const [w, c] of [[16, '#1b1b2a'], [9, '#EE384A']]) { ctx.strokeStyle = c; ctx.lineWidth = w; ctx.beginPath(); ctx.moveTo(hx, hy); ctx.bezierCurveTo(hx - 40, hy - 120 * ext, bx + 60, by - 150 * ext, bx, by); ctx.stroke(); }
       ctx.restore();
-      envMovieTheaterFront(ctx, T, null, {});
       roleTag(ctx, 'EXTRA #7', 690, 940, '#9AA3AD', 1, 40);
       if (sitting) burst(ctx, 440, 1380, T - sat, { kind: 'dust', n: 10, speed: 400, gravity: 100, life: .6, size: 22, seed: 4 });
     },
@@ -136,6 +136,7 @@ shots(() => {
       sp.armR = lerp(.4, 2.5, smooth(u)); sp.armL = lerp(.4, 1.9, smooth(u)); sp.head = -.35 * smooth(u); sp.lean = -.12 * smooth(u);
       const chew = T > tip + .3 ? Math.sin(T * 22) * .02 : 0; sp.squash = 1 + chew;
       C(ctx, 'teenSister', sp, { expr: T > tip ? 'excited' : 'smug', mouth: T > tip ? (Math.sin(T * 22) > 0 ? 'teethOpen' : 'grin') : null }, T);
+      envMovieTheaterFront(ctx, T, null, { popcorn: [] });
       // bucket tipped over her face, kernels falling
       if (T < tip + 1.4) { ctx.save(); ctx.translate(lerp(640, 585, smooth(u)), lerp(1380, 1000, smooth(u))); ctx.rotate(lerp(0, 2.6, smooth(u))); bucket(ctx, 0, 0, .85, 1); ctx.restore(); }
       for (let i = 0; i < 9; i++) { const t0 = tip + .1 + i * .13, d = T - t0; if (d > 0 && d < .6) kernel(ctx, 560 + (i % 3 - 1) * 20, 1030 + d * d * 1500, .6); }
@@ -163,7 +164,7 @@ shots(() => {
       dino(ctx, T < noticed ? lerp(300, 540, inv(t14, noticed, T)) : 540, 900, .75, stop ? 1 : 0, 0);
       const sp = idle(P({ x: 540, y: 1500, s: .8 }), T, 2); sp.armL = .6; sp.armR = .6; sp.bodyY = Math.sin(T * 3) * 6;
       C(ctx, 'teenSister', sp, { expr: 'smug', mouth: null, lookX: 0, lookY: -.3 }, T);
-      envMovieTheaterFront(ctx, T, null, {});
+      envMovieTheaterFront(ctx, T, null, { popcorn: [] });
       // stacked tags
       [[gotT, 790], [mainT, 700], [charT, 610]].forEach(([tt, y], i) => roleTag(ctx, 'MAIN CHARACTER', 540, y, '#FFC531', T - tt, 44 - i * 2));
       if (stop) { ctx.save(); ctx.strokeStyle = '#EE384A'; ctx.lineWidth = 8; ctx.beginPath(); ctx.arc(540, 780, 34 + (T - noticed) * 4, 0, 7); ctx.globalAlpha = .0; ctx.stroke(); ctx.restore(); }
@@ -190,7 +191,7 @@ shots(() => {
       const sp = idle(P({ x: 540, y: 1500, s: .8 }), T, 2);
       if (hit) { sp.lean = -.3 * Math.min(1, (T - roared) * 6); sp.armL = 1.6; sp.armR = 1.6; sp.head = -.2; sp.bodyY = -10; } else { sp.armL = .5; sp.armR = .5; }
       C(ctx, 'teenSister', sp, { expr: hit ? 'terrified' : (T > turned ? 'surprised' : 'smug'), mouth: hit ? 'scream' : null }, T);
-      envMovieTheaterFront(ctx, T, null, {});
+      envMovieTheaterFront(ctx, T, null, { popcorn: [] });
       roleTag(ctx, 'MAIN CHARACTER', 540, 790, '#FFC531', 1, 44);
       // wind of the roar: horizontal streaks
       if (hit) { ctx.save(); ctx.strokeStyle = 'rgba(255,255,255,.7)'; ctx.lineWidth = 8; ctx.lineCap = 'round'; for (let i = 0; i < 8; i++) { const y = 900 + i * 70, x0 = 620 + ((T * 1400 + i * 190) % 560); ctx.beginPath(); ctx.moveTo(x0, y); ctx.lineTo(x0 + 140, y + 10); ctx.stroke(); } ctx.restore(); }

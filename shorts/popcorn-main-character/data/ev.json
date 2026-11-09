@@ -1,0 +1,1086 @@
+{
+ "END": 48.807,
+ "fps": 30,
+ "events": [
+  {
+   "t": 0,
+   "type": "shot",
+   "id": "S01",
+   "trans": "none",
+   "end": 2.506
+  },
+  {
+   "t": 0,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 0,
+   "type": "music",
+   "mode": "main"
+  },
+  {
+   "t": 0.15,
+   "type": "line",
+   "id": "L0",
+   "text": "In this world, eating popcorn makes you the main character.",
+   "end": 2.486
+  },
+  {
+   "t": 0.3,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 0.89,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 1.81,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.45
+  },
+  {
+   "t": 1.81,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 1.97,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 2.506,
+   "type": "shot",
+   "id": "S02",
+   "trans": "whip",
+   "end": 4.654
+  },
+  {
+   "t": 2.506,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 2.506,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.35
+  },
+  {
+   "t": 2.586,
+   "type": "line",
+   "id": "L1",
+   "text": "One bite, and a spotlight follows you everywhere.",
+   "end": 4.634
+  },
+  {
+   "t": 3.286,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 3.566,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.35
+  },
+  {
+   "t": 4.654,
+   "type": "shot",
+   "id": "S03",
+   "trans": "cut",
+   "end": 6.967
+  },
+  {
+   "t": 4.734,
+   "type": "line",
+   "id": "L2",
+   "text": "Dramatic music. Wind in your hair. Indoors.",
+   "end": 6.697
+  },
+  {
+   "t": 5.534,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.4
+  },
+  {
+   "t": 6.174,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.7
+  },
+  {
+   "t": 6.174,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 6.967,
+   "type": "shot",
+   "id": "S04",
+   "trans": "zoom",
+   "end": 9.059
+  },
+  {
+   "t": 6.967,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 7.047,
+   "type": "line",
+   "id": "L3",
+   "text": "Grandpa ate one kernel. Car chase.",
+   "end": 8.839
+  },
+  {
+   "t": 7.307,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 7.767,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 8.367,
+   "type": "sfx",
+   "name": "alarm",
+   "vol": 0.35
+  },
+  {
+   "t": 8.367,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.5
+  },
+  {
+   "t": 8.367,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 9.059,
+   "type": "shot",
+   "id": "S05",
+   "trans": "cut",
+   "end": 11.215
+  },
+  {
+   "t": 9.059,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.4
+  },
+  {
+   "t": 9.139,
+   "type": "line",
+   "id": "L4",
+   "text": "Pop stars eat a bucket and get a sequel.",
+   "end": 10.995
+  },
+  {
+   "t": 9.919,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 10.599,
+   "type": "sfx",
+   "name": "bling",
+   "vol": 0.55
+  },
+  {
+   "t": 10.599,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 11.215,
+   "type": "shot",
+   "id": "S06",
+   "trans": "cut",
+   "end": 12.723
+  },
+  {
+   "t": 11.295,
+   "type": "line",
+   "id": "L5",
+   "text": "Me? I've never had a single piece.",
+   "end": 12.703
+  },
+  {
+   "t": 11.295,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 11.695,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 12.335,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 12.723,
+   "type": "shot",
+   "id": "S07",
+   "trans": "cut",
+   "end": 14.636
+  },
+  {
+   "t": 12.803,
+   "type": "line",
+   "id": "L6",
+   "text": "My big sister always eats it all first.",
+   "end": 14.616
+  },
+  {
+   "t": 12.823,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 13.083,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 13.223,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 14.063,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 14.263,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 14.263,
+   "type": "sfx",
+   "name": "poof",
+   "vol": 0.5
+  },
+  {
+   "t": 14.636,
+   "type": "shot",
+   "id": "S08",
+   "trans": "cut",
+   "end": 16.408
+  },
+  {
+   "t": 14.716,
+   "type": "line",
+   "id": "L7",
+   "text": "Kids call me Extra Number Seven.",
+   "end": 16.188
+  },
+  {
+   "t": 15.036,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 15.096,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.236,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.716,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.55
+  },
+  {
+   "t": 15.716,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 15.736,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 16.408,
+   "type": "shot",
+   "id": "S09",
+   "trans": "cut",
+   "end": 18.705
+  },
+  {
+   "t": 16.488,
+   "type": "line",
+   "id": "L8",
+   "text": "Then one day, she took me to the movies. Lily was there.",
+   "end": 18.685
+  },
+  {
+   "t": 16.508,
+   "type": "sfx",
+   "name": "step",
+   "vol": 0.3
+  },
+  {
+   "t": 16.988,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.208,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 17.968,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.6
+  },
+  {
+   "t": 17.968,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 18.705,
+   "type": "shot",
+   "id": "S10",
+   "trans": "zoom",
+   "end": 20.851
+  },
+  {
+   "t": 18.705,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 18.755,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.3
+  },
+  {
+   "t": 18.785,
+   "type": "line",
+   "id": "L9",
+   "text": "Sister's one rule? Don't. Embarrass. Me.",
+   "end": 20.631
+  },
+  {
+   "t": 19.745,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.55
+  },
+  {
+   "t": 19.745,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 19.905,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.55
+  },
+  {
+   "t": 19.905,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 20.365,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.65
+  },
+  {
+   "t": 20.365,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 20.851,
+   "type": "shot",
+   "id": "S11",
+   "trans": "cut",
+   "end": 22.199
+  },
+  {
+   "t": 20.931,
+   "type": "line",
+   "id": "L10",
+   "text": "So I reached for the popcorn.",
+   "end": 22.179
+  },
+  {
+   "t": 21.171,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 21.591,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 21.671,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.45
+  },
+  {
+   "t": 22.171,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.5
+  },
+  {
+   "t": 22.199,
+   "type": "shot",
+   "id": "S12",
+   "trans": "cut",
+   "end": 23.825
+  },
+  {
+   "t": 22.279,
+   "type": "line",
+   "id": "L11",
+   "text": "She slapped my hand. Mine.",
+   "end": 23.655
+  },
+  {
+   "t": 22.279,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 22.359,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.65
+  },
+  {
+   "t": 22.379,
+   "type": "sfx",
+   "name": "toss",
+   "vol": 0.3
+  },
+  {
+   "t": 22.379,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 23.259,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 23.759,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 23.825,
+   "type": "shot",
+   "id": "S13",
+   "trans": "cut",
+   "end": 26.052
+  },
+  {
+   "t": 23.905,
+   "type": "line",
+   "id": "L12",
+   "text": "I tried a sneaky straw. She sat on the bucket.",
+   "end": 25.782
+  },
+  {
+   "t": 24.245,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.4
+  },
+  {
+   "t": 25.025,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 25.085,
+   "type": "sfx",
+   "name": "boing",
+   "vol": 0.6
+  },
+  {
+   "t": 25.085,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 25.445,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 25.685,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 26.052,
+   "type": "shot",
+   "id": "S14",
+   "trans": "cut",
+   "end": 28.084
+  },
+  {
+   "t": 26.082,
+   "type": "music",
+   "mode": "tense"
+  },
+  {
+   "t": 26.132,
+   "type": "line",
+   "id": "L13",
+   "text": "Subscribe, because then she ate all of it.",
+   "end": 27.764
+  },
+  {
+   "t": 26.132,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.5
+  },
+  {
+   "t": 26.132,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 27.032,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 27.252,
+   "type": "sfx",
+   "name": "toss",
+   "vol": 0.4
+  },
+  {
+   "t": 27.332,
+   "type": "sfx",
+   "name": "power",
+   "vol": 0.5
+  },
+  {
+   "t": 27.332,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 27.552,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 28.084,
+   "type": "shot",
+   "id": "S15",
+   "trans": "cut",
+   "end": 30.051
+  },
+  {
+   "t": 28.164,
+   "type": "line",
+   "id": "L14",
+   "text": "She got so main character, the movie noticed.",
+   "end": 30.031
+  },
+  {
+   "t": 28.164,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.584,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 28.584,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 28.764,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 29.544,
+   "type": "sfx",
+   "name": "scratch",
+   "vol": 0.5
+  },
+  {
+   "t": 30.051,
+   "type": "shot",
+   "id": "S16",
+   "trans": "flash",
+   "end": 32.481
+  },
+  {
+   "t": 30.131,
+   "type": "line",
+   "id": "L15",
+   "text": "The dinosaur on screen turned around... and roared at her.",
+   "end": 32.211
+  },
+  {
+   "t": 30.151,
+   "type": "sfx",
+   "name": "whoosh",
+   "vol": 0.3
+  },
+  {
+   "t": 30.191,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 30.931,
+   "type": "sfx",
+   "name": "thud",
+   "vol": 0.5
+  },
+  {
+   "t": 31.711,
+   "type": "sfx",
+   "name": "glitch",
+   "vol": 0.4
+  },
+  {
+   "t": 31.711,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 31.761,
+   "type": "sfx",
+   "name": "impact",
+   "vol": 0.8
+  },
+  {
+   "t": 31.811,
+   "type": "sfx",
+   "name": "crash",
+   "vol": 0.5
+  },
+  {
+   "t": 32.461,
+   "type": "music",
+   "mode": "calm"
+  },
+  {
+   "t": 32.481,
+   "type": "shot",
+   "id": "s17",
+   "trans": "cut",
+   "end": 33.871
+  },
+  {
+   "t": 32.561,
+   "type": "line",
+   "id": "L16",
+   "text": "That's when I realized something.",
+   "end": 33.851
+  },
+  {
+   "t": 33.021,
+   "type": "sfx",
+   "name": "ding",
+   "vol": 0.6
+  },
+  {
+   "t": 33.871,
+   "type": "shot",
+   "id": "s18",
+   "trans": "cut",
+   "end": 36.059
+  },
+  {
+   "t": 33.951,
+   "type": "line",
+   "id": "L17",
+   "text": "A story is better with two main characters.",
+   "end": 35.839
+  },
+  {
+   "t": 34.871,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.6
+  },
+  {
+   "t": 34.871,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 35.051,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 36.059,
+   "type": "shot",
+   "id": "s19",
+   "trans": "cut",
+   "end": 38.439
+  },
+  {
+   "t": 36.139,
+   "type": "line",
+   "id": "L18",
+   "text": "So I found one last kernel... and gave it to Lily.",
+   "end": 38.219
+  },
+  {
+   "t": 36.379,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.4
+  },
+  {
+   "t": 36.919,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 37.879,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.6
+  },
+  {
+   "t": 37.879,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.419,
+   "type": "music",
+   "mode": "love"
+  },
+  {
+   "t": 38.439,
+   "type": "shot",
+   "id": "s20",
+   "trans": "cut",
+   "end": 40.144
+  },
+  {
+   "t": 38.519,
+   "type": "line",
+   "id": "L19",
+   "text": "She broke it in half. Half for me.",
+   "end": 39.874
+  },
+  {
+   "t": 38.519,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 38.639,
+   "type": "sfx",
+   "name": "pop",
+   "vol": 0.6
+  },
+  {
+   "t": 39.019,
+   "type": "sfx",
+   "name": "sparkle",
+   "vol": 0.5
+  },
+  {
+   "t": 39.019,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 39.359,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 39.619,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 40.144,
+   "type": "shot",
+   "id": "s21",
+   "trans": "zoom",
+   "end": 42.047
+  },
+  {
+   "t": 40.144,
+   "type": "sfx",
+   "name": "swell",
+   "vol": 0.5
+  },
+  {
+   "t": 40.144,
+   "type": "sfx",
+   "name": "zoom",
+   "vol": 0.35
+  },
+  {
+   "t": 40.224,
+   "type": "line",
+   "id": "L20",
+   "text": "Two spotlights. Violins. Slow motion.",
+   "end": 42.027
+  },
+  {
+   "t": 40.224,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 40.864,
+   "type": "sfx",
+   "name": "chime",
+   "vol": 0.5
+  },
+  {
+   "t": 40.864,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.404,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 41.544,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 42.047,
+   "type": "shot",
+   "id": "s22",
+   "trans": "flash",
+   "end": 44.207
+  },
+  {
+   "t": 42.127,
+   "type": "line",
+   "id": "L21",
+   "text": "For once, Extra Number Seven got the lead.",
+   "end": 43.887
+  },
+  {
+   "t": 42.627,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 43.007,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 43.587,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.55
+  },
+  {
+   "t": 43.587,
+   "type": "sfx",
+   "name": "bling",
+   "vol": 0.5
+  },
+  {
+   "t": 43.587,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 44.207,
+   "type": "shot",
+   "id": "s23",
+   "trans": "cut",
+   "end": 46.391
+  },
+  {
+   "t": 44.237,
+   "type": "music",
+   "mode": "party"
+  },
+  {
+   "t": 44.287,
+   "type": "line",
+   "id": "L22",
+   "text": "My sister? Now she's the background extra.",
+   "end": 46.121
+  },
+  {
+   "t": 44.387,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 45.627,
+   "type": "sfx",
+   "name": "sad_trombone",
+   "vol": 0.5
+  },
+  {
+   "t": 45.627,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 46.391,
+   "type": "shot",
+   "id": "s24",
+   "trans": "cut",
+   "end": 48.807
+  },
+  {
+   "t": 46.471,
+   "type": "line",
+   "id": "L23",
+   "text": "Subscribe, because yes... there's a sequel.",
+   "end": 48.157
+  },
+  {
+   "t": 46.471,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 47.151,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 47.751,
+   "type": "sfx",
+   "name": "cheer",
+   "vol": 0.5
+  },
+  {
+   "t": 47.751,
+   "type": "sfx",
+   "name": "tick",
+   "vol": 0.12
+  },
+  {
+   "t": 48.807,
+   "type": "music",
+   "mode": "end"
+  }
+ ]
+}

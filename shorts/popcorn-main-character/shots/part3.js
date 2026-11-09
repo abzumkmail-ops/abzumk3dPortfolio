@@ -129,8 +129,8 @@ shots(() => {
       const c = [540, 1130, 1.9 + lt * .05]; const h = prj(c, 540, 1500 - 400 * .8), b = prj(c, 540, 1260);
       spotlight(ctx, [{ x: b[0], y: b[1], r: 230 }], 1, .6);
       const f = inv(lead - .1, lead + .2, T), sx = Math.abs(Math.cos(f * Math.PI));
-      ctx.save(); ctx.translate(h[0], h[1] - 80); ctx.scale(Math.max(.05, f <= 0 || f >= 1 ? 1 : sx), 1); ctx.translate(-h[0], -(h[1] - 80));
-      if (f < .5) roleTag(ctx, 'EXTRA #7', h[0], h[1] - 80, GREY, lt, 52); else roleTag(ctx, 'LEAD', h[0], h[1] - 80, GOLD, 1, 60);
+      ctx.save(); ctx.translate(h[0], h[1] - 190); ctx.scale(Math.max(.05, f <= 0 || f >= 1 ? 1 : sx), 1); ctx.translate(-h[0], -(h[1] - 190));
+      if (f < .5) roleTag(ctx, 'EXTRA #7', h[0], h[1] - 190, GREY, lt, 52); else roleTag(ctx, 'LEAD', h[0], h[1] - 190, GOLD, 1, 60);
       ctx.restore();
       stamp(ctx, 'W', 540, 560, T - lead, '#2FCB5C', 1.0);
     },
