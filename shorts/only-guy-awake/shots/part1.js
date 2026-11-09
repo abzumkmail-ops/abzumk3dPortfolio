@@ -105,7 +105,7 @@ shots(() => {
   const land5 = we('L5', 'year'), fall5 = ws('L5', 'falls'), asl5 = ws('L5', 'asleep');
   S.push({ id: 'S5', start: st('L5'), trans: 'cut',
     bg: setBg('snowyStreet', { snow: true }),
-    cam: lt => camAt(650, 1180, 1.1 + lt * .01),
+    cam: lt => camAt(650, 1240, 1.0 + lt * .01),
     draw(ctx, T, lt) {
       const t0 = st('L5');
       const kC = T > asl5 + .1 ? clamp((T - asl5 - .1) / .4) ** 2 : 0, kG = T > asl5 + .3 ? clamp((T - asl5 - .3) / .4) ** 2 : 0;
@@ -141,7 +141,7 @@ shots(() => {
       const moving = T < job6, dx = lerp(80, 560, inv(t6, job6, T));
       const mp = idle(P({ x: 1130, y: 1500, s: .8, flip: -1, view: 'q34' }), T, 5);
       if (T > job6) { mp.armR = 2.7; mp.handR = .6; }
-      C(ctx, 'mom', mp, { expr: T > job6 ? 'sad' : 'flat' }, T);
+      C(ctx, 'mom', mp, { expr: T > job6 ? 'sad' : 'neutral' }, T);
       cart(ctx, dx + 150, T);
       const dp = moving ? walk(P({ x: dx, y: 1500, s: .8, view: 'q34' }), T, 1.1) : idle(P({ x: dx, y: 1500, s: .8, view: 'q34' }), T, 6);
       C(ctx, 'dad', dp, { expr: 'happy' }, T);
@@ -152,7 +152,7 @@ shots(() => {
   const bulk7 = ws('L7', 'bulking');
   S.push({ id: 'S7', start: st('L7'), trans: 'cut',
     bg: (ctx, T, cam) => envKitchen(ctx, T, cam, {}),
-    cam: lt => camAt(540, 1230, 1.5 + lt * .03),
+    cam: lt => camAt(540, 1260, 1.25 + lt * .03),
     draw(ctx, T, lt) {
       const k = T > bulk7 ? 1 : 0, p = idle(P({ x: 540, y: 1500, s: .8 }), T, 1);
       p.armL = 1.7; p.handL = 1.0; p.armR = 1.1; if (k) { p.bodyY -= Math.abs(Math.sin((T - bulk7) * 6)) * 14; p.squash = 1 + .04 * Math.sin((T - bulk7) * 12); }
@@ -276,7 +276,7 @@ shots(() => {
     cam: lt => camAt(580, 1230, 1.2 + lt * .01),
     draw(ctx, T, lt) {
       const dp = talk(idle(P({ x: 800, y: 1500, s: .8, flip: -1, view: 'q34' }), T, 2), T, 2, .3); dp.armR = 1.8;
-      C(ctx, 'doctor', dp, { expr: 'neutral', holding: { R: holdSign('SLEEP GENE') } }, T);
+      C(ctx, 'doctor', dp, { expr: 'neutral' }, T);
       const p = idle(P({ x: 330, y: 1500, s: .8, view: 'q34' }), T, 1);
       C(ctx, 'nubi', p, { expr: T > ws('L15', 'broken') ? 'sad' : 'nervous' }, T);
     },
@@ -320,7 +320,7 @@ shots(() => {
       const mp = idle(P({ x: 900, y: 1500, s: .8, flip: -1 }), T, 3); mp.armR = 2.2 + Math.sin(T * 9) * .4;
       C(ctx, 'mom', mp, { expr: 'happy' }, T);
       box(ctx, 290, 1330, 150, 20, 4, '#EE384A', 5); box(ctx, 290, 1318, 150, 14, 4, '#FFD447', 4);
-      const p = sit(idle(P({ x: 170, y: 1375, s: .8, view: 'q34' }), T, 1), 1250); p.armL = 1.4; p.armR = 1.4;
+      const p = sit(idle(P({ x: 170, y: 1375, s: .8, view: 'q34' }), T, 1), 1290); p.armL = 1.4; p.armR = 1.4;
       if (T > gam18) { p.armL += Math.sin(T * 14) * .1; p.head = Math.sin(T * 7) * .04; }
       C(ctx, 'nubi', p, { expr: T > sil18 ? 'sad' : 'happy', holding: { L: holdGameController, R: holdGameController } }, T);
     },
