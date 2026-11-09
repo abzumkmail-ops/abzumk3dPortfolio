@@ -1,0 +1,3 @@
+shorts/*/out/*
+!shorts/*/out/final_video.mp4
+shorts/*/audio/
