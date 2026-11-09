@@ -13,7 +13,7 @@ const A = {}; argv.forEach((x, i) => { if (x.startsWith('--')) A[x.slice(2)] = a
   const w = +(A.w || 300), b = await chromium.launch(), p = await b.newPage();
   const errs = []; p.on('pageerror', e => errs.push(e.message));
   p.on('console', m => { if (m.type() === 'error' && !m.text().startsWith('Failed to load resource')) errs.push(m.text()); });
-  p.on('requestfailed', r => { if (!/shots\/part\d+\.js$/.test(r.url())) errs.push('missing file: ' + r.url()); });
+  p.on('requestfailed', r => { if (!/(shots\/part\d+|engine\/js\/pack_\w+)\.js$/.test(r.url())) errs.push('missing file: ' + r.url()); });
   await p.goto('file://' + path.resolve(__dirname, '../index.html') + '?w=' + w);
   await p.waitForFunction('window.READY===true', null, { timeout: 30000 }).catch(() => errs.push('page never became READY (see errors above)'));
   if (errs.length) { console.log('ERRORS:\n' + [...new Set(errs)].join('\n')); await b.close(); process.exit(1); }

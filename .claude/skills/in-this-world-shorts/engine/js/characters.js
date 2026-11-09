@@ -32,6 +32,14 @@ const CAST = {
   kidF: { skin: '#D9A27A', shirt: '#80CDF5', sleeve: '#80CDF5', pants: '#3B3B4F', shoes: '#FF5B9B', hair: 'bob', hairC: '#2B2B2B', brow: '#2B2B2B', lashes: true, seed: 16 },
 };
 
+// ---------------- Extension registries (filled by asset packs: js/pack_*.js) ----------------
+// HAIR_STYLES[name](ctx, c, layer:'back'|'front', hw, hh, view, top)   — custom hair / hats (c.hair = name)
+// OUTFITS[name](ctx, c, x, y, tw, h, face, view)                         — custom torso clothing (c.outfit = name)
+// FACE_EXTRAS[name](ctx, c, fx, fy, hw, hh, view, face, phase)           — beards, mustaches, makeup (c.facial = name | [names]);
+//                                                                           phase 'under' = before the mouth, 'over' = after it
+// ACCESSORIES[name](ctx, c, x, y, tw, h, view)                           — drawn over the torso (c.acc = [names]): ties, whistles…
+const HAIR_STYLES = {}, OUTFITS = {}, FACE_EXTRAS = {}, ACCESSORIES = {};
+
 // ---------------- Expressions ----------------
 // brow: raise(px), angle(rad, + = angry/inward-down), asym(px raise diff L-R)
 // eyes: open(0..1.5), pupil(scale), shape
@@ -144,7 +152,7 @@ function drawShadow(ctx, p) {
 }
 
 function drawCharacter(ctx, chName, pose, face = {}, t = 0) {
-  const c = CAST[chName], p = pose, R = RIG;
+  const c = face.style ? Object.assign({}, CAST[chName], face.style) : CAST[chName], p = pose, R = RIG;   // face.style = per-shot costume change
   ctx.save();
   ctx.globalAlpha = p.alpha;
   const S = p.s * (c.tall || 1);
@@ -165,9 +173,9 @@ function drawCharacter(ctx, chName, pose, face = {}, t = 0) {
     const skin = dim ? shade(c.skin, -.15) : c.skin;
     const hoodie = chName === 'nubi' && (face.hoodie ?? true);
     const sl = hoodie ? sleeve : (chName === 'nubi' ? c.tee : sleeve);
-    const sleeveLen = (chName === 'nubi' && !hoodie) ? 70 : R.armH - R.handH + 6;
+    const sleeveLen = c.sleeveless ? 0 : ((chName === 'nubi' && !hoodie) || c.shortSleeves) ? 70 : R.armH - R.handH + 6;
     if (sleeveLen < R.armH - R.handH) { box(ctx, -R.armW / 2, -26, R.armW, R.armH - R.handH + 20, 18, skin, 8); }
-    box(ctx, -R.armW / 2, -26, R.armW, sleeveLen + 26, 20, sl, 8);
+    if (sleeveLen > 0) box(ctx, -R.armW / 2, -26, R.armW, sleeveLen + 26, 20, sl, 8);
     ctx.translate(0, R.armH - R.handH); ctx.rotate(hand);
     box(ctx, -R.armW / 2 + 2, -4, R.armW - 4, R.handH + 6, 18, skin, 8);
     if (face.holding && face.holding[which]) face.holding[which](ctx);
@@ -177,7 +185,8 @@ function drawCharacter(ctx, chName, pose, face = {}, t = 0) {
     ctx.save(); ctx.translate(lx, hipY - lift * .3); ctx.rotate(ang);
     const len = R.legH - lift;
     const pc = dim ? shade(c.pants, -.15) : c.pants;
-    box(ctx, -R.legW / 2, -10, R.legW, len + 10, 14, pc, 8);
+    if (c.shorts) { box(ctx, -R.legW / 2 + 6, -10, R.legW - 12, len + 10, 14, dim ? shade(c.skin, -.15) : c.skin, 8); box(ctx, -R.legW / 2, -10, R.legW, 66, 14, pc, 8); }
+    else box(ctx, -R.legW / 2, -10, R.legW, len + 10, 14, pc, 8);
     if (face.ripped) { // torn pants → heart boxers
       ctx.save(); rr(ctx, -R.legW / 2 + 6, -6, R.legW - 12, 52, 10); ctx.clip();
       ctx.fillStyle = '#FF8FC0'; ctx.fillRect(-60, -20, 120, 90);
@@ -186,7 +195,8 @@ function drawCharacter(ctx, chName, pose, face = {}, t = 0) {
       ctx.beginPath(); ctx.moveTo(-R.legW / 2 + 4, 46); for (let i = 0; i <= 6; i++) ctx.lineTo(-R.legW / 2 + 4 + i * (R.legW - 8) / 6, 46 + (i % 2 ? 10 : -4));
       ctx.lineWidth = 6; ctx.strokeStyle = OUTLINE; ctx.stroke();
     }
-    box(ctx, -R.legW / 2 - 4, len - 30, R.legW + 10, 34, 12, dim ? shade(c.shoes, -.15) : c.shoes, 8);
+    if (c.barefoot) box(ctx, -R.legW / 2 + 2, len - 22, R.legW + 2, 26, 12, dim ? shade(c.skin, -.15) : c.skin, 7);
+    else box(ctx, -R.legW / 2 - 4, len - 30, R.legW + 10, 34, 12, dim ? shade(c.shoes, -.15) : c.shoes, 8);
     ctx.restore();
   };
 
@@ -215,6 +225,12 @@ function drawCharacter(ctx, chName, pose, face = {}, t = 0) {
 }
 
 function drawTorso(ctx, name, c, tw, face, view) {
+  const R = RIG, x = -tw / 2, y = R.torsoTop, h = R.torsoH;
+  if (c.outfit && OUTFITS[c.outfit]) OUTFITS[c.outfit](ctx, c, x, y, tw, h, face, view);
+  else drawTorsoBase(ctx, name, c, tw, face, view);
+  for (const a of (c.acc || [])) if (ACCESSORIES[a]) { ctx.save(); ACCESSORIES[a](ctx, c, x, y, tw, h, view); ctx.restore(); }
+}
+function drawTorsoBase(ctx, name, c, tw, face, view) {
   const R = RIG, x = -tw / 2, y = R.torsoTop, h = R.torsoH;
   if (name === 'nubi') {
     const hoodie = face.hoodie ?? true;
@@ -259,6 +275,7 @@ function drawHair(ctx, c, layer, hw, hh, view) {
   const col = c.hairC, top = -hh + 8;
   const ox = view === 'side' ? -hw * .1 : view === 'q34' ? -hw * .05 : 0;
   ctx.save(); ctx.translate(ox, 0);
+  if (HAIR_STYLES[c.hair]) { HAIR_STYLES[c.hair](ctx, c, layer, hw, hh, view, top); ctx.restore(); return; }
   switch (c.hair) {
     case 'nubi': if (layer === 'front') {
       ctx.beginPath(); ctx.moveTo(-hw / 2 - 8, top + hh * .42);
@@ -367,9 +384,12 @@ function drawHead(ctx, name, c, f, view, t) {
   // cheeks / freckles / blush
   if (c.freckles) { ctx.fillStyle = '#B5733F'; for (const s of [-1, 1]) for (let k = 0; k < 3; k++) circle(ctx, fx + s * (62 + k * 9), fy + 14 + (k % 2) * 7, 3, '#B5733F'); }
   if (f.blush || E.blush) { ctx.globalAlpha *= .55; ellipse(ctx, fx - 70, fy + 20, 22, 12, '#FF5B9B'); ellipse(ctx, fx + 70, fy + 20, 22, 12, '#FF5B9B'); ctx.globalAlpha /= .55; }
+  const facial = c.facial ? [].concat(c.facial) : [];
+  for (const k of facial) if (FACE_EXTRAS[k]) { ctx.save(); FACE_EXTRAS[k](ctx, c, fx, fy, hw, hh, view, f, 'under'); ctx.restore(); }
   // mouth
   const shape = f.mouth || E.mouth;
   drawMouth(ctx, fx + (side ? 26 : 0), fy + 48, shape, f.mouthScale || 1);
+  for (const k of facial) if (FACE_EXTRAS[k]) { ctx.save(); FACE_EXTRAS[k](ctx, c, fx, fy, hw, hh, view, f, 'over'); ctx.restore(); }
   // extras
   if (f.sweat || E.sweat) { ctx.save(); ctx.translate(hw / 2 - 26, top + 54 + ((t * 40) % 20)); ctx.beginPath(); ctx.moveTo(0, -18); ctx.quadraticCurveTo(14, 4, 0, 12); ctx.quadraticCurveTo(-14, 4, 0, -18); fillStroke(ctx, '#7FD3FF', 5); ctx.restore(); }
   if (f.tears || E.tears) for (const s of side ? [1] : [-1, 1]) { const x = fx + s * (side ? 20 : sep); const k = (t * 1.6) % 1;

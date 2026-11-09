@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Asset catalog</title>
+<style>@font-face{font-family:'Lilita One';src:url(fonts/LilitaOne-Regular.ttf)} body{margin:0;background:#222}</style></head>
+<body><canvas id="c"></canvas>
+<script src="js/core.js"></script><script src="js/characters.js"></script><script src="js/env.js"></script><script src="js/fx_ui.js"></script>
+<script src="js/pack_people.js"></script><script src="js/pack_home.js"></script><script src="js/pack_outdoor.js"></script><script src="js/pack_public.js"></script>
+<script>
+// Asset catalog / QA sheets.
+//   catalog.html?mode=people[&from=0&n=21][&filter=pack]   all characters (CAST), labelled
+//   catalog.html?mode=sets[&tag=home]                         all sets (PACK_SETS) as phone-shaped tiles with Nubi for scale
+//   catalog.html?mode=set&name=pool[&t=1.5]                   one set full size (1080x1920) with Nubi + Lily
+window.STORY = { capColors: {}, capOverride: {} };
+const q = new URLSearchParams(location.search), mode = q.get('mode') || 'people';
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const BASE_CAST = ['nubi','lily','brayden','mom','grandma','teacher','popstar','lunchlady','kidA','kidB','kidC','kidD','kidE','kidF'];
+function label(s, x, y, size = 34) { ctx.font = size + 'px "Lilita One"'; ctx.textAlign = 'center'; ctx.lineJoin = 'round'; ctx.lineWidth = 7; ctx.strokeStyle = '#000'; ctx.strokeText(s, x, y); ctx.fillStyle = '#fff'; ctx.fillText(s, x, y); }
+async function go() {
+  await document.fonts.load('40px "Lilita One"');
+  if (mode === 'people') {
+    let names = Object.keys(CAST); if (q.get('filter') === 'pack') names = names.filter(n => !BASE_CAST.includes(n));
+    const from = +(q.get('from') || 0), n = +(q.get('n') || 21); names = names.slice(from, from + n);
+    const cols = 7, rows = Math.ceil(names.length / cols); cv.width = 2400; cv.height = 760 * rows + 40;
+    ctx.fillStyle = '#80CDF5'; ctx.fillRect(0, 0, cv.width, cv.height);
+    names.forEach((nm, i) => { const x = 170 + (i % cols) * 343, y = 640 + Math.floor(i / cols) * 760;
+      const p = basePose({ x, y, s: .55 }); drawShadow(ctx, p); drawCharacter(ctx, nm, p, { expr: 'happy', noBlink: true }, .5); label(nm, x, y + 60); });
+  } else if (mode === 'sets') {
+    const tag = q.get('tag'); const names = Object.keys(PACK_SETS).filter(n => !tag || PACK_SETS[n].tags.includes(tag));
+    const cols = 6, tw = 380, th = 676, rows = Math.ceil(names.length / cols); cv.width = cols * tw; cv.height = rows * (th + 50);
+    ctx.fillStyle = '#111'; ctx.fillRect(0, 0, cv.width, cv.height);
+    names.forEach((nm, i) => { const ox = (i % cols) * tw, oy = Math.floor(i / cols) * (th + 50);
+      ctx.save(); ctx.beginPath(); ctx.rect(ox + 4, oy + 4, tw - 8, th - 8); ctx.clip(); ctx.translate(ox + tw / 2, oy + th / 2); ctx.scale((tw - 8) / 1080, (tw - 8) / 1080);
+      const cam = { x: 540, y: 1060, z: 1 }; ctx.translate(-540, -1060);
+      try { PACK_SETS[nm].draw(ctx, 1.5, cam, {}); const p = basePose({ x: 540, y: 1500, s: .8 }); drawShadow(ctx, p); drawCharacter(ctx, 'nubi', p, { expr: 'happy' }, 1.5); }
+      catch (e) { console.error(nm + ': ' + e.message); }
+      ctx.restore(); label(nm, ox + tw / 2, oy + th + 34, 32); });
+  } else {
+    const nm = q.get('name'), t = +(q.get('t') || 1.5); cv.width = 1080; cv.height = 1920;
+    const cam = { x: 540, y: 1060, z: 1 }; ctx.translate(540, 960); ctx.translate(-540, -1060);
+    PACK_SETS[nm].draw(ctx, t, cam, {});
+    for (const [n, x, f] of [['nubi', 380, 1], ['lily', 700, -1]]) { const p = basePose({ x, y: 1500, s: .8, view: 'q34', flip: f }); drawShadow(ctx, p); drawCharacter(ctx, n, p, { expr: 'happy' }, t); }
+  }
+  window.DONE = true;
+}
+go();
+</script></body></html>

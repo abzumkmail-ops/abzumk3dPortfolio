@@ -3,6 +3,11 @@
 'use strict';
 const FLOOR = 1500;
 
+// ---------------- Set registry (asset packs add more with registerSet) ----------------
+// PACK_SETS[name] = { draw: (ctx, T, cam, o) => void, desc, opts, tags }. All sets: floor line at y = FLOOR (1500), world x ≈ -600..1700.
+const PACK_SETS = {};
+function registerSet(name, draw, desc = '', opts = '', tags = []) { PACK_SETS[name] = { draw, desc, opts, tags }; }
+
 function par(cam, k) { return { dx: (cam.x - 540) * (1 - k), dy: (cam.y - 960) * (1 - k) * .5 }; }
 
 function txt(ctx, s, x, y, size, fill, stroke = OUTLINE, lw = 0, font = 'Lilita One', align = 'center') {
@@ -186,3 +191,9 @@ function envSoft(ctx, t, c1 = '#FFB3D1', c2 = '#7B4BFF') {
   for (let i = 0; i < 24; i++) { const r = rng(i * 5 + 1); const x = r() * 1080, y = ((r() * 1920 - t * (40 + r() * 60)) % 2100 + 2100) % 2100 - 100;
     ctx.save(); ctx.globalAlpha = .35; heartPath(ctx, x, y, 18 + r() * 26); ctx.fillStyle = '#fff'; ctx.fill(); ctx.restore(); }
 }
+
+registerSet('hallway', envHallway, 'School hallway: lockers, windows, bulletin board', '{posters:false, photo:fn}', ['school']);
+registerSet('concert', envConcert, 'Concert stage at night with spotlights and a LIVE screen (add concertCrowd in front)', '', ['city', 'night']);
+registerSet('backyard', envBackyard, 'Sunny backyard: picket fence, tree, dog house, grass', '', ['home', 'outdoor']);
+registerSet('kitchen', envKitchen, 'Home kitchen: window, cabinets, fridge, counter (also works as a cafeteria serving area)', '{night}', ['home']);
+registerSet('gym', envGym, 'School gym / dance: banner, stage with curtains (stage floor y 1190), disco ball', "{dim, noLights, banner:'TEXT', bannerC}", ['school']);
