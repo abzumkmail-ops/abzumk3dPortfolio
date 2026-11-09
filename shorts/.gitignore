@@ -1,0 +1,7 @@
+*/engine/
+*/audio/
+*/tools/
+*/index.html
+*/out/*
+!*/out/final_video.mp4
+__pycache__/
