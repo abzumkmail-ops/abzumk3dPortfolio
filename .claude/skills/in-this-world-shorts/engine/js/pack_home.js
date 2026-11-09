@@ -489,7 +489,7 @@ function hmTub(ctx, T, C, bgPass) {
   for (const [x, y, rr_] of pts) { circle(ctx, x, y + Math.sin(T * 2.4 + x) * 2.5, rr_, C('#FFFFFF'), 5, C('#9FD8EE')); circle(ctx, x - rr_ * .35, y - rr_ * .35, rr_ * .22, C('#E6F7FF')); }
   // rubber duck on the rim
   const dy = Math.sin(T * 1.6) * 3;
-  ctx.save(); ctx.translate(1175, 1196 + dy);
+  ctx.save(); ctx.translate(655, 1192 + dy);
   ellipse(ctx, 0, 0, 44, 30, C('#FFD447'), 7); circle(ctx, -24, -32, 22, C('#FFD447'), 7);
   hmPoly(ctx, [[-44, -34], [-62, -28], [-44, -22]]); fillStroke(ctx, C('#FF8528'), 5);
   circle(ctx, -28, -38, 4, OUTLINE); ellipse(ctx, 14, -6, 18, 10, C('#FFE680'), 0, -.3);

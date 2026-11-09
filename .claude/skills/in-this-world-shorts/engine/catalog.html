@@ -29,7 +29,7 @@ async function go() {
     names.forEach((nm, i) => { const ox = (i % cols) * tw, oy = Math.floor(i / cols) * (th + 50);
       ctx.save(); ctx.beginPath(); ctx.rect(ox + 4, oy + 4, tw - 8, th - 8); ctx.clip(); ctx.translate(ox + tw / 2, oy + th / 2); ctx.scale((tw - 8) / 1080, (tw - 8) / 1080);
       const cam = { x: 540, y: 1060, z: 1 }; ctx.translate(-540, -1060);
-      try { PACK_SETS[nm].draw(ctx, 1.5, cam, {}); const p = basePose({ x: 540, y: 1500, s: .8 }); drawShadow(ctx, p); drawCharacter(ctx, 'nubi', p, { expr: 'happy' }, 1.5); }
+      try { PACK_SETS[nm].draw(ctx, 1.5, cam, {}); const p = basePose({ x: 540, y: 1500, s: .8 }); drawShadow(ctx, p); drawCharacter(ctx, 'nubi', p, { expr: 'happy' }, 1.5); front(nm, cam); }
       catch (e) { console.error(nm + ': ' + e.message); }
       ctx.restore(); label(nm, ox + tw / 2, oy + th + 34, 32); });
   } else {
@@ -37,8 +37,11 @@ async function go() {
     const cam = { x: 540, y: 1060, z: 1 }; ctx.translate(540, 960); ctx.translate(-540, -1060);
     PACK_SETS[nm].draw(ctx, t, cam, {});
     for (const [n, x, f] of [['nubi', 380, 1], ['lily', 700, -1]]) { const p = basePose({ x, y: 1500, s: .8, view: 'q34', flip: f }); drawShadow(ctx, p); drawCharacter(ctx, n, p, { expr: 'happy' }, t); }
+    front(nm, cam);
   }
   window.DONE = true;
 }
+// front layer (desks, water, seats…) if the set has one: env<Name>Front
+function front(nm, cam) { const f = window['env' + nm[0].toUpperCase() + nm.slice(1) + 'Front']; if (typeof f === 'function') f(ctx, 1.5, cam, {}); }
 go();
 </script></body></html>
