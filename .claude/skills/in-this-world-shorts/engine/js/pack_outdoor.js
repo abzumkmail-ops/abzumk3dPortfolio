@@ -6,49 +6,56 @@
 // big set pieces sit at the sides / back. All animation is a pure function of T (no Math.random).
 // Every set accepts o.night (dark-blue palette + stars/moon + lights). Campsite is night by default (o.day for day).
 //
-// SET ID         SHOWS / KEY POSITIONS                                                       OPTIONS                FRONT LAYER
-// pool           backyard swimming pool. Far deck (y 1000..1165) with loungers + umbrella     {night, sign:'POOL',   envPoolFront(ctx,T,cam,o)
-//                (x 190..560), lifeguard chair (x 900, seat y≈790), diving board (left, tip    swimmers:[x,..],
-//                x≈170 y≈1065), water slide (right, tower x 1180..1340, splash x≈1050), ladder  waterline:1300}
-//                (x 640). Back water band y 1207..1490; near coping at y 1490..1518 = FLOOR.
-//                -> characters at y 1500 WITHOUT the front layer stand on the near pool deck (pool behind them).
-//                -> call envPoolFront AFTER the characters and they are IN the pool, waist-deep:
-//                   water surface at POOL_WATERLINE = 1300 (o.waterline overrides). o.swimmers = [380, 700]
-//                   adds ripple rings around those x at the waterline.
-// beach          sand beach: sea horizon y≈980, animated waves + foam wash at y≈1330, sand    {night}                envBeachFront (optional: sand dunes +
-//                from ≈1390. Lifeguard tower (x -300..60), sandcastle (x -20..180, y 1600),                         grass in the bottom corners, y>1790;
-//                umbrella + towel (x 860..1150), seagulls, sailboat + island on horizon.                             never covers characters at y 1500)
-// playground     park: slide (left, platform y 1040, chute ends x≈230 y 1490), swings (right, {night, swing:false}   —
-//                frame x 950..1470, seats at x 1100/1300, seat y≈1320 at rest, animated sway),
-//                monkey bars (back, x 290..620), bench (back x 650..880, seat y≈1300),
-//                sandbox (front-right x 880..1180, y 1560..1660), path, trees, hills.
-// amusementPark  fun fair: ferris wheel (centre x 820 y 640, R 400, rotating, parallax .8),     {night}  night = bulbs, {—}
-//                roller coaster with a moving cart (back-left, parallax .6), striped big-top         glowing wheel + fireworks
-//                tent (x -260..260), snack stand + balloons (x 880..1240), string lights.
-// campsite       forest clearing, NIGHT BY DEFAULT: stars, moon, mountains, pines, fireflies,    {day, fire:false,      envCampsiteFront(ctx,T,cam,o) draws
-//                tents (x -230..190 and x 900..1320), log seats (x 110..340 and 740..970, seat    fireX:540, fireFront}  the campfire IN FRONT of characters
-//                top y≈1442), campfire at (o.fireX ?? 540, y 1590) with flicker + sparks + glow.                      (pass the same o with fireFront:true
-//                                                                                                                   so the back layer skips it)
-// snowyStreet    winter street: snowy houses (lit windows at night, chimney smoke), pines,       {night, snow:false}    envSnowyStreetFront: big near
-//                street lamp (x 150), snowman (x 1000, ~380 tall), sled (x 30..250, y≈1600),                         snowflakes over everything (optional)
-//                deterministic falling snow. Ground = snow from y 1330.
-// soccerField    stadium pitch: bleachers with cheering blocky fans (y 900..1250), ad boards,    {night, score:'2 - 1', —
-//                scoreboard (x 600..1000, y 260..500), floodlights (x -150 / 1250), goal (left     home:'HOME', away:'AWAY',
-//                x -300..190, crossbar y 1020), pitch stripes, centre circle round x 540.          ball:true}
-// downtown       city street: skyline (parallax .35), PIZZA (x -470..-30) / TOYS (x 0..520) /    {night, car:true}      —
-//                ICE CREAM (x 540..1020) shops, BOOKS + bus stop (x 1060..1400), traffic light
-//                (x 40, cycles), hydrant (x 960). Sidewalk y 1360..1560 (characters on it at 1500),
-//                curb 1560, road + crosswalk below. o.car = a car drives past on the road.
-// farm           farmyard: red barn (x -200..320) + silo, cow (x 30..270), hay bales           {night}                —
-//                (x 310..520), fence (back y 1260..1410), crop rows, tractor (x 830..1180),
-//                chickens pecking, windpump windmill turning (x 1260, wheel y 560).
+// SET ID         SHOWS / KEY POSITIONS (world coords)                                          OPTIONS                FRONT LAYER
+// pool           backyard swimming pool. Far deck y 1005..1165: umbrella + 2 loungers (x 60..450), {night, sign:'POOL',   envPoolFront(ctx,T,cam,o)
+//                POOL sign (x 610, above head height), lifeguard chair (x 850..960, seat y≈790),    swimmers:[x,..],
+//                diving board (left, tip x≈180 y≈960), water slide (tower x 1190..1360, splash     waterline:1310}
+//                x≈1060), ladder (x 620..750). Back water band y 1207..1490, near coping
+//                y 1488..1518 (= FLOOR), near deck tiles below.
+//                -> WITHOUT the front layer, characters on y 1500 stand on the near deck, pool behind them.
+//                -> WITH envPoolFront (call it AFTER drawing characters, same o) they are IN the pool, waist-deep:
+//                   water surface at POOL_WATERLINE = 1310 (o.waterline overrides; ~1200 = chest-deep,
+//                   ~1400 = knee-deep). Below the surface legs show faintly through the water.
+//                   o.swimmers = [380, 700] draws ripple rings around those x at the waterline.
+// beach          sea horizon y≈985 (boat + island parallax), animated wave crests, foam wash        {night}                envBeachFront (optional): sand dunes +
+//                at y≈1330, dry sand from y≈1392. Lifeguard tower (x -210..170, hut y 920..1120),                       grass tufts in the bottom corners only
+//                sandcastle (x -30..190, y 1610), bucket+spade (x 230..330), umbrella + towel                          (y>1790) — never covers characters
+//                (x 810..1130), palm (x 1290), seagulls, starfish/shells (low contrast).
+// playground     slide (left: tower x -330..-80, platform y 1030, chute ends x≈250 y 1470),         {night, swing:false}   —
+//                monkey bars (x -800..-364, pan left to see), swings (frame x 800..1330, seats
+//                at x 965 / 1165, seat y≈1320 at rest, sway ±0.3 rad), kite in the sky,
+//                bench (back x 650..880, seat y≈1300), sandbox (x 870..1190, y 1560..1670).
+// amusementPark  ferris wheel (centre x 780 y 520, R 340, rotating, parallax .8; lowest cabin      {night}                —
+//                above head height), roller coaster with 2 moving trains (back-left, parallax .6),
+//                striped big-top tent (x -280..280, ground 1450), SNACKS stand (x 820..1170) with
+//                balloons above it, string lights. Night: glowing bulbs, lit wheel, fireworks.
+// campsite       forest clearing, NIGHT BY DEFAULT (o.day:true for daytime): stars, shooting star, {day, fire:false,      envCampsiteFront(ctx,T,cam,o) draws the
+//                moon, mountains, pines, fireflies, lantern post (x 205). Tents x -230..190 and       fireX:540, fireFront}  campfire IN FRONT of characters. Pass
+//                x 890..1330 (base 1440). Log seats x 110..340 and x 740..970 (seat top y≈1428).                         the same o with fireFront:true to both
+//                Campfire at (o.fireX ?? 540, 1590) with flicker, sparks and warm night glow.                          calls so the back layer skips it.
+// snowyStreet    row of snow-roofed houses (base y 1340, lit windows + glow at night, chimney     {night, snow:false}    envSnowyStreetFront: big near
+//                smoke), snowy pines, street lamp (x 150), snowman (x 965, ~500 tall incl. hat),                       snowflakes over everything (optional)
+//                sled (x 30..280, y≈1595), deterministic falling snow. Snow ground from y 1330.
+// soccerField    bleachers (y 900..1230) with cheering blocky fans, ad boards (y 1230..1320),      {night, score:'2 - 1', —
+//                scoreboard (x 580..1020, y 250..510), floodlights (x -180 / 1280), goal (left       home:'HOME', away:'AWAY',
+//                x -300..190, crossbar y 1020), striped pitch from y 1320, centre circle (540,1700). clock:'45:00', cheer:true,
+//                                                                                                  ball:false}
+// downtown       skyline (parallax .35); shops on y 1360: BAKERY (x -930), PIZZA (x -470..-30),  {night, car:true}      —
+//                TOYS (x -10..520), ICE CREAM (x 540..1020, giant cone on roof), BOOKS (x 1040);
+//                traffic light (x 40, cycles R/Y/G every 3 s), hydrant (x 960), bus stop (x 1080..1420).
+//                Sidewalk y 1360..1556 (characters stand on it at 1500), curb y 1556, road + crosswalk
+//                below. o.car: a red car drives past on the road.
+// farm           red barn (x -220..320) + silo (x -400), cow (x 30..290, chewing + tail swish),     {night}                —
+//                hay bales (x 330..670), wooden fence (back, y 1250..1410), crop rows + patchwork
+//                hills, red tractor (x 805..1150), chickens pecking (x 150, 960, 1080), windpump
+//                windmill turning (x 970, wheel centre y 540, above head height).
 //
 // Notes for shot writers: register names are the ids above (PACK_SETS[id].draw). Call the env as the shot's bg:
 //   bg: (ctx, T, cam) => envPool(ctx, T, cam, { night: false })
 //   draw: (ctx, T, lt) => { C(ctx,'nubi',P({x:380,y:1500,s:.8}),{},T); envPoolFront(ctx, T, camOfThisShot, { swimmers:[380] }); }
 // Bottom of screen (world y ≈ 1650..1800 at the default camera) is kept calm because captions sit there.
 'use strict';
-const POOL_WATERLINE = 1300;
+const POOL_WATERLINE = 1310;
 let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementPark, envCampsite, envCampsiteFront,
   envSnowyStreet, envSnowyStreetFront, envSoccerField, envDowntown, envFarm;
 
@@ -56,11 +63,12 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
   // ---------------------------------------------------------------- palette / night mapping
   let NIGHT = false;
   const NC = {};
+  const LIT = new Set(['#FFD98A', '#FFE9A8', '#FFE08A', '#FFFDE8', '#FFF6C8', '#FFF3C4']); // light sources: never darkened
   function N(c) { // day colour → night colour (multiplied towards deep blue) when NIGHT
-    if (!NIGHT || typeof c !== 'string' || c[0] !== '#' || c.length !== 7 || c === OUTLINE) return c;
+    if (!NIGHT || typeof c !== 'string' || c[0] !== '#' || c.length !== 7 || c === OUTLINE || LIT.has(c)) return c;
     let v = NC[c]; if (v) return v;
     const n = parseInt(c.slice(1), 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
-    const R = Math.min(255, Math.round(r * .36 + 14)), G = Math.min(255, Math.round(g * .40 + 16)), Bl = Math.min(255, Math.round(b * .56 + 46));
+    const R = Math.min(255, Math.round(r * .42 + 12)), G = Math.min(255, Math.round(g * .44 + 16)), Bl = Math.min(255, Math.round(b * .6 + 46));
     v = '#' + ((1 << 24) + (R << 16) + (G << 8) + Bl).toString(16).slice(1);
     return (NC[c] = v);
   }
@@ -275,8 +283,8 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     blob(ctx, hc, '#3E9E4A', 7); ctx.fillStyle = N('#3E9E4A'); ctx.fillRect(-3000, 905, 9000, 110);
     for (let i = 0; i < 60; i++) { const x = -800 + hash(i * 3.1) * 3000, y = 900 + hash(i * 7.7) * 90; Ci(ctx, x, y, 8, ['#FF5B9B', '#FFD447', '#FFFFFF'][i % 3], 0); }
     // POOL sign
-    bar(ctx, 540, 830, 540, 1000, '#F4E3C3', 10, 5);
-    B(ctx, 430, 800, 220, 84, 18, '#FFFFFF', 8); txt(ctx, o.sign || 'POOL', 540, 845, 58, N('#2E9CCA'));
+    bar(ctx, 610, 830, 610, 1000, '#F4E3C3', 10, 5);
+    B(ctx, 500, 800, 220, 84, 18, '#FFFFFF', 8); txt(ctx, o.sign || 'POOL', 610, 845, 58, N('#2E9CCA'));
     if (nt) bulbString(ctx, -400, 760, 1500, 760, 70, 22, T, true);
     // far deck
     ctx.fillStyle = N('#F6E7C8'); ctx.fillRect(-3000, 1005, 9000, 160);
@@ -284,9 +292,9 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     ctx.beginPath(); for (const y of [1050, 1100]) { ctx.moveTo(-3000, y); ctx.lineTo(6000, y); } for (let x = -1600; x < 2800; x += 110) { ctx.moveTo(x, 1005); ctx.lineTo(x + (x - cam.x) * .12, 1165); } ctx.stroke();
     ctx.fillStyle = OUTLINE; ctx.fillRect(-3000, 1001, 9000, 7);
     // umbrella + loungers
-    umbrella(ctx, 360, 760, 1140, 380, ['#FF5B9B', '#FFFFFF', '#FFD447', '#FFFFFF'], T);
-    lounger(ctx, 175, 1140, '#20BDBB'); lounger(ctx, 400, 1140, '#FFD447');
-    B(ctx, 340, 1090, 40, 50, 8, '#FFFFFF', 5); // little table
+    umbrella(ctx, 250, 770, 1140, 360, ['#FF5B9B', '#FFFFFF', '#FFD447', '#FFFFFF'], T);
+    lounger(ctx, 60, 1140, '#20BDBB'); lounger(ctx, 285, 1140, '#FFD447');
+    B(ctx, 232, 1090, 40, 50, 8, '#FFFFFF', 5); // little table
     // lifeguard chair
     bar(ctx, 850, 1150, 878, 800, '#FFFFFF', 14, 6); bar(ctx, 950, 1150, 922, 800, '#FFFFFF', 14, 6);
     for (let k = 0; k < 3; k++) bar(ctx, 856 + k * 6, 1080 - k * 90, 944 - k * 6, 1080 - k * 90, '#FFFFFF', 8, 5);
@@ -352,7 +360,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     const top = x => WL + Math.sin(x * .017 + T * 2.6) * 5 + Math.sin(x * .043 - T * 3.3) * 3;
     ctx.beginPath(); ctx.moveTo(x0, 4000); for (let x = x0; x <= x1; x += 20) ctx.lineTo(x, top(x)); ctx.lineTo(x1, 4000); ctx.closePath();
     const g = ctx.createLinearGradient(0, WL, 0, WL + 420);
-    g.addColorStop(0, NIGHT ? 'rgba(40,150,215,.62)' : 'rgba(70,205,248,.62)'); g.addColorStop(.45, NIGHT ? 'rgba(24,110,190,.84)' : 'rgba(38,165,232,.84)'); g.addColorStop(1, NIGHT ? 'rgba(14,70,150,.95)' : 'rgba(26,130,215,.95)');
+    g.addColorStop(0, NIGHT ? 'rgba(40,150,215,.6)' : 'rgba(70,205,248,.6)'); g.addColorStop(.35, NIGHT ? 'rgba(24,110,190,.86)' : 'rgba(38,165,232,.86)'); g.addColorStop(.7, NIGHT ? 'rgba(14,70,150,.97)' : 'rgba(26,130,215,.97)'); g.addColorStop(1, NIGHT ? 'rgb(12,60,140)' : 'rgb(24,122,208)');
     ctx.fillStyle = g; ctx.fill();
     ctx.save(); ctx.clip(); waterNet(ctx, WL + 40, WL + 700, T * 1.1, .26, x0, x1); ctx.restore();
     // surface line
@@ -428,6 +436,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     ctx.strokeStyle = N('#D9AD5C'); ctx.lineWidth = 6; ctx.stroke();
     { const r = rng(5); ctx.fillStyle = N('#E3B868'); for (let i = 0; i < 110; i++) { const x = -1200 + r() * 3600, y = 1420 + r() * 700; ctx.fillRect(x, y, 6 + r() * 6, 5); } }
     // lifeguard tower (left)
+    ctx.save(); ctx.translate(90, 0);
     for (const [x1, x2] of [[-300, -250], [-10, -60]]) bar(ctx, x1, 1430, x2, 1130, '#FFFFFF', 14, 6);
     bar(ctx, -270, 1300, -40, 1300, '#FFFFFF', 10, 5);
     B(ctx, -320, 1110, 330, 30, 8, '#F4E3C3', 8);
@@ -435,14 +444,16 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     poly(ctx, [[-330, 930], [-155, 840], [20, 930]]); FS(ctx, '#EE384A', 9);
     txt(ctx, 'LIFEGUARD', -155, 1080, 30, N('#EE384A'));
     flag(ctx, -155, 740, T, '#EE384A', 1.1); ln(ctx, -155, 740, -155, 845, OUTLINE, 7);
-    ctx.beginPath(); ctx.moveTo(10, 1125); ctx.lineTo(130, 1420); ctx.strokeStyle = OUTLINE; ctx.lineWidth = 26; ctx.stroke(); ctx.strokeStyle = N('#F4E3C3'); ctx.lineWidth = 14; ctx.stroke();
+    for (let k = 0; k < 4; k++) bar(ctx, 30, 1160 + k * 70, 80, 1160 + k * 70, '#FFFFFF', 6, 4);
+    bar(ctx, 30, 1430, 30, 1130, '#FFFFFF', 7, 4); bar(ctx, 80, 1430, 80, 1130, '#FFFFFF', 7, 4);
+    ctx.restore();
     // palm (far right)
     palm(ctx, 1290, 1420, 1, T);
     // umbrella + towel (right)
-    poly(ctx, [[880, 1545], [1150, 1545], [1180, 1625], [850, 1625]]); FS(ctx, '#20BDBB', 7);
-    ctx.save(); poly(ctx, [[880, 1545], [1150, 1545], [1180, 1625], [850, 1625]]); ctx.clip();
-    for (let i = 0; i < 6; i++) { ctx.fillStyle = N(i % 2 ? '#FFFFFF' : '#FFD447'); ctx.fillRect(860 + i * 60, 1540, 22, 100); } ctx.restore();
-    umbrella(ctx, 1000, 1040, 1560, 400, ['#EE384A', '#FFFFFF', '#2E9CCA', '#FFFFFF'], T, .08);
+    poly(ctx, [[840, 1545], [1090, 1545], [1120, 1625], [810, 1625]]); FS(ctx, '#20BDBB', 7);
+    ctx.save(); poly(ctx, [[840, 1545], [1090, 1545], [1120, 1625], [810, 1625]]); ctx.clip();
+    for (let i = 0; i < 6; i++) { ctx.fillStyle = N(i % 2 ? '#FFFFFF' : '#FFD447'); ctx.fillRect(820 + i * 60, 1540, 22, 100); } ctx.restore();
+    umbrella(ctx, 950, 1040, 1560, 380, ['#EE384A', '#FFFFFF', '#2E9CCA', '#FFFFFF'], T, .07);
     // sandcastle (left front)
     const sc = '#F2C25E', sx = 80, sy = 1610;
     B(ctx, sx - 110, sy - 100, 220, 100, 8, sc, 8);
@@ -493,10 +504,20 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     // path
     ctx.beginPath(); ctx.moveTo(500, 1300); ctx.quadraticCurveTo(470, 1380, 400, 1440); ctx.lineTo(680, 1440); ctx.quadraticCurveTo(650, 1380, 620, 1300); ctx.closePath(); FS(ctx, '#F4E3C3', 6);
     // monkey bars (back)
-    { const c = '#7B4BFF', y0 = 1110, y1 = 1310;
-      for (const x of [300, 600]) { bar(ctx, x, y0, x, y1, c, 14, 5); bar(ctx, x + 30, y0, x + 30, y1, c, 14, 5); for (let k = 1; k < 4; k++) bar(ctx, x, y0 + k * 48, x + 30, y0 + k * 48, '#FFD447', 7, 4); }
-      bar(ctx, 300, y0, 630, y0, c, 12, 5); bar(ctx, 300, y0 + 26, 630, y0 + 26, c, 12, 5);
-      for (let k = 1; k < 9; k++) bar(ctx, 300 + k * 33, y0, 300 + k * 33, y0 + 26, '#FFD447', 7, 3); }
+    { const c = '#7B4BFF', y0 = 1020, y1 = 1490, xa = -800, xb = -400;
+      for (const x of [xa, xb]) { bar(ctx, x, y0, x, y1, c, 16, 6); bar(ctx, x + 36, y0, x + 36, y1, c, 16, 6); for (let k = 1; k < 8; k++) bar(ctx, x, y0 + k * 58, x + 36, y0 + k * 58, '#FFD447', 8, 4); }
+      bar(ctx, xa, y0, xb + 36, y0, c, 14, 6); bar(ctx, xa, y0 + 30, xb + 36, y0 + 30, c, 14, 6);
+      for (let k = 1; k < 12; k++) bar(ctx, xa + k * 36, y0, xa + k * 36, y0 + 30, '#FFD447', 8, 3); }
+    // kite
+    { const kx = 640 + Math.sin(T * .8) * 40 + par(cam, .4).dx, ky = 420 + Math.sin(T * 1.3) * 26, a = Math.sin(T * 1.1) * .18;
+      ctx.beginPath(); ctx.moveTo(kx, ky + 70); ctx.bezierCurveTo(kx + 60, ky + 300, kx + 160, ky + 500, kx + 260, ky + 900); ctx.strokeStyle = 'rgba(27,21,48,.5)'; ctx.lineWidth = 3; ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(kx, ky + 70); for (let i = 1; i <= 8; i++) ctx.lineTo(kx + Math.sin(T * 4 + i) * 16, ky + 70 + i * 22); ctx.strokeStyle = OUTLINE; ctx.lineWidth = 4; ctx.stroke();
+      for (let i = 1; i <= 3; i++) { const bx = kx + Math.sin(T * 4 + i * 2.6) * 16, by = ky + 70 + i * 44; poly(ctx, [[bx - 14, by - 8], [bx + 14, by + 8], [bx + 14, by - 8], [bx - 14, by + 8]]); FS(ctx, PAL[i * 2], 3); }
+      ctx.save(); ctx.translate(kx, ky); ctx.rotate(a);
+      poly(ctx, [[0, -90], [64, -10], [0, 70], [-64, -10]]); FS(ctx, '#FF5B9B', 7);
+      poly(ctx, [[0, -90], [64, -10], [0, -10]]); FS(ctx, '#FFD447', 0); poly(ctx, [[0, 70], [-64, -10], [0, -10]]); FS(ctx, '#FFD447', 0);
+      poly(ctx, [[0, -90], [64, -10], [0, 70], [-64, -10]]); FS(ctx, null, 7); ln(ctx, 0, -90, 0, 70, OUTLINE, 4); ln(ctx, -64, -10, 64, -10, OUTLINE, 4);
+      ctx.restore(); }
     // bench (back right)
     bar(ctx, 680, 1300, 680, 1350, '#3A3A55', 8, 4); bar(ctx, 850, 1300, 850, 1350, '#3A3A55', 8, 4);
     B(ctx, 650, 1240, 230, 22, 8, '#30A045', 7); B(ctx, 650, 1272, 230, 22, 8, '#30A045', 7); B(ctx, 650, 1300, 230, 24, 8, '#30A045', 7);
@@ -513,10 +534,10 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     chute(); ctx.strokeStyle = N('#FFF1A8'); ctx.lineWidth = 16; ctx.stroke();
     // swings (right)
     { const L = 430, py = 885;
-      bar(ctx, 1010, py, 950, 1495, '#FF8528', 16, 6); bar(ctx, 1010, py, 1070, 1495, '#FF8528', 16, 6);
-      bar(ctx, 1410, py, 1350, 1495, '#FF8528', 16, 6); bar(ctx, 1410, py, 1470, 1495, '#FF8528', 16, 6);
-      B(ctx, 980, py - 18, 460, 30, 12, '#2E9CCA', 8);
-      [[1105, 0], [1310, 1.7]].forEach(([x, ph], i) => {
+      bar(ctx, 860, py, 800, 1495, '#FF8528', 16, 6); bar(ctx, 860, py, 920, 1495, '#FF8528', 16, 6);
+      bar(ctx, 1270, py, 1210, 1495, '#FF8528', 16, 6); bar(ctx, 1270, py, 1330, 1495, '#FF8528', 16, 6);
+      B(ctx, 830, py - 18, 470, 30, 12, '#2E9CCA', 8);
+      [[965, 0], [1165, 1.7]].forEach(([x, ph], i) => {
         const a = o.swing === false ? 0 : Math.sin(T * 2.3 + ph) * (.32 - i * .06);
         ctx.save(); ctx.translate(x, py + 4); ctx.rotate(a);
         for (const cx of [-34, 34]) { ln(ctx, cx, 0, cx, L, OUTLINE, 9); ln(ctx, cx, 0, cx, L, '#B8C2CC', 4); }
@@ -529,7 +550,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     // flowers
     for (let i = 0; i < 16; i++) { const x = -700 + hash(i * 9.1) * 2600, y = 1330 + hash(i * 4.4) * 90; if (x > 250 && x < 900) continue; Ci(ctx, x, y, 9, ['#FF5B9B', '#FFD447', '#FFFFFF'][i % 3], 4); }
     if (nt) { // park lamps
-      for (const x of [-480, 1560]) { bar(ctx, x, 1440, x, 820, '#3A3A55', 10, 5); B(ctx, x - 30, 780, 60, 60, 14, '#FFE9A8', 6); glow(ctx, x, 810, 300); }
+      for (const x of [-120, 1460]) { bar(ctx, x, 1440, x, 820, '#3A3A55', 10, 5); B(ctx, x - 30, 780, 60, 60, 14, '#FFE9A8', 6); glow(ctx, x, 810, 300); }
     }
   };
 
@@ -548,7 +569,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     }
     // roller coaster (back left)
     withPar(ctx, cam, .6, () => {
-      const ty = x => x > 380 ? lerp(ty(380), 1380, smooth((x - 380) / 300)) : 790 + 210 * Math.sin(x * .0058 + .3) + 80 * Math.sin(x * .016 + 1.3);
+      const ty = x => x > 420 ? lerp(ty(420), 1380, smooth((x - 420) / 260)) : 640 + 190 * Math.sin(x * .0062 + 1.1) + 70 * Math.sin(x * .017 + 1.3);
       for (let x = -1300; x <= 660; x += 75) { bar(ctx, x, ty(x) + 10, x, 1420, '#FFFFFF', 6, 4); }
       for (let x = -1300; x < 660; x += 150) { ln(ctx, x, ty(x) + 60, x + 75, 1400, '#FFFFFF', 4); }
       const path = () => { ctx.beginPath(); for (let x = -1400; x <= 680; x += 20) x === -1400 ? ctx.moveTo(x, ty(x)) : ctx.lineTo(x, ty(x)); };
@@ -568,9 +589,9 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     });
     // ferris wheel
     withPar(ctx, cam, .8, () => {
-      const cx = 820, cy = 640, R = 400, rot = T * .22;
+      const cx = 780, cy = 520, R = 340, rot = T * .22;
       bar(ctx, cx, cy, cx - 230, 1440, '#E8F2F7', 18, 7); bar(ctx, cx, cy, cx + 230, 1440, '#E8F2F7', 18, 7);
-      bar(ctx, cx - 150, 1180, cx + 150, 1180, '#E8F2F7', 10, 5);
+      bar(ctx, cx - 160, 1150, cx + 160, 1150, '#E8F2F7', 10, 5);
       for (let i = 0; i < 16; i++) { const a = rot + i * TAU / 16; ln(ctx, cx, cy, cx + Math.cos(a) * R, cy + Math.sin(a) * R, OUTLINE, 11); ln(ctx, cx, cy, cx + Math.cos(a) * R, cy + Math.sin(a) * R, '#FFFFFF', 5); }
       for (const [rad, col, w] of [[R, '#FF5B9B', 18], [R * .72, '#FFD447', 10]]) { ctx.beginPath(); ctx.arc(cx, cy, rad, 0, TAU); ctx.strokeStyle = OUTLINE; ctx.lineWidth = w + 14; ctx.stroke(); ctx.strokeStyle = N(col); ctx.lineWidth = w; ctx.stroke(); }
       if (nt) { ctx.save(); ctx.globalCompositeOperation = 'lighter'; for (let i = 0; i < 40; i++) { const a = rot + i * TAU / 40; const on = (i + Math.floor(T * 6)) % 3; circle(ctx, cx + Math.cos(a) * R, cy + Math.sin(a) * R, on ? 9 : 14, on ? '#FFE9A8' : '#FF9AD0'); } ctx.restore(); glow(ctx, cx, cy, R * 1.25, '255,120,200', .18); }
@@ -603,26 +624,25 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
       flag(ctx, x, 830, T, '#FFD447', 1);
       if (nt) bulbString(ctx, x - 280, 1200, x, 920, 0, 6, T, true), bulbString(ctx, x, 920, x + 280, 1200, 0, 6, T, true); }
     // snack stand (right)
-    { const x = 900;
+    { const x = 835;
       B(ctx, x, 1250, 320, 210, 12, '#FFF3D6', 9); B(ctx, x - 14, 1250, 348, 40, 10, '#FF8528', 8);
       B(ctx, x + 30, 1300, 260, 90, 8, nt ? '#FFE9A8' : '#7A4A22', 7);
       for (let i = 0; i < 3; i++) { const cx = x + 80 + i * 80; poly(ctx, [[cx - 14, 1360], [cx + 14, 1360], [cx, 1400]]); FS(ctx, '#F4E3C3', 4); blob(ctx, [[cx, 1340, 26], [cx - 16, 1350, 18], [cx + 16, 1350, 18]], ['#FFB3D1', '#B9A4FF', '#9EE6F0'][i], 4); }
       for (let k = 0; k < 2; k++) bar(ctx, x + 10 + k * 300, 1250, x + 10 + k * 300, 1090, '#FFFFFF', 8, 4);
       ctx.save(); rr(ctx, x - 30, 1050, 380, 70, 10); ctx.clip(); for (let i = 0; i < 8; i++) { ctx.fillStyle = N(i % 2 ? '#FFFFFF' : '#20BDBB'); ctx.fillRect(x - 30 + i * 48, 1050, 48, 70); } ctx.restore(); rr(ctx, x - 30, 1050, 380, 70, 10); FS(ctx, null, 8);
       ctx.beginPath(); for (let i = 0; i < 8; i++) ctx.arc(x - 6 + i * 48, 1120, 24, 0, Math.PI); FS(ctx, '#20BDBB', 7);
-      B(ctx, x + 30, 960, 260, 80, 16, '#FF5B9B', 8); txt(ctx, 'SNACKS', x + 160, 1002, 54, nt ? '#FFF6C8' : N('#FFFFFF'));
+      B(ctx, x + 30, 960, 260, 80, 16, '#FF5B9B', 8); txt(ctx, 'SNACKS', x + 160, 1002, 46, nt ? '#FFF6C8' : N('#FFFFFF'));
       if (nt) glow(ctx, x + 160, 1000, 200, '255,120,200', .4);
       // balloons
       const bcol = ['#EE384A', '#FFD447', '#2E9CCA', '#30CE65', '#7B4BFF', '#FF5B9B'];
       for (let i = 0; i < 6; i++) {
-        const bx = x - 70 + (i % 3) * 55 + Math.sin(T * 1.5 + i) * 8, by = 990 + Math.floor(i / 3) * 70 - (i % 2) * 30 + Math.sin(T * 2 + i * 1.3) * 6;
-        ctx.beginPath(); ctx.moveTo(x - 20, 1300); ctx.quadraticCurveTo((bx + x - 20) / 2 + 10, (by + 1300) / 2, bx, by + 44); ctx.strokeStyle = OUTLINE; ctx.lineWidth = 3; ctx.stroke();
+        const bx = x - 20 + (i % 3) * 55 + Math.sin(T * 1.5 + i) * 8, by = 880 + Math.floor(i / 3) * 70 - (i % 2) * 30 + Math.sin(T * 2 + i * 1.3) * 6;
+        ctx.beginPath(); ctx.moveTo(x - 20, 1270); ctx.quadraticCurveTo((bx + x - 20) / 2 + 10, (by + 1270) / 2, bx, by + 44); ctx.strokeStyle = OUTLINE; ctx.lineWidth = 3; ctx.stroke();
         El(ctx, bx, by, 34, 42, bcol[i], 6); El(ctx, bx - 10, by - 14, 8, 12, 'rgba(255,255,255,.6)');
       }
       B(ctx, x - 40, 1270, 40, 190, 8, '#B8C2CC', 6); }
     // string lights across
-    bulbString(ctx, -400, 860, 1500, 820, 120, 24, T, nt);
-    bunting(ctx, 300, 1180, 880, 1180, 50, 9, T);
+    bulbString(ctx, -400, 700, 1500, 700, 110, 24, T, nt);
   };
 
   // ================================================================= 5. CAMPSITE
@@ -698,7 +718,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
   envCampsiteFront = function (ctx, T, cam, o = {}) {
     setNight(o, true);
     const x = o.fireX ?? 540;
-    campfire(ctx, x, 1600, T, .9);
+    campfire(ctx, x, 1590, T, .9);
     if (NIGHT) glow(ctx, x, 1480, 260, '255,190,90', .3);
   };
 
@@ -726,7 +746,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
   function snowman(ctx, x, y, T) {
     blob(ctx, [[x, y - 95, 100], [x, y - 245, 76], [x, y - 360, 56]], '#FFFFFF', 8);
     ctx.fillStyle = 'rgba(120,160,220,.18)'; ctx.beginPath(); ctx.arc(x + 20, y - 80, 80, 0, TAU); ctx.fill();
-    bar(ctx, x - 70, y - 260, x - 170, y - 330, '#7A4A22', 7, 4); bar(ctx, x + 70, y - 260, x + 165, y - 320, '#7A4A22', 7, 4); bar(ctx, x + 140, y - 305, x + 150, y - 345, '#7A4A22', 5, 3);
+    bar(ctx, x - 70, y - 260, x - 125, y - 340, '#7A4A22', 7, 4); bar(ctx, x + 70, y - 260, x + 165, y - 320, '#7A4A22', 7, 4); bar(ctx, x + 140, y - 305, x + 150, y - 345, '#7A4A22', 5, 3);
     Ci(ctx, x - 20, y - 372, 8, OUTLINE); Ci(ctx, x + 20, y - 372, 8, OUTLINE);
     poly(ctx, [[x - 4, y - 360], [x + 62, y - 348], [x - 4, y - 344]]); FS(ctx, '#FF8528', 5);
     for (let k = 0; k < 5; k++) { const a = .35 + k * .1; Ci(ctx, x - 30 + k * 15, y - 330 + Math.sin(a * 6) * 4 + Math.abs(k - 2) * -3 + 6, 5, OUTLINE); }
@@ -758,7 +778,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     if (nt) { glow(ctx, 150, 790, 360, '255,220,140', .45); }
     B(ctx, 120, 1410, 60, 24, 8, '#24225B', 6);
     // snowman + sled
-    snowman(ctx, 1000, 1545, T);
+    snowman(ctx, 965, 1545, T);
     ctx.save(); ctx.translate(140, 1595); ctx.rotate(-.04);
     B(ctx, -110, -40, 220, 34, 12, '#EE384A', 8);
     ctx.beginPath(); ctx.moveTo(-120, 10); ctx.lineTo(100, 10); ctx.quadraticCurveTo(140, 10, 136, -30); ctx.strokeStyle = OUTLINE; ctx.lineWidth = 16; ctx.stroke(); ctx.strokeStyle = N('#B8C2CC'); ctx.lineWidth = 7; ctx.stroke();
@@ -802,7 +822,8 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     }
     // ad boards
     const ads = [['GO TEAM!', '#EE384A'], ['GOAL!', '#FF8528'], ['NUBI FC', '#7B4BFF'], ['PLAY FAIR', '#30A045'], ['SNACKS', '#FF5B9B'], ['GO TEAM!', '#2E9CCA']];
-    for (let i = -4; i < 12; i++) { const [s, c] = ads[mod(i, ads.length)], x = i * 300 - 60; B(ctx, x, 1230, 300, 90, 0, c, 7); txt(ctx, s, x + 150, 1276, 46, N('#FFFFFF')); }
+    for (let i = -4; i < 12; i++) B(ctx, i * 300 - 60, 1230, 300, 90, 0, ads[mod(i, ads.length)][1], 7);
+    for (let i = -4; i < 12; i++) { const s = ads[mod(i, ads.length)][0]; txt(ctx, s, i * 300 + 90, 1277, Math.min(44, 380 / s.length), N('#FFFFFF')); }
     // pitch stripes
     let y = 1320, k = 0, hgt = 50; while (y < 4000) { ctx.fillStyle = N(k % 2 ? '#56B848' : '#62C552'); ctx.fillRect(-3000, y, 9000, hgt); y += hgt; hgt *= 1.32; k++; }
     ctx.fillStyle = OUTLINE; ctx.fillRect(-3000, 1317, 9000, 6);
@@ -811,6 +832,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     ctx.moveTo(540, 1352); ctx.lineTo(540, 4000); ctx.stroke();
     ctx.lineWidth = 12; ctx.beginPath(); ctx.ellipse(540, 1700, 480, 150, 0, 0, TAU); ctx.stroke();
     El(ctx, 540, 1700, 18, 7, '#FFFFFF');
+    if (nt) { glow(ctx, 540, 1650, 900, '170,255,170', .16); }
     // goal (left)
     { const gx0 = -300, gx1 = 190, gy0 = 1020, gy1 = 1505, bx0 = -250, bx1 = 140, by0 = 1080, by1 = 1400;
       ctx.save(); ctx.strokeStyle = 'rgba(255,255,255,.75)'; ctx.lineWidth = 3; ctx.beginPath();
@@ -858,7 +880,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
   envDowntown = function (ctx, T, cam, o = {}) {
     const nt = setNight(o);
     if (nt) { sky(ctx, '#0E1240', '#4A2A80', -300, 1100); stars(ctx, T, cam, 50); withPar(ctx, cam, .1, () => moon(ctx, 880, 200, 56)); }
-    else { sky(ctx, '#45B2F2', '#D6F2FF', -300, 1100); withPar(ctx, cam, .1, () => sun(ctx, 160, 200, 74, T)); }
+    else { sky(ctx, '#45B2F2', '#D6F2FF', -300, 1100); withPar(ctx, cam, .1, () => sun(ctx, 930, 230, 74, T)); }
     clouds(ctx, T, cam, .2, 5, 81, 80, 360, .9, nt ? .25 : 1);
     // skyline
     withPar(ctx, cam, .35, () => {
@@ -902,7 +924,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     B(ctx, -3000, 1556, 9000, 32, 0, '#B8B2A8', 7);
     ctx.fillStyle = N('#55596E'); ctx.fillRect(-3000, 1590, 9000, 2400);
     // crosswalk
-    let cy = 1610, ch = 26; for (let k = 0; k < 7; k++) { const half = 300 + k * 60; ctx.fillStyle = N('#F4F4F4'); ctx.fillRect(540 - half, cy, half * 2, ch); cy += ch * 2.1; ch *= 1.3; }
+    let cy = 1610, ch = 26; for (let k = 0; k < 7; k++) { const half = 300 + k * 60; ctx.fillStyle = N('#E4E6EE'); ctx.fillRect(540 - half, cy, half * 2, ch); cy += ch * 2.1; ch *= 1.3; }
     ctx.fillStyle = N('#FFD447'); for (let i = -20; i < 40; i++) { if (Math.abs(i * 220 - 540) < 450) continue; ctx.fillRect(i * 220, 1930, 130, 18); }
     // car
     if (o.car) { const cx = -1100 + mod(T * 520, 2900), cyy = 1760;
@@ -975,7 +997,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     { let y = 1190, h = 18, k = 0; while (y < 1420) { ctx.fillStyle = N(k % 2 ? '#6FB84C' : '#8ED062'); ctx.fillRect(-3000, y, 9000, h); if (k % 2) { ctx.fillStyle = N('#4D9A3C'); for (let x = -1400 + (k * 37) % 60; x < 2700; x += 60) { ctx.beginPath(); ctx.arc(x, y + h / 2, h * .45, 0, TAU); ctx.fill(); } } y += h; h *= 1.18; k++; } }
     // windpump windmill (right)
     withPar(ctx, cam, .9, () => {
-      const wx = 1260, wy = 560;
+      const wx = 970, wy = 540;
       bar(ctx, wx - 70, 1380, wx - 12, wy + 40, '#B8C2CC', 10, 5); bar(ctx, wx + 70, 1380, wx + 12, wy + 40, '#B8C2CC', 10, 5);
       for (let k = 0; k < 5; k++) { const y = 1300 - k * 150, s = lerp(70, 18, (1300 - y) / 740); bar(ctx, wx - s, y, wx + s, y, '#B8C2CC', 6, 4); }
       poly(ctx, [[wx + 10, wy - 10], [wx + 190, wy - 40], [wx + 190, wy + 30], [wx + 10, wy + 10]]); FS(ctx, '#EE384A', 7);
@@ -1010,7 +1032,7 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
     { const hb = (x, y, w, h) => { B(ctx, x, y - h, w, h, 10, '#F2C94C', 8); ctx.strokeStyle = N('#D9A93A'); ctx.lineWidth = 5; ctx.beginPath(); for (let k = 1; k < 4; k++) { ctx.moveTo(x + 10, y - h + k * h / 4); ctx.lineTo(x + w - 10, y - h + k * h / 4); } ctx.stroke(); ln(ctx, x + w * .33, y - h, x + w * .33, y, '#B07840', 5); ln(ctx, x + w * .66, y - h, x + w * .66, y, '#B07840', 5); };
       hb(330, 1440, 170, 90); hb(500, 1440, 170, 90); hb(410, 1350, 170, 90); }
     // tractor
-    { const x = 840, y = 1500, puff = mod(T * .9, 1);
+    { const x = 815, y = 1500, puff = mod(T * .9, 1);
       for (let k = 0; k < 3; k++) { const u = mod(T * .6 + k / 3, 1); ctx.save(); ctx.globalAlpha = (1 - u) * .6; circle(ctx, x + 155 + u * 40, y - 330 - u * 200, 14 + u * 30, NIGHT ? '#8A90C0' : '#E8EEF5'); ctx.restore(); }
       bar(ctx, x + 150, y - 260, x + 150, y - 330, '#3A3A55', 10, 4);
       B(ctx, x - 10, y - 210, 260, 100, 18, '#EE384A', 9);
@@ -1022,14 +1044,14 @@ let envPool, envPoolFront, envBeach, envBeachFront, envPlayground, envAmusementP
       wr(x + 50, y - 55, 58); wr(x + 250, y - 105, 108); }
     // cow + chickens
     cow(ctx, 30, 1520, T);
-    chicken(ctx, 200, 1585, T, 0, 1); chicken(ctx, 960, 1600, T, 1.7, -1); chicken(ctx, 1080, 1570, T, 3.1, 1);
+    chicken(ctx, 150, 1630, T, 0, 1); chicken(ctx, 960, 1600, T, 1.7, -1); chicken(ctx, 1080, 1570, T, 3.1, 1);
   };
 
-  registerSet('pool', envPool, 'Outdoor swimming pool: far deck w/ loungers, umbrella, lifeguard chair, diving board, water slide; near deck = FLOOR. Call envPoolFront after characters to put them IN the water (waterline y 1300 = waist-deep; o.swimmers:[x] ripples)', "{night, sign:'POOL', swimmers:[x], waterline}", ['outdoor']);
+  registerSet('pool', envPool, 'Outdoor swimming pool: far deck w/ loungers, umbrella, lifeguard chair, diving board, water slide; near deck = FLOOR. Call envPoolFront after characters to put them IN the water (waterline y 1310 = waist-deep; o.swimmers:[x] ripples)', "{night, sign:'POOL', swimmers:[x], waterline}", ['outdoor']);
   registerSet('beach', envBeach, 'Sunny beach: animated waves + foam, boat & island on horizon, lifeguard tower (left), umbrella + towel (right), sandcastle, seagulls. Optional envBeachFront = dunes in the bottom corners', '{night}', ['outdoor']);
   registerSet('playground', envPlayground, 'Park playground: slide (left), swinging swings (right, seats y≈1320), monkey bars + bench (back), sandbox (front right)', '{night, swing:false}', ['outdoor']);
   registerSet('amusementPark', envAmusementPark, 'Fun fair: rotating ferris wheel, roller coaster w/ moving carts, striped big top, snack stand + balloons, string lights (night = glowing bulbs + fireworks)', '{night}', ['outdoor', 'city']);
-  registerSet('campsite', envCampsite, 'Forest campsite (NIGHT by default): stars, moon, tents, log seats (top y≈1442), campfire at x 540 (envCampsiteFront draws it in front; pass fireFront:true)', '{day, fire:false, fireX, fireFront}', ['outdoor', 'night']);
+  registerSet('campsite', envCampsite, 'Forest campsite (NIGHT by default): stars, moon, tents, log seats (top y≈1428), campfire at x 540 (envCampsiteFront draws it in front; pass fireFront:true)', '{day, fire:false, fireX, fireFront}', ['outdoor', 'night']);
   registerSet('snowyStreet', envSnowyStreet, 'Snowy winter street: snow-roofed houses w/ smoking chimneys, snowman (right), sled, street lamp, falling snow. envSnowyStreetFront = near flakes', '{night, snow:false}', ['outdoor']);
   registerSet('soccerField', envSoccerField, 'Soccer stadium: bleachers w/ cheering fans, ad boards, scoreboard (o.score), floodlights, goal (left), pitch lines', "{night, score:'2 - 1', home, away, clock, cheer, ball:false}", ['outdoor', 'school']);
   registerSet('downtown', envDowntown, 'City street: skyline, PIZZA / TOYS / ICE CREAM / BOOKS shops, traffic light, bus stop, crosswalk; sidewalk = FLOOR (road below)', '{night, car}', ['outdoor', 'city']);
