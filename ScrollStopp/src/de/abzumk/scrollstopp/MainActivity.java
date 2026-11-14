@@ -1,6 +1,12 @@
 package de.abzumk.scrollstopp;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.admin.DevicePolicyManager;
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -17,7 +23,9 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
     private TextView status, stats;
-    private Button permBtn;
+    private Button permBtn, protectBtn, cancelBtn;
+    private TextView protectText;
+    private final List<Switch> switches = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle b) {
@@ -54,6 +62,26 @@ public class MainActivity extends Activity {
         addSwitch(col, "Snapchat Spotlight blockieren", Prefs.SPOTLIGHT);
         addSwitch(col, "YouTube Shorts blockieren", Prefs.SHORTS);
 
+        TextView ph = new TextView(this);
+        ph.setText("Schutz vor Deinstallieren");
+        ph.setTextSize(20);
+        ph.setTypeface(Typeface.DEFAULT_BOLD);
+        ph.setPadding(0, dp(28), 0, dp(6));
+        col.addView(ph);
+
+        protectText = new TextView(this);
+        protectText.setTextSize(14);
+        col.addView(protectText);
+
+        protectBtn = new Button(this);
+        protectBtn.setOnClickListener(v -> onProtectClick());
+        col.addView(protectBtn, lp(dp(10)));
+
+        cancelBtn = new Button(this);
+        cancelBtn.setText("Doch nicht – Schutz behalten");
+        cancelBtn.setOnClickListener(v -> { Protection.cancelUnlock(this); refresh(); });
+        col.addView(cancelBtn, lp(dp(6)));
+
         stats = new TextView(this);
         stats.setTextSize(15);
         stats.setPadding(0, dp(22), 0, dp(22));
@@ -87,13 +115,87 @@ public class MainActivity extends Activity {
         s.setTextSize(17);
         s.setPadding(0, dp(14), 0, dp(14));
         s.setChecked(Prefs.on(this, key));
-        s.setOnCheckedChangeListener((v, on) -> Prefs.get(this).edit().putBoolean(key, on).apply());
+        s.setOnCheckedChangeListener((v, on) -> {
+            Prefs.get(this).edit().putBoolean(key, on).apply();
+            if (protectText != null) refresh();
+        });
+        switches.add(s);
         col.addView(s);
+    }
+
+    private void onProtectClick() {
+        if (!Protection.active(this)) {
+            if (!serviceOn()) {
+                startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
+                return;
+            }
+            new AlertDialog.Builder(this)
+                    .setTitle("Wie lange soll das Aufheben dauern?")
+                    .setItems(Protection.DELAY_NAMES, (d, which) -> new AlertDialog.Builder(this)
+                            .setTitle("Schutz aktivieren?")
+                            .setMessage("Danach kannst du ScrollStopp nicht mehr einfach löschen oder ausschalten. "
+                                    + "Zum Aufheben musst du in der App \"Schutz aufheben\" tippen und dann "
+                                    + Protection.DELAY_NAMES[which] + " warten.\n\nIm nächsten Schritt bitte \"Aktivieren\" tippen.")
+                            .setPositiveButton("Aktivieren", (d2, w2) -> {
+                                Protection.enable(this, Protection.DELAYS[which]);
+                                requestAdmin();
+                                refresh();
+                            })
+                            .setNegativeButton("Abbrechen", null)
+                            .show())
+                    .show();
+        } else if (!Protection.adminActive(this)) {
+            requestAdmin();
+        } else if (Protection.unlockAt(this) == 0) {
+            new AlertDialog.Builder(this)
+                    .setTitle("Schutz aufheben?")
+                    .setMessage("Der Schutz endet erst in " + Protection.delayName(Protection.delay(this))
+                            + ". Bis dahin bleibt alles blockiert.")
+                    .setPositiveButton("Timer starten", (d, w) -> { Protection.requestUnlock(this); refresh(); })
+                    .setNegativeButton("Abbrechen", null)
+                    .show();
+        }
+    }
+
+    private void requestAdmin() {
+        Intent i = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
+        i.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, Protection.admin(this));
+        i.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, "Damit ScrollStopp nicht einfach gelöscht werden kann.");
+        startActivity(i);
+    }
+
+    private void refresh() {
+        boolean prot = Protection.active(this);
+        long at = Protection.unlockAt(this);
+        for (Switch s : switches) {
+            // While protected, blockers can only be switched on, never off.
+            s.setEnabled(!prot || !s.isChecked());
+        }
+        cancelBtn.setVisibility(prot && at > 0 ? android.view.View.VISIBLE : android.view.View.GONE);
+        if (!prot) {
+            protectText.setText("Aus. Wenn an, kann ScrollStopp nicht einfach gelöscht oder ausgeschaltet werden.");
+            protectBtn.setText("Schutz aktivieren");
+            protectBtn.setEnabled(true);
+        } else if (!Protection.adminActive(this)) {
+            protectText.setText("Fast fertig: Geräteadministrator noch nicht aktiv.");
+            protectBtn.setText("Geräteadministrator aktivieren");
+            protectBtn.setEnabled(true);
+        } else if (at > 0) {
+            protectText.setText("🔒 Aktiv. Schutz endet am "
+                    + DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT).format(new Date(at)) + ".");
+            protectBtn.setText("Timer läuft …");
+            protectBtn.setEnabled(false);
+        } else {
+            protectText.setText("🔒 Aktiv. Aufheben dauert " + Protection.delayName(Protection.delay(this)) + ".");
+            protectBtn.setText("Schutz aufheben");
+            protectBtn.setEnabled(true);
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        refresh();
         boolean on = serviceOn();
         GradientDrawable bg = new GradientDrawable();
         bg.setCornerRadius(dp(12));

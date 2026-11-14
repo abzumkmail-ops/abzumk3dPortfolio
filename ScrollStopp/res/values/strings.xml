@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">ScrollStopp</string>
     <string name="service_desc">Blockiert Snapchat Storys, Snapchat Spotlight und YouTube Shorts. Chats und Snaps funktionieren weiter. Die App liest nur, welcher Bildschirm in Snapchat/YouTube offen ist, und sendet nichts ins Internet.</string>
+    <string name="admin_desc">ScrollStopp-Schutz: verhindert, dass die App einfach deinstalliert wird.</string>
 </resources>

@@ -37,7 +37,9 @@ public class BlockService extends AccessibilityService {
     @Override
     public void onAccessibilityEvent(AccessibilityEvent e) {
         if (e == null || e.getPackageName() == null) return;
-        pendingPkg = e.getPackageName().toString();
+        String pkg = e.getPackageName().toString();
+        if (!SNAP.equals(pkg) && !YT.equals(pkg) && !isGuarded(pkg)) return;
+        pendingPkg = pkg;
         if (!pending) {
             pending = true;
             handler.postDelayed(check, 120);
@@ -49,6 +51,16 @@ public class BlockService extends AccessibilityService {
         AccessibilityNodeInfo root = getRootInActiveWindow();
         if (root == null || root.getPackageName() == null) return;
         String rootPkg = root.getPackageName().toString();
+
+        if (isGuarded(rootPkg)) {
+            if (Protection.active(this) && Protection.adminActive(this) && touchesUs(root)) {
+                lastAction = SystemClock.uptimeMillis();
+                performGlobalAction(GLOBAL_ACTION_BACK);
+                handler.postDelayed(() -> performGlobalAction(GLOBAL_ACTION_HOME), 250);
+                Toast.makeText(this, "ScrollStopp ist geschützt. Schutz aufheben geht nur in der App.", Toast.LENGTH_LONG).show();
+            }
+            return;
+        }
 
         if (YT.equals(rootPkg) && Prefs.on(this, Prefs.SHORTS)) {
             for (String id : SHORTS_IDS) {
@@ -67,6 +79,45 @@ public class BlockService extends AccessibilityService {
             if ((stories && f.storyHeader) || (spot && f.spotHeader)) {
                 block(f.spotHeader ? "Spotlight blockiert" : "Storys blockiert", f.chatTab);
             }
+        }
+    }
+
+    /** Settings / installer apps where ScrollStopp could be removed or switched off. */
+    private static boolean isGuarded(String pkg) {
+        return pkg.contains("settings") || pkg.contains("packageinstaller")
+                || pkg.contains("permissioncontroller") || pkg.equals("com.android.vending")
+                || pkg.contains("securitycenter") || pkg.contains("devicecare");
+    }
+
+    // Words that show a screen can uninstall / stop / disable an app (DE + EN).
+    private static final String[] DANGER = {
+            "deinstall", "uninstall", "beenden erzwingen", "stopp erzwingen", "force stop",
+            "deaktivieren", "deactivate", "administrator", "device admin", "geräteadmin",
+            "verwenden", "use scrollstopp", "blockiert snapchat", "scrollstopp-schutz",
+            "app löschen", "entfernen", "remove", "ausschalten", "turn off", "stop scrollstopp",
+            "scrollstopp beenden"
+    };
+
+    private boolean touchesUs(AccessibilityNodeInfo root) {
+        StringBuilder sb = new StringBuilder();
+        collect(root, sb, 0);
+        String all = sb.toString();
+        if (!all.contains("scrollstopp")) return false;
+        for (String w : DANGER) if (all.contains(w)) return true;
+        return false;
+    }
+
+    private void collect(AccessibilityNodeInfo n, StringBuilder sb, int depth) {
+        if (n == null || depth > 40 || sb.length() > 20000) return;
+        if (n.isVisibleToUser()) {
+            if (n.getText() != null) sb.append(n.getText()).append('\n');
+            if (n.getContentDescription() != null) sb.append(n.getContentDescription()).append('\n');
+        }
+        for (int i = 0; i < n.getChildCount(); i++) collect(n.getChild(i), sb, depth + 1);
+        if (depth == 0) {
+            String low = sb.toString().toLowerCase();
+            sb.setLength(0);
+            sb.append(low);
         }
     }
 
